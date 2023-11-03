@@ -169,7 +169,7 @@ Säveltäjälle määritellyt teoskategoriat. Kaikille säveltäjille ei ole mä
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | -- | -- | -- |
-| [`code`](#metacomposerworkcategoriescode)  | aina | string | Teoskategorian koodi  |   |
+| `code`  | aina | string | Teoskategorian koodi  |   |
 | [`label`](#metacomposerworkcategorieslabel)  | aina | string | Teoskategorian otsikko | |
 
 ```JSON
