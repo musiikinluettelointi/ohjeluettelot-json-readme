@@ -431,7 +431,7 @@ Kielen otsikko.
 
 #### items.\*.authorizedTitle.language.label.*.locale
 
-Kielen koodi.
+Kielen otsikon kielikoodi.
 
 ```JSON
 "locale": "fi",
