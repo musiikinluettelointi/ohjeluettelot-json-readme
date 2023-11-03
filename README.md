@@ -355,6 +355,23 @@ Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
 | [`publications`](#itemsauthorizedtitlepublications) | joskus | array |  | |
 | [`sources`](#itemsauthorizedtitlesources) | joskus | array |  | |
 
+
+#### items.*.authorizedTitle.title
+
+#### items.*.authorizedTitle.offset
+
+#### items.*.authorizedTitle.language
+
+#### items.*.authorizedTitle.alphabet
+
+#### items.*.authorizedTitle.transliteration
+
+#### items.*.authorizedTitle.note
+
+#### items.*.authorizedTitle.publications
+
+#### items.*.authorizedTitle.sources
+
 ```JSON
 "authorizedTitle": {
     "title": "Vremena goda, op37a",
@@ -370,6 +387,7 @@ Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
     "transliteration": "sfs4900",
     "note": "Poroila 2013",
 ```
+
 #### items.*.authorizedTitleHistory
 
 Auktorisoidun nimekkeen muutoshistoria, mikäli teosobjektilla on auktorisoitu nimeke.
