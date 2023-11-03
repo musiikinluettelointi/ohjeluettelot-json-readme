@@ -331,9 +331,9 @@ Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
 "authorizedTitle": {
   "title": ,
   "offset": ,
-  "alphabet": {
-  },
   "language": {
+  },
+  "alphabet": {
   },
   "transliteration": {
   },
@@ -344,6 +344,17 @@ Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
   ]
 },
 ```
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`title`](#itemsauthorizedtitletitle) | aina | string |  |  |
+| [`offset`](#itemsauthorizedtitleoffset) | joskus | integer |  | |
+| [`language`](#itemsauthorizedtitlelanguage) | joskus | object |  | |
+| [`alphabet`](#itemsauthorizedtitlealphabet) | joskus | object |  |  |
+| [`transliteration`](#itemsauthorizedtitletransliteration) | joskus | object |  | |
+| [`note`](#itemsauthorizedtitlenote) | joskus | string |  | |
+| [`publications`](#itemsauthorizedtitlepublications) | joskus | array |  | |
+| [`sources`](#itemsauthorizedtitlesources) | joskus | array |  | |
+
 ```JSON
 "authorizedTitle": {
     "title": "Vremena goda, op37a",
