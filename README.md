@@ -285,7 +285,7 @@ Tämä rakenne sisältää teosluettelon teosluettelo-objektit.
 
 #### items.*.itemType
 
-teosluettelo-objektin tyyppi.
+Teosluettelo-objektin tyyppi.
 
 ```JSON
 "itemType": "work",
@@ -299,7 +299,7 @@ teosluettelo-objektin tyyppi.
 
 #### items.*.id
 
-teosluettelo-objektin tunniste teosluettelossa.
+Teosluettelo-objektin tunniste teosluettelossa.
 
 ```JSON
 "id": "work-c10de676-0115-474f-895e-26940602371b",
@@ -401,7 +401,7 @@ Ohitettavat merkit.
 
 #### items.*.authorizedTitle.language
 
-Nimekkeen kieli.
+Tämä rakenne sisältää nimekkeen kielen.
 
 ```JSON
 "language": {
@@ -427,7 +427,7 @@ Kielen koodi.
 
 #### items.\*.authorizedTitle.language.label.*
 
-Kielen otsikko.
+Tämä rakenne sisältää kielen otsikon.
 
 ```JSON
 "label": [
@@ -440,7 +440,7 @@ Kielen otsikko.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`locale`](#itemsauthorizedtitlelanguagelabellocale) | aina | string | Kielen koodi | ISO 639-2 |
+| [`locale`](#itemsauthorizedtitlelanguagelabellocale) | aina | string | Kielen otsikon kielikoodi | ISO 639-2 |
 | [`literal`](#itemsauthorizedtitlelanguagelabelliteral) | aina | array | Kielen otsikko | |
 
 #### items.\*.authorizedTitle.language.label.*.locale
@@ -459,7 +459,7 @@ Kielen otsikko.
 ```
 #### items.*.authorizedTitle.alphabet
 
-Nimekkeen merkistö.
+Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä kyrillisestä merkistöstä latinalaiselle merkistölle translitteroiduille nimekkeille.
 
 ```JSON
 "alphabet": {
@@ -469,13 +469,23 @@ Nimekkeen merkistö.
   ]
 },
 ```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`code`](#itemsauthorizedtitlealphabetcode) | aina | string | Merkistön koodi | `latin` \| `cyrillic` |
+| [`label`](#itemsauthorizedtitlealphabetlabel) | aina | array | Merkistön otsikko | |
+
 #### items.*.authorizedTitle.alphabet.code
+
+Merkistön koodi.
 
 ```JSON
 "code": "latin",
 ```
 
 #### items.\*.authorizedTitle.alphabet.label.*
+
+Tämä rakenne sisältää merkistön otsikon.
 
 ```JSON
 "label": [
@@ -485,6 +495,10 @@ Nimekkeen merkistö.
   }
 ]
 ```
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`locale`](#itemsauthorizedtitlealphabetlabellocale) | aina | string | Merkistön otsikon kielikoodi | ISO 639-2 |
+| [`literal`](#itemsauthorizedtitlealphabetlabelliteral) | aina | array | Merkistön otsikko | |
 
 #### items.\*.authorizedTitle.alphabet.label.*.locale
 
@@ -522,7 +536,7 @@ Huomautus nimekkeestä.
 
 #### items.\*.authorizedTitle.publications.*
 
-Nimekkeeseen liittyvät julkaisut.
+Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 
 ```JSON
 "publications": [
@@ -556,15 +570,15 @@ Julkaisun tunniste teosluettelossa.
 
 #### items.\*.authorizedTitle.sources.*
 
-Nimekkeen lähteet.
+Tämä rakenne sisältää nimekkeen lähteet.
 
 ```JSON
 "sources": [
-                {
-                    "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1. ",
-                    "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
-                }
-            ]
+  {
+    "reference": ,
+    "id": 
+  }
+]
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
