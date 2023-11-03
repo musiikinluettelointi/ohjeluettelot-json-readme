@@ -364,7 +364,7 @@ Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
 | [`offset`](#itemsauthorizedtitleoffset) | joskus | integer | Ohitettavat merkit | |
 | [`language`](#itemsauthorizedtitlelanguage) | joskus | object | Nimekkeen kieli | |
 | [`alphabet`](#itemsauthorizedtitlealphabet) | joskus | object | Nimekkeen merkistö |  |
-| [`transliteration`](#itemsauthorizedtitletransliteration) | joskus | object | Nimekkeen translitterointi | |
+| [`transliteration`](#itemsauthorizedtitletransliteration) | joskus | object | Nimekkeen translitterointi | `iso9` \| `sfs4900` |
 | [`note`](#itemsauthorizedtitlenote) | joskus | string | Huomautus nimekkeestä | |
 | [`publications`](#itemsauthorizedtitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut | |
 | [`sources`](#itemsauthorizedtitlesources) | joskus | array | Nimekkeen lähteet | |
@@ -397,6 +397,7 @@ Nimekkeen kieli.
   ]
 },
 ```
+
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | [`code`](#itemsauthorizedtitlelanguagecode) | aina | string | Kielen koodi | ISO 639-2 |
@@ -410,7 +411,7 @@ Kielen koodi.
 "code": "rus",
 ```
 
-#### items.*.authorizedTitle.language.label
+#### items.\*.authorizedTitle.language.label.*
 
 Kielen otsikko.
 
@@ -422,6 +423,7 @@ Kielen otsikko.
   }
 ]
 ```
+
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | [`locale`](#itemsauthorizedtitlelanguagelabellocale) | aina | string | Kielen koodi | ISO 639-2 |
@@ -447,7 +449,7 @@ Nimekkeen merkistö.
 
 ```JSON
 "alphabet": {
-  "code": "latin",
+  "code": ,
   "label": [
 
   ]
@@ -459,16 +461,27 @@ Nimekkeen merkistö.
 "code": "latin",
 ```
 
-#### items.\*.authorizedTitle.alphabet.*.label
-
+#### items.\*.authorizedTitle.alphabet.label.*
 
 ```JSON
 "label": [
   {
-    "locale": "fi",
-    "literal": "latinalainen"
+    "locale": ,
+    "literal": 
   }
 ]
+```
+
+#### items.\*.authorizedTitle.alphabet.label.*.locale
+
+```JSON
+"locale": "fi",
+```
+
+#### items.\*.authorizedTitle.alphabet.label.*.literal
+
+```JSON
+"literal": "latinalainen"
 ```
 
 #### items.*.authorizedTitle.transliteration
@@ -476,79 +489,89 @@ Nimekkeen merkistö.
 Nimekkeen translitterointi.
 
 ```JSON
-"authorizedTitle": {
-    "title": "Vremena goda, op37a",
-    "language": {
-        "code": "rus",
-        "label": [
-            {
-                "locale": "fi",
-                "literal": "venäjä"
-            }
-        ]
-    },
-    "transliteration": "sfs4900",
-    "note": "Poroila 2013",
+"transliteration": "sfs4900",
 ```
+
+| Arvo | Kuvaus |
+| --- | --- |
+| `iso9`| Kansainvälinen standardi |
+| `sfs4900`| Kansallinen standardi |
+
 
 #### items.*.authorizedTitle.note
 
 Huomautus nimekkeestä.
 
 ```JSON
-"authorizedTitle": {
-    "title": "Vremena goda, op37a",
-    "language": {
-        "code": "rus",
-        "label": [
-            {
-                "locale": "fi",
-                "literal": "venäjä"
-            }
-        ]
-    },
-    "transliteration": "sfs4900",
-    "note": "Poroila 2013",
+ "note": "Poroila 2013",
 ```
 
-#### items.*.authorizedTitle.publications
+#### items.\*.authorizedTitle.publications.*
 
 Nimekkeeseen liittyvät julkaisut.
 
 ```JSON
-"authorizedTitle": {
-    "title": "Vremena goda, op37a",
-    "language": {
-        "code": "rus",
-        "label": [
-            {
-                "locale": "fi",
-                "literal": "venäjä"
-            }
-        ]
-    },
-    "transliteration": "sfs4900",
-    "note": "Poroila 2013",
+"publications": [
+  {
+    "reference": ,
+    "id":
+  }
+]
 ```
 
-#### items.*.authorizedTitle.sources
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`reference`](#itemsauthorizedtitlepublicationsreference) | aina | string | Julkaisun lähdeviite | |
+| [`id`](#itemsauthorizedtitlepublicationsid) | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
+
+#### items.\*.authorizedTitle.publications.*.reference
+
+Julkaisun lähdeviite.
+
+```JSON
+"reference": "",
+```
+
+#### items.\*.authorizedTitle.publications.*.id
+
+Julkaisun tunniste teosluettelossa.
+
+```JSON
+"id": ""
+```
+
+#### items.\*.authorizedTitle.sources.*
 
 Nimekkeen lähteet.
 
 ```JSON
-"authorizedTitle": {
-    "title": "Vremena goda, op37a",
-    "language": {
-        "code": "rus",
-        "label": [
-            {
-                "locale": "fi",
-                "literal": "venäjä"
-            }
-        ]
-    },
-    "transliteration": "sfs4900",
-    "note": "Poroila 2013",
+"sources": [
+                {
+                    "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1. ",
+                    "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
+                }
+            ]
+```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`reference`](#itemsauthorizedtitlesourcesreference) | aina | string | Lähteen lähdeviite | |
+| [`id`](#itemsauthorizedtitlesourcesid) | aina | string | Lähteen tunniste teosluettelossa | source-{uuid} |
+
+#### items.\*.authorizedTitle.sources.*.reference
+
+Lähteen lähdeviite.
+
+```JSON
+"reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
+```
+
+#### items.\*.authorizedTitle.sources.*.id
+
+Lähteen tunniste teosluettelossa.
+
+```JSON
+"id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
 ```
 
 #### items.*.authorizedTitleHistory
