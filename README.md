@@ -292,6 +292,13 @@ Säveltäjä. Anonyymeillä teosobjekteilla ei ole säveltäjää.
   "kantoUri":
 },
 ```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `id` | aina | string |  | |
+| `name` | aina | string | | |
+| `kantoUri` | joskus | string | | |
+
 #### items.*.composer.id
 
 ```JSON
