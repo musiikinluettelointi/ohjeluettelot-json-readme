@@ -264,54 +264,99 @@ Dokumentin tuottanut rajapinta
 
 Teosobjektin tyyppi.
 
+| Arvo | Kuvaus |
+| --- | --- |
+| `work`| Teos |
+| `part`| Teoksen osa  |
+| `arrangement`| Teoksen tai teoksen osan sovitus |
+| `translation`| Teoksen, teoksen osan tai sovituksen käännös |
+
+
+```JSON
+"itemType": "work",
+```
 #### items.*.id
 
 Teosobjektin tunniste teosluettelossa.
 
+```JSON
+"id": "work-c10de676-0115-474f-895e-26940602371b",
+```
 #### items.*.composer
 
 Säveltäjä. Anonyymeillä teosobjekteilla ei ole säveltäjää.
 
+```JSON
+
+```
 #### items.*.authorizedTitle
 
 Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
 
+```JSON
+
+```
 #### items.*.authorizedTitleHistory
 
 Auktorisoidun nimekkeen muutoshistoria, mikäli teosobjektilla on auktorisoitu nimeke.
 
+```JSON
+
+```
 #### items.*.alternativeTitle
 
 Vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nimekkeen eri kieliversiot, lempinimet ja nimekkeen viittausmuodot.
 
+```JSON
+
+```
 #### items.*.workCategory
 
 Teoskategoria. Kaikilla teosobjekteilla ei ole teoskategoriaa.
 
+```JSON
+
+```
 #### items.*.workNumber
 
 Numerointi. Kaikilla teosobjekteilla ei ole numerointia.
 
+```JSON
+
+```
 #### items.*.creationYear
 
 Luomisaika. Kaikilla teosobjekteilla ei ole luomisaikaa.
 
+```JSON
+
+```
 #### items.*.mediumOfPerformance
 
 Esityskokoonpano. Kaikilla teosobjekteilla ei ole esityskokoonpano.
 
+```JSON
+
+```
 #### items.*.genre
 
 Muoto tai lajityyppi. Kaikilla teosobjekteilla ei ole muotoa tai lajityyppiä.
 
+```JSON
+
+```
 #### items.*.sources
 
 Lähteet. Kaikilla teosobjekteilla ei ole lähteitä.
 
 ```JSON
+
+```
+
+```JSON
 {
-            "itemType": "work",
-            "id": "work-c10de676-0115-474f-895e-26940602371b",
+            
+            
             "composer": {
                 "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8",
                 "name": "Pingoud, Ernest, 1887-1942",
