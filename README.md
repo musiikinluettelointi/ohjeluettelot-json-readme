@@ -265,25 +265,51 @@ Dokumentin tuottanut rajapinta
 
 #### items.*.itemType
 
+Teosobjektin tyyppi.
+
 #### items.*.id
+
+Teosobjektin tunniste teosluettelossa.
 
 #### items.*.composer
 
+Säveltäjä.
+
 #### items.*.authorizedTitle
+
+Auktorisoitu nimeke.
 
 #### items.*.authorizedTitleHistory
 
+Auktorisoidun nimekkeen muutoshistoria.
+
 #### items.*.alternativeTitle
+
+Vaihtoehtoiset nimekkeet.
 
 #### items.*.workCategory
 
+Teoskategoria.
+
+#### items.*.workNumber
+
+Numerointi.
+
 #### items.*.creationYear
+
+Luomisaika.
 
 #### items.*.mediumOfPerformance
 
+Esityskokoonpano.
+
 #### items.*.genre
 
+Muoto tai lajityyppi.
+
 #### items.*.sources
+
+Lähteet.
 
 ```JSON
 {
