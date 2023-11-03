@@ -400,7 +400,7 @@ Nimekkeen kieli.
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | [`code`](#itemsauthorizedtitlelanguagecode) | aina | string | Kielen koodi | ISO 639-2 |
-| [`label`](#itemsauthorizedtitlelanguagelabel) | auna | array | Kielen otsikko | |
+| [`label`](#itemsauthorizedtitlelanguagelabel) | aina | array | Kielen otsikko | |
 
 #### items.*.authorizedTitle.language.code
 
@@ -417,20 +417,30 @@ Kielen otsikko.
 ```JSON
 "label": [
   {
-    "locale": "fi",
-    "literal": "venäjä"
+    "locale": ,
+    "literal": 
   }
 ]
 ```
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`code`](#itemsauthorizedtitlelanguagecode) | aina | string | Kielen koodi | ISO 639-2 |
-| [`label`](#itemsauthorizedtitlelanguagelabel) | auna | array | Kielen otsikko | |
+| [`locale`](#itemsauthorizedtitlelanguagelabellocale) | aina | string | Kielen koodi | ISO 639-2 |
+| [`literal`](#itemsauthorizedtitlelanguagelabelliteral) | aina | array | Kielen otsikko | |
 
-#### items.*.authorizedTitle.language.label.*.locale
+#### items.\*.authorizedTitle.language.label.*.locale
 
-#### items.*.authorizedTitle.language.label.*.literal
+Kielen koodi.
 
+```JSON
+"locale": "fi",
+```
+#### items.\*.authorizedTitle.language.label.*.literal
+
+Kielen otsikko.
+
+```JSON
+"literal": "venäjä"
+```
 #### items.*.authorizedTitle.alphabet
 
 Nimekkeen merkistö.
