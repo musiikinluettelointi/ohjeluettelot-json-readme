@@ -263,6 +263,28 @@ Dokumentin tuottanut rajapinta
 | `genre` | joskus | array |  |
 | `sources` | joskus  | array |  |
 
+#### items.*.itemType
+
+#### items.*.id
+
+#### items.*.composer
+
+#### items.*.authorizedTitle
+
+#### items.*.authorizedTitleHistory
+
+#### items.*.alternativeTitle
+
+#### items.*.workCategory
+
+#### items.*.creationYear
+
+#### items.*.mediumOfPerformance
+
+#### items.*.genre
+
+#### items.*.sources
+
 ```JSON
 {
             "itemType": "work",
