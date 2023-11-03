@@ -317,7 +317,7 @@ Säveltäjän nimi.
 
 #### items.*.composer.kantoUri
 
-Säveltäjän KANTO URI.
+Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 
 ```JSON
 "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455"
@@ -328,7 +328,35 @@ Säveltäjän KANTO URI.
 Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
 
 ```JSON
-
+"authorizedTitle": {
+  "title": ,
+  "offset": ,
+  "alphabet": ,
+  "language": ,
+  "transliteration": ,
+  "publications": [
+  ],
+  "sources": [
+  ]
+},
+```
+```JSON
+   "uniform_title": {
+        "note": "Poroila 2013",
+        "title": "Vremena goda, op37a",
+        "offset": "0",
+        "sources": [
+            {
+                "id": "6",
+                "note": null,
+                "uuid": "165ed660-ccbe-43da-852c-3f5f58c03826",
+                "order": 1
+            }
+        ],
+        "alphabet": "latin",
+        "language": "rus",
+        "transliteration": "sfs4900"
+    },
 ```
 #### items.*.authorizedTitleHistory
 
@@ -390,12 +418,7 @@ Lähteet. Kaikilla teosobjekteilla ei ole lähteitä.
 ```JSON
 {
             
-            
-            "composer": {
-                "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8",
-                "name": "Pingoud, Ernest, 1887-1942",
-                "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455"
-            },
+
             "authorizedTitle": {
                 "title": "Prologue, op4",
                 "sources": [
