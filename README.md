@@ -455,7 +455,11 @@ Nimekkeen merkistö.
 ```
 #### items.*.authorizedTitle.alphabet.code
 
-#### items.*.authorizedTitle.alphabet.label
+```JSON
+"code": "latin",
+```
+
+#### items.\*.authorizedTitle.alphabet.*.label
 
 
 ```JSON
