@@ -19,7 +19,7 @@ To do
 
 | Avain | Läsnä | Tyyppi | Kuvaus |
 | --- | --- | --- | --- |
-| `meta` | aina | object | Sisältää dokumentin metatiedot |
+| [`meta`](#meta) | aina | object | Sisältää dokumentin metatiedot |
 | `items` | aina  | array | Sisältää teosobjektit |
 
 ### meta
