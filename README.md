@@ -295,11 +295,13 @@ Säveltäjä. Anonyymeillä teosobjekteilla ei ole säveltäjää.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`id`](#itemscomposerid) | aina | string |  | |
-| [`name`](#itemscomposername) | aina | string | | |
-| [`kantoUri`](#itemscomposerkantouri) | joskus | string | | |
+| [`id`](#itemscomposerid) | aina | string | Säveltäjän tunniste teosluettelossa | name-{uuid} |
+| [`name`](#itemscomposername) | aina | string | Säveltäjän nimi | |
+| [`kantoUri`](#itemscomposerkantouri) | joskus | string | Säveltäjän KANTO URI | |
 
 #### items.*.composer.id
+
+Säveltäjän tunniste teosluettelossa.
 
 ```JSON
 "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8",
@@ -307,11 +309,15 @@ Säveltäjä. Anonyymeillä teosobjekteilla ei ole säveltäjää.
 
 #### items.*.composer.name
 
+Säveltäjän nimi.
+
 ```JSON
 "name": "Pingoud, Ernest, 1887-1942",
 ```
 
 #### items.*.composer.kantoUri
+
+Säveltäjän KANTO URI.
 
 ```JSON
 "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455"
