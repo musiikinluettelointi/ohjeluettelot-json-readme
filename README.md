@@ -295,9 +295,9 @@ Säveltäjä. Anonyymeillä teosobjekteilla ei ole säveltäjää.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `id` | aina | string |  | |
-| `name` | aina | string | | |
-| `kantoUri` | joskus | string | | |
+| [`id`](#itemscomposerid) | aina | string |  | |
+| [`name`](#itemscomposername) | aina | string | | |
+| [`kantoUri`](#itemscomposerkantouri) | joskus | string | | |
 
 #### items.*.composer.id
 
