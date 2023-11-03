@@ -253,13 +253,13 @@ Dokumentin tuottanut rajapinta
 | [`itemType`](#itemsitemtype) | aina | string | Teosobjektin tyyppi | `work` \| `part` \| `arrangement` \| `translation`  |
 | [`id`](#itemsid) | aina  | string | Teosobjektin tunniste teosluettelossa | {`work` \| `part` \| `arrangement` \| `translation`}-{uuid} |
 | [`composer`](#itemscomposer) | joskus | object | Säveltäjä | |
-| [`authorizedTitle`](#itemsauthorizedtitle) | joskus  | array | Auktorisoitu nimeke  | |
+| [`authorizedTitle`](#itemsauthorizedtitle) | joskus | array | Auktorisoitu nimeke  | |
 | [`authorizedTitleHistory`](#itemsauthorizedtitlehistory) | joskus | array | Auktorisoidun nimekkeen muutoshistoria | |
-| [`alternativeTitle`](#itemsalternativetitle) | joskus  | array | Vaihtoehtoiset nimekkeet | |
+| [`alternativeTitle`](#itemsalternativetitle) | joskus | array | Vaihtoehtoiset nimekkeet | |
 | [`workCategory`](#itemsworkcategory) | joskus | array | Teoskategoria | |
 | [`workNumber`](#itemsworknumber) | joskus  | array | Numerointi | |
 | [`creationYear`](#itemscreationyear) | joskus | array | Luomisaika | |
-| [`mediumOfPerformance`](#itemsmediumofperformance) | joskus  | array | Esityskokoonpano | |
+| [`mediumOfPerformance`](#itemsmediumofperformance) | joskus | array | Esityskokoonpano | |
 | [`genre`](#itemsgenre) | joskus | array | Muoto tai lajityyppi | |
 | [`sources`](#itemssources) | joskus  | array | Lähteet | |
 
