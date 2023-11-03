@@ -364,29 +364,129 @@ Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
 
 Auktorisoitu nimeke.
 
+```JSON
+"title": "Vremena goda, op37a",
+```
+
 #### items.*.authorizedTitle.offset
 
 Ohitettavat merkit.
+
+```JSON
+"offset": 3,
+```
 
 #### items.*.authorizedTitle.language
 
 Nimekkeen kieli.
 
+```JSON
+"language": {
+  "code": "rus",
+  "label": [
+
+  ]
+},
+```
+
+#### items.*.authorizedTitle.language.code
+
+#### items.*.authorizedTitle.language.label
+
+```JSON
+"label": [
+  {
+    "locale": "fi",
+    "literal": "venäjä"
+  }
+]
+```
+
 #### items.*.authorizedTitle.alphabet
 
 Nimekkeen merkistö.
+
+```JSON
+"alphabet": {
+  "code": "latin",
+  "label": [
+
+  ]
+},
+```
+#### items.*.authorizedTitle.alphabet.code
+
+#### items.*.authorizedTitle.alphabet.label
+
+
+```JSON
+"label": [
+  {
+    "locale": "fi",
+    "literal": "latinalainen"
+  }
+]
+```
 
 #### items.*.authorizedTitle.transliteration
 
 Nimekkeen translitterointi.
 
+```JSON
+"authorizedTitle": {
+    "title": "Vremena goda, op37a",
+    "language": {
+        "code": "rus",
+        "label": [
+            {
+                "locale": "fi",
+                "literal": "venäjä"
+            }
+        ]
+    },
+    "transliteration": "sfs4900",
+    "note": "Poroila 2013",
+```
+
 #### items.*.authorizedTitle.note
 
 Huomautus nimekkeestä.
 
+```JSON
+"authorizedTitle": {
+    "title": "Vremena goda, op37a",
+    "language": {
+        "code": "rus",
+        "label": [
+            {
+                "locale": "fi",
+                "literal": "venäjä"
+            }
+        ]
+    },
+    "transliteration": "sfs4900",
+    "note": "Poroila 2013",
+```
+
 #### items.*.authorizedTitle.publications
 
 Nimekkeeseen liittyvät julkaisut.
+
+```JSON
+"authorizedTitle": {
+    "title": "Vremena goda, op37a",
+    "language": {
+        "code": "rus",
+        "label": [
+            {
+                "locale": "fi",
+                "literal": "venäjä"
+            }
+        ]
+    },
+    "transliteration": "sfs4900",
+    "note": "Poroila 2013",
+```
 
 #### items.*.authorizedTitle.sources
 
