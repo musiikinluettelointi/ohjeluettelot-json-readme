@@ -334,6 +334,7 @@ Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
   "alphabet": ,
   "language": ,
   "transliteration": ,
+  "note" ,
   "publications": [
   ],
   "sources": [
@@ -341,22 +342,19 @@ Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
 },
 ```
 ```JSON
-   "uniform_title": {
-        "note": "Poroila 2013",
-        "title": "Vremena goda, op37a",
-        "offset": "0",
-        "sources": [
-            {
-                "id": "6",
-                "note": null,
-                "uuid": "165ed660-ccbe-43da-852c-3f5f58c03826",
-                "order": 1
-            }
-        ],
-        "alphabet": "latin",
-        "language": "rus",
-        "transliteration": "sfs4900"
-    },
+            "authorizedTitle": {
+                "title": "Vremena goda, op37a",
+                "language": {
+                    "code": "rus",
+                    "label": [
+                        {
+                            "locale": "fi",
+                            "literal": "venäjä"
+                        }
+                    ]
+                },
+                "transliteration": "sfs4900",
+                "note": "Poroila 2013",
 ```
 #### items.*.authorizedTitleHistory
 
