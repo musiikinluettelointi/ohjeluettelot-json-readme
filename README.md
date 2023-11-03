@@ -270,43 +270,43 @@ Teosobjektin tunniste teosluettelossa.
 
 #### items.*.composer
 
-Säveltäjä.
+Säveltäjä. Anonyymeillä teosobjekteilla ei ole säveltäjää.
 
 #### items.*.authorizedTitle
 
-Auktorisoitu nimeke.
+Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
 
 #### items.*.authorizedTitleHistory
 
-Auktorisoidun nimekkeen muutoshistoria.
+Auktorisoidun nimekkeen muutoshistoria, mikäli teosobjektilla on auktorisoitu nimeke.
 
 #### items.*.alternativeTitle
 
-Vaihtoehtoiset nimekkeet.
+Vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nimekkeen eri kieliversiot, lempinimet ja nimekkeen viittausmuodot.
 
 #### items.*.workCategory
 
-Teoskategoria.
+Teoskategoria. Kaikilla teosobjekteilla ei ole teoskategoriaa.
 
 #### items.*.workNumber
 
-Numerointi.
+Numerointi. Kaikilla teosobjekteilla ei ole numerointia.
 
 #### items.*.creationYear
 
-Luomisaika.
+Luomisaika. Kaikilla teosobjekteilla ei ole luomisaikaa.
 
 #### items.*.mediumOfPerformance
 
-Esityskokoonpano.
+Esityskokoonpano. Kaikilla teosobjekteilla ei ole esityskokoonpano.
 
 #### items.*.genre
 
-Muoto tai lajityyppi.
+Muoto tai lajityyppi. Kaikilla teosobjekteilla ei ole muotoa tai lajityyppiä.
 
 #### items.*.sources
 
-Lähteet.
+Lähteet. Kaikilla teosobjekteilla ei ole lähteitä.
 
 ```JSON
 {
