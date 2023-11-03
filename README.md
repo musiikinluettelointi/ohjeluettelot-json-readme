@@ -102,12 +102,12 @@ Säveltäjän tiedot.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | -- | -- | -- |
-| `name` | aina | string | Säveltäjän nimi  |  |
-| `id` | aina | string | Säveltäjän tunniste teosluettelossa | name-{uuid} |
-| `kantoUri` | joskus | string | Säveltäjän KANTO URI  | uri |
-| `url` | joskus | string |  Teosluettelon osoite  | url |
-| `introduction` | joskus | array |  Teosluettelon esipuhe  |  |
-| `workCategories` | joskus | array |  Säveltäjälle määritellyt teoskategoriat  |  |
+| [`name`](#metacomposername) | aina | string | Säveltäjän nimi  |  |
+| [`id`](#metacomposerid) | aina | string | Säveltäjän tunniste teosluettelossa | name-{uuid} |
+| [`kantoUri`](#metacomposerkantouri) | joskus | string | Säveltäjän KANTO URI  | uri |
+| [`url`](#metacomposerurl) | joskus | string |  Teosluettelon osoite  | url |
+| [`introduction`](#metacomposerintroduction) | joskus | array |  Teosluettelon esipuhe  |  |
+| [`workCategories`](#metacomposerworkcategories) | joskus | array |  Säveltäjälle määritellyt teoskategoriat  |  |
 
 #### meta.composer.name
 
