@@ -145,13 +145,6 @@ Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 
  Teosluettelon esipuhe. Kaikille säveltäjille ei ole laadittu esipuhetta.
 
-| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | --- | --- | --- |
-| `locale` | aina | string |  Esipuheen kieli  | ISO 639-1  |
-| `text` | aina | string | Teosluettelon esipuhe | |
-| `author` | joskus | string | Esipuheen kirjoittaja | |
-| `url` | joskus | string |  Esipuheen osoite  | url |
-
 ```JSON
 "introduction": [
   {
@@ -162,15 +155,16 @@ Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
   }
 ],
 ```
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `locale` | aina | string |  Esipuheen kieli  | ISO 639-1  |
+| `text` | aina | string | Teosluettelon esipuhe | |
+| `author` | joskus | string | Esipuheen kirjoittaja | |
+| `url` | joskus | string |  Esipuheen osoite  | url |
 
 #### meta.composer.workCategories
 
 Säveltäjälle määritellyt teoskategoriat. Kaikille säveltäjille ei ole määritelty teoskategorioita.
-
-| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | --- | --- | --- |
-| `code`  | aina | string | Teoskategorian koodi  |   |
-| [`label`](#metacomposerworkcategorieslabel)  | aina | string | Teoskategorian otsikko | |
 
 ```JSON
 "workCategories": [
@@ -182,15 +176,14 @@ Säveltäjälle määritellyt teoskategoriat. Kaikille säveltäjille ei ole mä
   }
 ]
 ```
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `code`  | aina | string | Teoskategorian koodi  |   |
+| [`label`](#metacomposerworkcategorieslabel)  | aina | string | Teoskategorian otsikko | |
 
 #### meta.composer.workCategories.label
 
 Teoskategorian otsikko.
-
-| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | --- | --- | --- |
-| `locale` | aina | string |  Teoskategorian otsikon kieli | ISO 639-1  |
-| `text` | aina | string | Teoskategorian otsikko | |
 
 ```JSON
 "label": {
@@ -198,6 +191,10 @@ Teoskategorian otsikko.
   "text": "Opusnumeroidut teokset"
 }
 ```
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `locale` | aina | string |  Teoskategorian otsikon kieli | ISO 639-1  |
+| `text` | aina | string | Teoskategorian otsikko | |
 
 #### meta.apiVersion
 
