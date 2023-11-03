@@ -41,7 +41,7 @@ Tämä rakenne sisältää dokumentin metatiedot.
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | -- | -- | -- |
+| --- | --- | --- | --- | --- |
 | [`createdBy`](#metacreatedby) | aina | string |  Dokumentin tuottaja | email |
 | [`createdAt`](#metacreatedat) | aina | string |  Dokumentin luomisaika | ISO 8601 |
 | [`license`](#metalicense) | aina | object |  Dokumentin käyttöehdot |  |
@@ -76,7 +76,7 @@ Dokumentin käyttöehdot.
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | -- | -- | -- |
+| --- | --- | --- | --- | --- |
 | `name` | aina | string |  Dokumentin lisenssi |  |
 | `url` | aina | string |  Lisenssin osoite | url |
 
@@ -101,7 +101,7 @@ Säveltäjän tiedot.
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | -- | -- | -- |
+| --- | --- | --- | --- | --- |
 | [`name`](#metacomposername) | aina | string | Säveltäjän nimi  |  |
 | [`id`](#metacomposerid) | aina | string | Säveltäjän tunniste teosluettelossa | name-{uuid} |
 | [`kantoUri`](#metacomposerkantouri) | joskus | string | Säveltäjän KANTO URI  | uri |
@@ -146,7 +146,7 @@ Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
  Teosluettelon esipuhe. Kaikille säveltäjille ei ole laadittu esipuhetta.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | -- | -- | -- |
+| --- | --- | --- | --- | --- |
 | `locale` | aina | string |  Esipuheen kieli  | ISO 639-1  |
 | `text` | aina | string | Teosluettelon esipuhe | |
 | `author` | joskus | string | Esipuheen kirjoittaja | |
@@ -168,7 +168,7 @@ Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 Säveltäjälle määritellyt teoskategoriat. Kaikille säveltäjille ei ole määritelty teoskategorioita.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | -- | -- | -- |
+| --- | --- | --- | --- | --- |
 | `code`  | aina | string | Teoskategorian koodi  |   |
 | [`label`](#metacomposerworkcategorieslabel)  | aina | string | Teoskategorian otsikko | |
 
@@ -188,7 +188,7 @@ Säveltäjälle määritellyt teoskategoriat. Kaikille säveltäjille ei ole mä
 Teoskategorian otsikko.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | -- | -- | -- |
+| --- | --- | --- | --- | --- |
 | `locale` | aina | string |  Teoskategorian otsikon kieli | ISO 639-1  |
 | `text` | aina | string | Teoskategorian otsikko | |
 
@@ -248,20 +248,20 @@ Dokumentin tuottanut rajapinta
 ]
 ```
 
-| Avain | Läsnä | Tyyppi | Kuvaus |
-| --- | --- | --- | --- |
-| `itemType` | aina | string | |
-| `id` | aina  | string | |
-| `composer` | joskus | object | |
-| `authorizedTitle` | joskus  | array |  |
-| `authorizedTitleHistory` | joskus | array |  |
-| `alternativeTitle` | joskus  | array |  |
-| `workCategory` | joskus | array |  |
-| `workNumber` | joskus  | array |  |
-| `creationYear` | joskus | array |  |
-| `mediumOfPerformance` | joskus  | array |  |
-| `genre` | joskus | array |  |
-| `sources` | joskus  | array |  |
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `itemType` | aina | string | | |
+| `id` | aina  | string | | |
+| `composer` | joskus | object | | |
+| `authorizedTitle` | joskus  | array |  | |
+| `authorizedTitleHistory` | joskus | array |  | |
+| `alternativeTitle` | joskus  | array |  | |
+| `workCategory` | joskus | array |  | |
+| `workNumber` | joskus  | array |  | |
+| `creationYear` | joskus | array |  | |
+| `mediumOfPerformance` | joskus  | array |  | |
+| `genre` | joskus | array |  | |
+| `sources` | joskus  | array |  | |
 
 #### items.*.itemType
 
