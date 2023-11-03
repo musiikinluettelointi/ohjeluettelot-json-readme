@@ -602,13 +602,35 @@ Lähteen tunniste teosluettelossa.
 "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
 ```
 
-#### items.*.authorizedTitleHistory
+#### items.\*.authorizedTitleHistory.*
 
-Auktorisoidun nimekkeen muutoshistoria, mikäli teosluettelo-objektilla on auktorisoitu nimeke.
+Tämä rakenne sisältää auktorisoidun nimekkeen muutoshistorian, mikäli teosluettelo-objektilla on auktorisoitu nimeke.
 
 ```JSON
-
+"authorizedTitleHistory": [
+    {
+      "createdAt": ,
+      "authorizedTitle": {
+            
+    }
+  ],
 ```
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`createdAt`](#itemsauthorizedtitlehistorycreatedat) | aina | string | Auktorisoidun nimekkeen luomispäivämäärä | `YYYY`-`MM`-`DD` |
+| [`authorizedTitle`](#itemsauthorizedtitlehistoryauthorizedtitle) | aina | object | Auktorisoitu nimeke| |
+
+#### items.\*.authorizedTitleHistory.*.createdAt
+
+Auktorisoidun nimekkeen luomispäivämäärä. Mikäli kuukautta tai päivää ei ole tiedossa, on ne merkitty numerolla yksi.
+```JSON
+"createdAt": "2014-07-01",
+```
+
+#### items.\*.authorizedTitleHistory.*.authorizedTitle
+
+Tämä rakenne sisältää auktorisoidun nimekkeen. Rakenne on identtinen rakenteen [`items.*.authorizedTitle`](#itemsauthorizedtitletitle) kanssa.
+
 #### items.*.alternativeTitle
 
 Vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nimekkeen eri kieliversiot, lempinimet ja nimekkeen viittausmuodot.
