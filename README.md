@@ -630,7 +630,7 @@ Auktorisoidun nimekkeen luomispäivämäärä. Mikäli kuukautta tai päivää e
 
 #### items.\*.authorizedTitleHistory.*.authorizedTitle
 
-Tämä rakenne sisältää auktorisoidun nimekkeen. Rakenne on identtinen rakenteen [`items.*.authorizedTitle`](#itemsauthorizedtitletitle) kanssa.
+Tämä rakenne sisältää auktorisoidun nimekkeen. Rakenne on identtinen rakenteen [`items.*.authorizedTitle`](#itemsauthorizedtitle) kanssa.
 
 #### items.*.alternativeTitle
 
