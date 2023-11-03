@@ -20,7 +20,7 @@ To do
 | Avain | Läsnä | Tyyppi | Kuvaus |
 | --- | --- | --- | --- |
 | [`meta`](#meta) | aina | object | Sisältää dokumentin metatiedot |
-| [`items`](#items) | aina  | array | Sisältää teosobjektit |
+| [`items`](#items) | aina  | array | Sisältää teosluettelo-objektit |
 
 ### meta
 
@@ -66,7 +66,7 @@ Dokumentin luomisaika.
 
 #### meta.license
 
-Dokumentin käyttöehdot.
+Tämä rakenne sisältää dokumentin käyttöehdot.
 
 ```JSON
 "license": {
@@ -83,7 +83,7 @@ Dokumentin käyttöehdot.
 
 #### meta.composer
 
-Säveltäjän tiedot.
+Tämä rakenne sisältää säveltäjän tiedot.
 
 ```JSON
 "composer": {
@@ -143,7 +143,7 @@ Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 
 #### meta.composer.introduction.*
 
- Teosluettelon esipuhe. Kaikille säveltäjille ei ole laadittu esipuhetta.
+Tämä rakenne sisältää teoksen esipuheen. Kaikille säveltäjille ei ole laadittu esipuhetta.
 
 ```JSON
 "introduction": [
@@ -164,7 +164,7 @@ Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 
 #### meta.composer.workCategories.*
 
-Säveltäjälle määritellyt teoskategoriat. Kaikille säveltäjille ei ole määritelty teoskategorioita.
+Tämä rakenne sisältää säveltäjälle määritellyt teoskategoriat. Kaikille säveltäjille ei ole määritelty teoskategorioita.
 
 ```JSON
 "workCategories": [
@@ -183,7 +183,10 @@ Säveltäjälle määritellyt teoskategoriat. Kaikille säveltäjille ei ole mä
 
 #### meta.composer.workCategories.*.label
 
-Teoskategorian otsikko.
+> [!WARNING]
+> Avain `text` tullaan muuttamaan avaimeksi `literal`.
+
+Tämä rakenne sisältää teoskategorian otsikon.
 
 ```JSON
 "label": {
@@ -193,27 +196,38 @@ Teoskategorian otsikko.
 ```
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `locale` | aina | string |  Teoskategorian otsikon kieli | ISO 639-1  |
+| `locale` | aina | string |  Teoskategorian otsikon kielikoodi | ISO 639-1  |
 | `text` | aina | string | Teoskategorian otsikko | |
 
 #### meta.composer.workCategories.*.label.locale
+
+Teoskategorian otsikon kielikoodi.
+
 ```JSON
 "locale": "fi",
 ```
 #### meta.composer.workCategories.*.label.text
+
+> [!WARNING]
+> Avain `text` tullaan muuttamaan avaimeksi `literal`.
+
+Teoskategorian otsikko.
+
 ```JSON
 "text": "Opusnumeroidut teokset"
 ```
 
 #### meta.apiVersion
 
-Dokumentin tuottanut rajapinta
+Dokumentin tuottanut rajapinta.
 
 ```JSON
 "apiVersion": "v1"
 ```
 
 ### items.*
+
+Tämä rakenne sisältää teosluettelon teosluettelo-objektit.
 
 ```JSON
 "items": [
@@ -256,8 +270,8 @@ Dokumentin tuottanut rajapinta
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`itemType`](#itemsitemtype) | aina | string | Teosobjektin tyyppi | `work` \| `part` \| `arrangement` \| `translation`  |
-| [`id`](#itemsid) | aina  | string | Teosobjektin tunniste teosluettelossa | {`work` \| `part` \| `arrangement` \| `translation`}-{uuid} |
+| [`itemType`](#itemsitemtype) | aina | string | teosluettelo-objektin tyyppi | `work` \| `part` \| `arrangement` \| `translation`  |
+| [`id`](#itemsid) | aina  | string | teosluettelo-objektin tunniste teosluettelossa | {`work` \| `part` \| `arrangement` \| `translation`}-{uuid} |
 | [`composer`](#itemscomposer) | joskus | object | Säveltäjä | |
 | [`authorizedTitle`](#itemsauthorizedtitle) | joskus | array | Auktorisoitu nimeke  | |
 | [`authorizedTitleHistory`](#itemsauthorizedtitlehistory) | joskus | array | Auktorisoidun nimekkeen muutoshistoria | |
@@ -271,7 +285,7 @@ Dokumentin tuottanut rajapinta
 
 #### items.*.itemType
 
-Teosobjektin tyyppi.
+teosluettelo-objektin tyyppi.
 
 ```JSON
 "itemType": "work",
@@ -285,14 +299,14 @@ Teosobjektin tyyppi.
 
 #### items.*.id
 
-Teosobjektin tunniste teosluettelossa.
+teosluettelo-objektin tunniste teosluettelossa.
 
 ```JSON
 "id": "work-c10de676-0115-474f-895e-26940602371b",
 ```
 #### items.*.composer
 
-Säveltäjä. Anonyymeillä teosobjekteilla ei ole säveltäjää.
+Tämä rakenne sisältää teosluettelo-objektin säveltäjän tiedot. Anonyymeillä teosluettelo-objekteilla ei ole säveltäjää.
 
 ```JSON
 "composer": {
@@ -334,7 +348,7 @@ Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 
 #### items.*.authorizedTitle
 
-Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
+Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen. Kaikilla teosluettelo-objekteilla ei ole auktorisoitua nimekettä.
 
 ```JSON
 "authorizedTitle": {
@@ -576,7 +590,7 @@ Lähteen tunniste teosluettelossa.
 
 #### items.*.authorizedTitleHistory
 
-Auktorisoidun nimekkeen muutoshistoria, mikäli teosobjektilla on auktorisoitu nimeke.
+Auktorisoidun nimekkeen muutoshistoria, mikäli teosluettelo-objektilla on auktorisoitu nimeke.
 
 ```JSON
 
@@ -590,42 +604,42 @@ Vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nime
 ```
 #### items.*.workCategory
 
-Teoskategoria. Kaikilla teosobjekteilla ei ole teoskategoriaa.
+Teoskategoria. Kaikilla teosluettelo-objekteilla ei ole teoskategoriaa.
 
 ```JSON
 
 ```
 #### items.*.workNumber
 
-Numerointi. Kaikilla teosobjekteilla ei ole numerointia.
+Numerointi. Kaikilla teosluettelo-objekteilla ei ole numerointia.
 
 ```JSON
 
 ```
 #### items.*.creationYear
 
-Luomisaika. Kaikilla teosobjekteilla ei ole luomisaikaa.
+Luomisaika. Kaikilla teosluettelo-objekteilla ei ole luomisaikaa.
 
 ```JSON
 
 ```
 #### items.*.mediumOfPerformance
 
-Esityskokoonpano. Kaikilla teosobjekteilla ei ole esityskokoonpano.
+Esityskokoonpano. Kaikilla teosluettelo-objekteilla ei ole esityskokoonpano.
 
 ```JSON
 
 ```
 #### items.*.genre
 
-Muoto tai lajityyppi. Kaikilla teosobjekteilla ei ole muotoa tai lajityyppiä.
+Muoto tai lajityyppi. Kaikilla teosluettelo-objekteilla ei ole muotoa tai lajityyppiä.
 
 ```JSON
 
 ```
 #### items.*.sources
 
-Lähteet. Kaikilla teosobjekteilla ei ole lähteitä.
+Lähteet. Kaikilla teosluettelo-objekteilla ei ole lähteitä.
 
 ```JSON
 
