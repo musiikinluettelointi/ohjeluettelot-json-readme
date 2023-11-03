@@ -141,7 +141,7 @@ Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 "url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud",
 ```
 
-#### meta.composer.introduction
+#### meta.composer.introduction.*
 
  Teosluettelon esipuhe. Kaikille säveltäjille ei ole laadittu esipuhetta.
 
@@ -162,7 +162,7 @@ Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 | `author` | joskus | string | Esipuheen kirjoittaja | |
 | `url` | joskus | string |  Esipuheen osoite  | url |
 
-#### meta.composer.workCategories
+#### meta.composer.workCategories.*
 
 Säveltäjälle määritellyt teoskategoriat. Kaikille säveltäjille ei ole määritelty teoskategorioita.
 
@@ -181,7 +181,7 @@ Säveltäjälle määritellyt teoskategoriat. Kaikille säveltäjille ei ole mä
 | `code`  | aina | string | Teoskategorian koodi  |   |
 | [`label`](#metacomposerworkcategorieslabel)  | aina | string | Teoskategorian otsikko | |
 
-#### meta.composer.workCategories.label
+#### meta.composer.workCategories.*.label
 
 Teoskategorian otsikko.
 
@@ -195,6 +195,15 @@ Teoskategorian otsikko.
 | --- | --- | --- | --- | --- |
 | `locale` | aina | string |  Teoskategorian otsikon kieli | ISO 639-1  |
 | `text` | aina | string | Teoskategorian otsikko | |
+
+#### meta.composer.workCategories.*.label.locale
+```JSON
+"locale": "fi",
+```
+#### meta.composer.workCategories.*.label.text
+```JSON
+"text": "Opusnumeroidut teokset"
+```
 
 #### meta.apiVersion
 
@@ -382,16 +391,28 @@ Nimekkeen kieli.
 
 ```JSON
 "language": {
-  "code": "rus",
+  "code": ,
   "label": [
 
   ]
 },
 ```
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`code`](#itemsauthorizedtitlelanguagecode) | aina | string | Kielen koodi | ISO 639-2 |
+| [`label`](#itemsauthorizedtitlelanguagelabel) | auna | array | Kielen otsikko | |
 
 #### items.*.authorizedTitle.language.code
 
+Kielen koodi.
+
+```JSON
+"code": "rus",
+```
+
 #### items.*.authorizedTitle.language.label
+
+Kielen otsikko.
 
 ```JSON
 "label": [
@@ -401,6 +422,14 @@ Nimekkeen kieli.
   }
 ]
 ```
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`code`](#itemsauthorizedtitlelanguagecode) | aina | string | Kielen koodi | ISO 639-2 |
+| [`label`](#itemsauthorizedtitlelanguagelabel) | auna | array | Kielen otsikko | |
+
+#### items.*.authorizedTitle.language.label.*.locale
+
+#### items.*.authorizedTitle.language.label.*.literal
 
 #### items.*.authorizedTitle.alphabet
 
