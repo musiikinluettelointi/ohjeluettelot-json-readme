@@ -20,7 +20,7 @@ To do
 | Avain | Läsnä | Tyyppi | Kuvaus |
 | --- | --- | --- | --- |
 | [`meta`](#meta) | aina | object | Sisältää dokumentin metatiedot |
-| `items` | aina  | array | Sisältää teosobjektit |
+| [`items`](#items) | aina  | array | Sisältää teosobjektit |
 
 ### meta
 
@@ -42,11 +42,11 @@ Tämä rakenne sisältää dokumentin metatiedot.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | -- | -- | -- |
-| `createdBy` | aina | string |  Dokumentin tuottaja | email |
-| `createdAt` | aina | string |  Dokumentin luomisaika | ISO 8601 |
-| `license` | aina | object |  Dokumentin käyttöehdot |  |
-| `composer` | aina | object | Säveltäjän tiedot |  |
-| `apiVersion` | aina | string |  Dokumentin tuottanut rajapinta |  |
+| [`createdBy`](metacreatedby) | aina | string |  Dokumentin tuottaja | email |
+| [`createdAt`](metacreatedat) | aina | string |  Dokumentin luomisaika | ISO 8601 |
+| [`license`](metalicense) | aina | object |  Dokumentin käyttöehdot |  |
+| [`composer`](metacomposer) | aina | object | Säveltäjän tiedot |  |
+| [`apiVersion`](metaapiversion) | aina | string |  Dokumentin tuottanut rajapinta |  |
 
 #### meta.createdBy
 
