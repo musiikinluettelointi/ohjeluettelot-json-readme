@@ -264,6 +264,9 @@ Dokumentin tuottanut rajapinta
 
 Teosobjektin tyyppi.
 
+```JSON
+"itemType": "work",
+```
 | Arvo | Kuvaus |
 | --- | --- |
 | `work`| Teos |
@@ -271,10 +274,6 @@ Teosobjektin tyyppi.
 | `arrangement`| Teoksen tai teoksen osan sovitus |
 | `translation`| Teoksen, teoksen osan tai sovituksen käännös |
 
-
-```JSON
-"itemType": "work",
-```
 #### items.*.id
 
 Teosobjektin tunniste teosluettelossa.
@@ -287,8 +286,30 @@ Teosobjektin tunniste teosluettelossa.
 Säveltäjä. Anonyymeillä teosobjekteilla ei ole säveltäjää.
 
 ```JSON
-
+"composer": {
+  "id": ,
+  "name": ,
+  "kantoUri":
+},
 ```
+#### items.*.composer.id
+
+```JSON
+"id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8",
+```
+
+#### items.*.composer.name
+
+```JSON
+"name": "Pingoud, Ernest, 1887-1942",
+```
+
+#### items.*.composer.kantoUri
+
+```JSON
+"kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455"
+```
+
 #### items.*.authorizedTitle
 
 Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
