@@ -250,8 +250,8 @@ Dokumentin tuottanut rajapinta
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`itemType`](#itemsitemtype) | aina | string | Teosobjektin tyyppi | work \|part \|arrangement \|translation  |
-| [`id`](#itemsid) | aina  | string | Teosobjektin tunniste teosluettelossa | {work \|part \|arrangement \|translation}-{uuid} |
+| [`itemType`](#itemsitemtype) | aina | string | Teosobjektin tyyppi | `work` \| `part` \| `arrangement` \| `translation`  |
+| [`id`](#itemsid) | aina  | string | Teosobjektin tunniste teosluettelossa | {`work` \| `part` \| `arrangement` \| `translation`}-{uuid} |
 | [`composer`](#itemscomposer) | joskus | object | Säveltäjä | |
 | [`authorizedTitle`](#itemsauthorizedtitle) | joskus  | array | Auktorisoitu nimeke  | |
 | [`authorizedTitleHistory`](#itemsauthorizedtitlehistory) | joskus | array | Auktorisoidun nimekkeen muutoshistoria | |
