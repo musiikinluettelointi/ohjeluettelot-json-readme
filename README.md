@@ -250,18 +250,18 @@ Dokumentin tuottanut rajapinta
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`itemType`](#itemsitemtype) | aina | string | | |
-| [`id`](#itemsid) | aina  | string | | |
-| [`composer`](#itemscomposer) | joskus | object | | |
-| [`authorizedTitle`](#itemsauthorizedtitle) | joskus  | array |  | |
-| [`authorizedTitleHistory`](#itemsauthorizedtitlehistory) | joskus | array |  | |
-| [`alternativeTitle`](#itemsalternativetitle) | joskus  | array |  | |
-| [`workCategory`](#itemsworkcategory) | joskus | array |  | |
-| [`workNumber`](#itemsworknumber) | joskus  | array |  | |
-| [`creationYear`](#itemscreationyear) | joskus | array |  | |
-| [`mediumOfPerformance`](#itemsmediumofperformance) | joskus  | array |  | |
-| [`genre`](#itemsgenre) | joskus | array |  | |
-| [`sources`](#itemssources) | joskus  | array |  | |
+| [`itemType`](#itemsitemtype) | aina | string | Teosobjektin tyyppi | work \|part \|arrangement \|translation  |
+| [`id`](#itemsid) | aina  | string | Teosobjektin tunniste teosluettelossa | {work \|part \|arrangement \|translation}-{uuid} |
+| [`composer`](#itemscomposer) | joskus | object | Säveltäjä | |
+| [`authorizedTitle`](#itemsauthorizedtitle) | joskus  | array | Auktorisoitu nimeke  | |
+| [`authorizedTitleHistory`](#itemsauthorizedtitlehistory) | joskus | array | Auktorisoidun nimekkeen muutoshistoria | |
+| [`alternativeTitle`](#itemsalternativetitle) | joskus  | array | Vaihtoehtoiset nimekkeet | |
+| [`workCategory`](#itemsworkcategory) | joskus | array | Teoskategoria | |
+| [`workNumber`](#itemsworknumber) | joskus  | array | Numerointi | |
+| [`creationYear`](#itemscreationyear) | joskus | array | Luomisaika | |
+| [`mediumOfPerformance`](#itemsmediumofperformance) | joskus  | array | Esityskokoonpano | |
+| [`genre`](#itemsgenre) | joskus | array | Muoto tai lajityyppi | |
+| [`sources`](#itemssources) | joskus  | array | Lähteet | |
 
 #### items.*.itemType
 
