@@ -42,13 +42,15 @@ Tämä rakenne sisältää dokumentin metatiedot.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | -- | -- | -- |
-| `createdBy` | aina | string |  Identifioi dokumentin tuottajan | email |
+| `createdBy` | aina | string |  Dokumentin tuottaja | email |
 | `createdAt` | aina | string |  Dokumentin luomisaika | ISO 8601 |
 | `license` | aina | object |  Dokumentin käyttöehdot |  |
-| `composer` | aina | object | Dokumentin sisällön kuvaus |  |
+| `composer` | aina | object | Säveltäjän tiedot |  |
 | `apiVersion` | aina | string |  Dokumentin tuottanut rajapinta |  |
 
 #### meta.createdBy
+
+Dokumentin tuottaja.
 
 ```JSON
 "createdBy": "info@musiikinluettelointi.fi",
@@ -56,11 +58,15 @@ Tämä rakenne sisältää dokumentin metatiedot.
 
 #### meta.createdAt
 
+Dokumentin luomisaika.
+
 ```JSON
 "createdAt": "2023-10-31T16:54:50.265847Z",
 ```
 
 #### meta.license
+
+Dokumentin käyttöehdot.
 
 ```JSON
 "license": {
@@ -76,6 +82,8 @@ Tämä rakenne sisältää dokumentin metatiedot.
 
 
 #### meta.composer
+
+Säveltäjän tiedot.
 
 ```JSON
 "composer": {
@@ -95,7 +103,7 @@ Tämä rakenne sisältää dokumentin metatiedot.
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | -- | -- | -- |
 | `name` | aina | string | Säveltäjän nimi  |  |
-| `id` | aina | string | Säveltäjän tunniste | name-{uuid} |
+| `id` | aina | string | Säveltäjän tunniste teosluettelossa | name-{uuid} |
 | `kantoUri` | joskus | string | Säveltäjän KANTO URI  | uri |
 | `url` | joskus | string |  Teosluettelon osoite  | url |
 | `introduction` | joskus | array |  Teosluettelon esipuhe  |  |
@@ -103,7 +111,7 @@ Tämä rakenne sisältää dokumentin metatiedot.
 
 #### meta.composer.name
 
-Säveltäjän nimi 
+Säveltäjän nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktorisoituja nimenmuotoja.
 
 ```JSON
 "name": "Pingoud, Ernest, 1887-1942",
@@ -111,7 +119,7 @@ Säveltäjän nimi
 
 #### meta.composer.id
 
-Säveltäjän tunniste 
+Säveltäjän tunniste teosluettelossa.
 
 ```JSON
 "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8",
@@ -119,7 +127,7 @@ Säveltäjän tunniste
 
 #### meta.composer.kantoUri
 
-Säveltäjän KANTO URI
+Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 
 ```JSON
 "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455",
@@ -127,7 +135,7 @@ Säveltäjän KANTO URI
 
 #### meta.composer.url
 
-Teosluettelon osoite
+Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 
 ```JSON
 "url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud",
@@ -135,13 +143,13 @@ Teosluettelon osoite
 
 #### meta.composer.introduction
 
- Teosluettelon esipuhe
+ Teosluettelon esipuhe. Kaikille säveltäjille ei ole laadittu esipuhetta.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | -- | -- | -- |
 | `locale` | aina | string |  Esipuheen kieli  | ISO 639-1  |
 | `text` | aina | string | Teosluettelon esipuhe | |
-| `author` | joskus | string | Eipuheen kirjoittaja | |
+| `author` | joskus | string | Esipuheen kirjoittaja | |
 | `url` | joskus | string |  Esipuheen osoite  | url |
 
 ```JSON
@@ -157,7 +165,7 @@ Teosluettelon osoite
 
 #### meta.composer.workCategories
 
-Säveltäjälle määritellyt teoskategoriat
+Säveltäjälle määritellyt teoskategoriat. Kaikille säveltäjille ei ole määritelty teoskategorioita.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | -- | -- | -- |
@@ -176,6 +184,8 @@ Säveltäjälle määritellyt teoskategoriat
 ```
 
 #### meta.composer.workCategories.label
+
+Teoskategorian otsikko.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | -- | -- | -- |
@@ -197,7 +207,228 @@ Dokumentin tuottanut rajapinta
 "apiVersion": "v1"
 ```
 
+### items.*
 
+```JSON
+"items": [
+  {
+    "itemType": ,
+    "id": ,
+    "composer": {
+    
+    },
+    "authorizedTitle": {
+    
+    },
+    "authorizedTitleHistory": [
+    
+    ],
+    "alternativeTitle": [
+    
+    ],
+    "workCategory": [
+    
+    ],
+    "workNumber": [
+    
+    ],
+    "creationYear": [
+    
+    ],
+    "mediumOfPerformance": [
+     
+    ],
+    "genre": [
+      
+    ],
+    "sources": [
+    
+    ]
+  }
+]
+```
 
-### items
+| Avain | Läsnä | Tyyppi | Kuvaus |
+| --- | --- | --- | --- |
+| `itemType` | aina | string | |
+| `id` | aina  | string | |
+| `composer` | joskus | object | |
+| `authorizedTitle` | joskus  | array |  |
+| `authorizedTitleHistory` | joskus | array |  |
+| `alternativeTitle` | joskus  | array |  |
+| `workCategory` | joskus | array |  |
+| `workNumber` | joskus  | array |  |
+| `creationYear` | joskus | array |  |
+| `mediumOfPerformance` | joskus  | array |  |
+| `genre` | joskus | array |  |
+| `sources` | joskus  | array |  |
 
+```JSON
+{
+            "itemType": "work",
+            "id": "work-c10de676-0115-474f-895e-26940602371b",
+            "composer": {
+                "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8",
+                "name": "Pingoud, Ernest, 1887-1942",
+                "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455"
+            },
+            "authorizedTitle": {
+                "title": "Prologue, op4",
+                "sources": [
+                    {
+                        "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
+                        "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
+                    }
+                ]
+            },
+            "authorizedTitleHistory": [
+                {
+                    "createdAt": "2014-07-01",
+                    "authorizedTitle": {
+                        "title": "Prologue, op4",
+                        "sources": [
+                            {
+                                "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
+                                "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "alternativeTitle": [
+                {
+                    "title": "Prologue symphonique pour Grand Orchestre",
+                    "language": {
+                        "code": "fre",
+                        "label": [
+                            {
+                                "locale": "fi",
+                                "literal": "ranska"
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
+                            "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
+                        }
+                    ]
+                }
+            ],
+            "workCategory": [
+                {
+                    "code": "withOpusNumber",
+                    "label": [
+                        {
+                            "locale": "fi",
+                            "literal": "Opusnumeroidut teokset"
+                        }
+                    ]
+                }
+            ],
+            "workNumber": [
+                {
+                    "number": "op4",
+                    "type": {
+                        "code": "opusNumber",
+                        "label": [
+                            {
+                                "locale": "fi",
+                                "literal": "opusnumero"
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
+                            "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
+                        }
+                    ]
+                }
+            ],
+            "creationYear": [
+                {
+                    "label": [
+                        {
+                            "locale": "fi",
+                            "literal": "1915"
+                        }
+                    ],
+                    "years": [
+                        {
+                            "year": 1915
+                        }
+                    ],
+                    "sources": [
+                        {
+                            "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
+                            "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
+                        }
+                    ]
+                }
+            ],
+            "mediumOfPerformance": [
+                {
+                    "label": [
+                        {
+                            "locale": "fi",
+                            "literal": "orkesteri"
+                        }
+                    ],
+                    "items": [
+                        {
+                            "label": [
+                                {
+                                    "locale": "fi",
+                                    "literal": "orkesteri"
+                                }
+                            ],
+                            "itemCount": 1,
+                            "itemIsGroup": true,
+                            "sekoUri": "http://urn.fi/urn:nbn:fi:au:seko:00728"
+                        }
+                    ],
+                    "sources": [
+                        {
+                            "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
+                            "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
+                        }
+                    ]
+                }
+            ],
+            "genre": [
+                {
+                    "label": [
+                        {
+                            "locale": "fi",
+                            "literal": "orkesterimusiikki"
+                        }
+                    ],
+                    "slmUri": "http://urn.fi/URN:NBN:fi:au:slm:s1009"
+                }
+            ],
+            "firstPerformed": [
+                {
+                    "label": [
+                        {
+                            "locale": "fi",
+                            "literal": "1918"
+                        }
+                    ],
+                    "year": 1918,
+                    "sources": [
+                        {
+                            "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
+                            "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
+                        }
+                    ]
+                }
+            ],
+            "sources": [
+                {
+                    "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
+                    "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
+                }
+            ]
+        },
+```
