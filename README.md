@@ -362,19 +362,35 @@ Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
 
 #### items.*.authorizedTitle.title
 
+Auktorisoitu nimeke.
+
 #### items.*.authorizedTitle.offset
+
+Ohitettavat merkit.
 
 #### items.*.authorizedTitle.language
 
+Nimekkeen kieli.
+
 #### items.*.authorizedTitle.alphabet
+
+Nimekkeen merkistö.
 
 #### items.*.authorizedTitle.transliteration
 
+Nimekkeen translitterointi.
+
 #### items.*.authorizedTitle.note
+
+Huomautus nimekkeestä.
 
 #### items.*.authorizedTitle.publications
 
+Nimekkeeseen liittyvät julkaisut.
+
 #### items.*.authorizedTitle.sources
+
+Nimekkeen lähteet.
 
 ```JSON
 "authorizedTitle": {
