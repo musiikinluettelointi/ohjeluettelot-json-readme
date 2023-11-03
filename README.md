@@ -611,9 +611,10 @@ Tämä rakenne sisältää auktorisoidun nimekkeen muutoshistorian, mikäli teos
     {
       "createdAt": ,
       "authorizedTitle": {
-            
+
+      }    
     }
-  ],
+  ]
 ```
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
