@@ -332,29 +332,33 @@ Auktorisoitu nimeke. Kaikilla teosobjekteilla ei ole auktorisoitua nimekettä.
   "title": ,
   "offset": ,
   "language": {
+
   },
   "alphabet": {
+
   },
   "transliteration": {
+
   },
   "note": ,
   "publications": [
+
   ],
   "sources": [
+
   ]
 },
 ```
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`title`](#itemsauthorizedtitletitle) | aina | string |  |  |
-| [`offset`](#itemsauthorizedtitleoffset) | joskus | integer |  | |
-| [`language`](#itemsauthorizedtitlelanguage) | joskus | object |  | |
-| [`alphabet`](#itemsauthorizedtitlealphabet) | joskus | object |  |  |
-| [`transliteration`](#itemsauthorizedtitletransliteration) | joskus | object |  | |
-| [`note`](#itemsauthorizedtitlenote) | joskus | string |  | |
-| [`publications`](#itemsauthorizedtitlepublications) | joskus | array |  | |
-| [`sources`](#itemsauthorizedtitlesources) | joskus | array |  | |
-
+| [`title`](#itemsauthorizedtitletitle) | aina | string | Auktorisoitu nimeke |  |
+| [`offset`](#itemsauthorizedtitleoffset) | joskus | integer | Ohitettavat merkit | |
+| [`language`](#itemsauthorizedtitlelanguage) | joskus | object | Nimekkeen kieli | |
+| [`alphabet`](#itemsauthorizedtitlealphabet) | joskus | object | Nimekkeen merkistö |  |
+| [`transliteration`](#itemsauthorizedtitletransliteration) | joskus | object | Nimekkeen translitterointi | |
+| [`note`](#itemsauthorizedtitlenote) | joskus | string | Huomautus nimekkeestä | |
+| [`publications`](#itemsauthorizedtitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut | |
+| [`sources`](#itemsauthorizedtitlesources) | joskus | array | Nimekkeen lähteet | |
 
 #### items.*.authorizedTitle.title
 
