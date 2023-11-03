@@ -250,18 +250,18 @@ Dokumentin tuottanut rajapinta
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `itemType` | aina | string | | |
-| `id` | aina  | string | | |
-| `composer` | joskus | object | | |
-| `authorizedTitle` | joskus  | array |  | |
-| `authorizedTitleHistory` | joskus | array |  | |
-| `alternativeTitle` | joskus  | array |  | |
-| `workCategory` | joskus | array |  | |
-| `workNumber` | joskus  | array |  | |
-| `creationYear` | joskus | array |  | |
-| `mediumOfPerformance` | joskus  | array |  | |
-| `genre` | joskus | array |  | |
-| `sources` | joskus  | array |  | |
+| [`itemType`](#itemsitemtype) | aina | string | | |
+| [`id`](#itemsid) | aina  | string | | |
+| [`composer`](#itemscomposer) | joskus | object | | |
+| [`authorizedTitle`](#itemsauthorizedtitle) | joskus  | array |  | |
+| [`authorizedTitleHistory`](#itemsauthorizedtitlehistory) | joskus | array |  | |
+| [`alternativeTitle`](#itemsalternativetitle) | joskus  | array |  | |
+| [`workCategory`](#itemsworkcategory) | joskus | array |  | |
+| [`workNumber`](#itemsworknumber) | joskus  | array |  | |
+| [`creationYear`](#itemscreationyear) | joskus | array |  | |
+| [`mediumOfPerformance`](#itemsmediumofperformance) | joskus  | array |  | |
+| [`genre`](#itemsgenre) | joskus | array |  | |
+| [`sources`](#itemssources) | joskus  | array |  | |
 
 #### items.*.itemType
 
