@@ -4,13 +4,30 @@
 
 Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nimekkeen eri kieliversiot, lempinimet ja nimekkeen viittausmuodot.
 
-[`Esimerkki`](#esimerkki)
+
+## Esimerkki
 
 ```JSON
-"alternativeTitle": [
-
+ "authorizedTitle": [
+  {
+    "title": "Kehtolaulu",
+    "language": {
+      "code": "fin",
+      "label": [
+        {
+          "locale": "fi",
+          "literal": "suomi"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
+        "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
+      }
+    ]
+  }
 ]
-
 ```
 
 ## items.\*.alternativeTitle.\*
@@ -351,29 +368,4 @@ Lähteen tunniste teosluettelossa.
 
 ```JSON
 "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
-```
-
-## Esimerkki
-
-```JSON
- "authorizedTitle": [
-  {
-    "title": "Kehtolaulu",
-    "language": {
-      "code": "fin",
-      "label": [
-        {
-          "locale": "fi",
-          "literal": "suomi"
-        }
-      ]
-    },
-    "sources": [
-      {
-        "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
-        "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
-      }
-    ]
-  }
-]
 ```
