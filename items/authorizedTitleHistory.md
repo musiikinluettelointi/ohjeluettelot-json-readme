@@ -42,7 +42,7 @@ Auktorisoidun nimekkeen luomispäivämäärä. Mikäli kuukautta tai päivää e
 
 `object`
 
-Tämä rakenne sisältää muutoshistoriaversion nimekkeen. Rakenne on identtinen rakenteen [`items\*.authorizedTitle`](#itemsauthorizedtitle) kanssa.
+Tämä rakenne sisältää muutoshistoriaversion nimekkeen. Rakenne on identtinen rakenteen [`items\*.authorizedTitle`](items/authorizedTitle.md) kanssa.
 
 #### items.\*.authorizedTitleHistory.\*.authorizedTitle.title
 #### items.\*.authorizedTitleHistory.\*.authorizedTitle.offset
