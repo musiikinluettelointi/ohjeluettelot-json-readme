@@ -4,10 +4,10 @@ Tämä rakenne sisältää säveltäjän tiedot.
 
 ```JSON
 "composer": {
-  "name": ,
-  "id": ,
-  "kantoUri": ,
-  "url": ,
+  "name": "Pingoud, Ernest, 1887-1942",
+  "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8",
+  "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455",
+  "url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud",
   "introduction": [
 
   ],
@@ -19,52 +19,13 @@ Tämä rakenne sisältää säveltäjän tiedot.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`name`](#metacomposername) | aina | string | Säveltäjän nimi  |  |
-| [`id`](#metacomposerid) | aina | string | Säveltäjän tunniste teosluettelossa | name-{uuid} |
-| [`kantoUri`](#metacomposerkantouri) | joskus | string | Säveltäjän KANTO URI  | uri |
-| [`url`](#metacomposerurl) | joskus | string |  Teosluettelon osoite  | url |
-| [`introduction`](#metacomposerintroduction) | joskus | array |  Teosluettelon esipuhe  |  |
-| [`workCategories`](#metacomposerworkcategories) | joskus | array |  Säveltäjälle määritellyt teoskategoriat  |  |
+| `name` | aina | string | Säveltäjän nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktorisoituja nimenmuotoja.  |  |
+| `id` | aina | string | Säveltäjän tunniste teosluettelossa | name-{uuid} |
+| `kantoUri` | joskus | string | Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta. | uri |
+| `url` | joskus | string |  Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.  | url |
+| [`introduction`](#metacomposerintroduction) | joskus | array |  Teosluettelon esipuhe.  |  |
+| [`workCategories`](#metacomposerworkcategories) | joskus | array |  Säveltäjälle määritellyt teoskategoriat.  |  |
 
-## meta.composer.name
-
-`string`
-
-Säveltäjän nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktorisoituja nimenmuotoja.
-
-```JSON
-"name": "Pingoud, Ernest, 1887-1942"
-```
-
-## meta.composer.id
-
-`string`
-
-Säveltäjän tunniste teosluettelossa.
-
-```JSON
-"id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8"
-```
-
-## meta.composer.kantoUri
-
-`string`
-
-Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
-
-```JSON
-"kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455"
-```
-
-## meta.composer.url
-
-`string`
-
-Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
-
-```JSON
-"url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud"
-```
 
 ## meta.composer.introduction
 
