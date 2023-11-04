@@ -4,9 +4,9 @@ Tämä rakenne sisältää teosluettelo-objektin säveltäjän tiedot. Anonyymei
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `id` | aina | string | Säveltäjän tunniste teosluettelossa | name-{uuid} |
-| `name` | aina | string | Säveltäjän nimi | |
-| `kantoUri` | joskus | string | Säveltäjän KANTO URI | |
+| `id` | aina | string | Säveltäjän tunniste teosluettelossa. | name-{uuid} |
+| `name` | aina | string | Säveltäjän nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktorisoituja nimenmuotoja. | |
+| `kantoUri` | joskus | string | Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta. | |
 
 ## Esimerkki
 
