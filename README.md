@@ -653,13 +653,265 @@ Tämä rakenne sisältää auktorisoidun nimekkeen. Rakenne on identtinen rakent
 #### items.\*.authorizedTitleHistory.\*.authorizedTitle.sources.*.id
 
 
-#### items.*.alternativeTitle
+#### items.\*.alternativeTitle.*
 
-Vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nimekkeen eri kieliversiot, lempinimet ja nimekkeen viittausmuodot.
+Tämä rakenne sisältää vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nimekkeen eri kieliversiot, lempinimet ja nimekkeen viittausmuodot.
 
 ```JSON
+"alternativeTitle": {
+  "title": ,
+  "offset": ,
+  "language": {
 
+  },
+  "alphabet": {
+
+  },
+  "transliteration": {
+
+  },
+  "note": ,
+  "publications": [
+
+  ],
+  "sources": [
+
+  ]
+},
 ```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`title`](#itemsauthorizedtitletitle) | aina | string | Auktorisoitu nimeke |  |
+| [`offset`](#itemsauthorizedtitleoffset) | joskus | integer | Ohitettavat merkit | |
+| [`language`](#itemsauthorizedtitlelanguage) | joskus | object | Nimekkeen kieli | |
+| [`alphabet`](#itemsauthorizedtitlealphabet) | joskus | object | Nimekkeen merkistö |  |
+| [`transliteration`](#itemsauthorizedtitletransliteration) | joskus | object | Nimekkeen translitterointi | `iso9` \| `sfs4900` |
+| [`note`](#itemsauthorizedtitlenote) | joskus | string | Huomautus nimekkeestä | |
+| [`publications`](#itemsauthorizedtitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut | |
+| [`sources`](#itemsauthorizedtitlesources) | joskus | array | Nimekkeen lähteet | |
+
+#### items.\*.alternativeTitle.*.title
+
+Vaihtoehtoinen nimeke.
+
+```JSON
+"title": "Vremena goda, op37a",
+```
+
+#### items.\*.alternativeTitle.*.offset
+
+Ohitettavat merkit.
+
+```JSON
+"offset": 3,
+```
+
+#### items.\*.alternativeTitle.*.language
+
+Tämä rakenne sisältää nimekkeen kielen.
+
+```JSON
+"language": {
+  "code": ,
+  "label": [
+
+  ]
+},
+```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`code`](#itemsauthorizedtitlelanguagecode) | aina | string | Kielen koodi | ISO 639-2 |
+| [`label`](#itemsauthorizedtitlelanguagelabel) | aina | array | Kielen otsikko | |
+
+#### items.\*.alternativeTitle.*.language.code
+
+Kielen koodi.
+
+```JSON
+"code": "rus",
+```
+
+#### items.\*.alternativeTitle.*.language.label.*
+
+Tämä rakenne sisältää kielen otsikon.
+
+```JSON
+"label": [
+  {
+    "locale": ,
+    "literal": 
+  }
+]
+```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`locale`](#itemsauthorizedtitlelanguagelabellocale) | aina | string | Kielen otsikon kielikoodi | ISO 639-2 |
+| [`literal`](#itemsauthorizedtitlelanguagelabelliteral) | aina | array | Kielen otsikko | |
+
+#### items.\*.alternativeTitle.*.language.label.*.locale
+
+Kielen otsikon kielikoodi.
+
+```JSON
+"locale": "fi",
+```
+#### items.\*.alternativeTitle.*.language.label.*.literal
+
+Kielen otsikko.
+
+```JSON
+"literal": "venäjä"
+```
+#### items.\*.alternativeTitle.*.alphabet
+
+Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä kyrillisestä merkistöstä latinalaiselle merkistölle translitteroiduille nimekkeille.
+
+```JSON
+"alphabet": {
+  "code": ,
+  "label": [
+
+  ]
+},
+```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`code`](#itemsauthorizedtitlealphabetcode) | aina | string | Merkistön koodi | `latin` \| `cyrillic` |
+| [`label`](#itemsauthorizedtitlealphabetlabel) | aina | array | Merkistön otsikko | |
+
+#### items.\*.alternativeTitle.*.alphabet.code
+
+Merkistön koodi.
+
+```JSON
+"code": "latin",
+```
+
+#### items.\*.alternativeTitle.*.alphabet.label.*
+
+Tämä rakenne sisältää merkistön otsikon.
+
+```JSON
+"label": [
+  {
+    "locale": ,
+    "literal": 
+  }
+]
+```
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`locale`](#itemsauthorizedtitlealphabetlabellocale) | aina | string | Merkistön otsikon kielikoodi | ISO 639-2 |
+| [`literal`](#itemsauthorizedtitlealphabetlabelliteral) | aina | array | Merkistön otsikko | |
+
+#### items.\*.alternativeTitle.*.alphabet.label.*.locale
+
+```JSON
+"locale": "fi",
+```
+
+#### items.\*.alternativeTitle.*.alphabet.label.*.literal
+
+```JSON
+"literal": "latinalainen"
+```
+
+#### items.\*.alternativeTitle.*.transliteration
+
+Nimekkeen translitterointi.
+
+```JSON
+"transliteration": "sfs4900",
+```
+
+| Arvo | Kuvaus |
+| --- | --- |
+| `iso9`| Kansainvälinen standardi |
+| `sfs4900`| Kansallinen standardi |
+
+
+#### items.\*.alternativeTitle.*.note
+
+Huomautus nimekkeestä.
+
+```JSON
+ "note": "Poroila 2013",
+```
+
+#### items.\*.alternativeTitle.*.publications.*
+
+Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
+
+```JSON
+"publications": [
+  {
+    "reference": ,
+    "id":
+  }
+]
+```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`reference`](#itemsauthorizedtitlepublicationsreference) | aina | string | Julkaisun lähdeviite | |
+| [`id`](#itemsauthorizedtitlepublicationsid) | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
+
+#### items.\*.alternativeTitle.*.publications.*.reference
+
+Julkaisun lähdeviite.
+
+```JSON
+"reference": "",
+```
+
+#### items.\*.alternativeTitle.*.publications.*.id
+
+Julkaisun tunniste teosluettelossa.
+
+```JSON
+"id": ""
+```
+
+#### items.\*.alternativeTitle.*.sources.*
+
+Tämä rakenne sisältää nimekkeen lähteet.
+
+```JSON
+"sources": [
+  {
+    "reference": ,
+    "id": 
+  }
+]
+```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`reference`](#itemsauthorizedtitlesourcesreference) | aina | string | Lähteen lähdeviite | |
+| [`id`](#itemsauthorizedtitlesourcesid) | aina | string | Lähteen tunniste teosluettelossa | source-{uuid} |
+
+#### items.\*.alternativeTitle.*.sources.*.reference
+
+Lähteen lähdeviite.
+
+```JSON
+"reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
+```
+
+#### items.\*.alternativeTitle.*.sources.*.id
+
+Lähteen tunniste teosluettelossa.
+
+```JSON
+"id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
+```
+
+
+
 #### items.*.workCategory
 
 Teoskategoria. Kaikilla teosluettelo-objekteilla ei ole teoskategoriaa.
@@ -707,49 +959,7 @@ Lähteet. Kaikilla teosluettelo-objekteilla ei ole lähteitä.
 {
             
 
-            "authorizedTitle": {
-                "title": "Prologue, op4",
-                "sources": [
-                    {
-                        "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
-                        "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
-                    }
-                ]
-            },
-            "authorizedTitleHistory": [
-                {
-                    "createdAt": "2014-07-01",
-                    "authorizedTitle": {
-                        "title": "Prologue, op4",
-                        "sources": [
-                            {
-                                "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
-                                "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
-                            }
-                        ]
-                    }
-                }
-            ],
-            "alternativeTitle": [
-                {
-                    "title": "Prologue symphonique pour Grand Orchestre",
-                    "language": {
-                        "code": "fre",
-                        "label": [
-                            {
-                                "locale": "fi",
-                                "literal": "ranska"
-                            }
-                        ]
-                    },
-                    "sources": [
-                        {
-                            "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
-                            "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
-                        }
-                    ]
-                }
-            ],
+     
             "workCategory": [
                 {
                     "code": "withOpusNumber",
