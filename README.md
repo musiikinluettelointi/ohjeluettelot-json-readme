@@ -6,6 +6,8 @@ To do
 
 ## Dokumentin rakenne
 
+Dokumentti sisältää dokumentin metatiedot ja teosluettelo-objektit.
+
 ```JSON
 {
   "meta": {
