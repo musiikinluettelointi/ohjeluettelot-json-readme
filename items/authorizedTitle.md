@@ -33,7 +33,7 @@ Tämä rakenne sisältää nimekkeen kielen.
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `code` | aina | string | Kielen koodi. | ISO 639-2 |
-| [`label`](#itemsauthorizedtitlelanguagelabel) | aina | array | Kielen otsikko. | |
+| [`label`](#itemsauthorizedtitlelanguagelabel) | aina | array | Kielen otsikon kieliversiot. | |
 
 ### items.\*.authorizedTitle.language.label
 
@@ -71,8 +71,8 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu kyrillises
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `code` | aina | string | Merkistön koodi | `latin` \| `cyrillic` |
-| [`label`](#itemsauthorizedtitlealphabetlabel) | aina | array | Merkistön otsikko | |
+| `code` | aina | string | Merkistön koodi. | `latin` \| `cyrillic` |
+| [`label`](#itemsauthorizedtitlealphabetlabel) | aina | array | Merkistön otsikon kieliversiot. | |
 
 ### items.\*.authorizedTitle.alphabet.label
 
