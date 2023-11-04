@@ -1,4 +1,4 @@
-## items.\*.itemType
+# items.\*.itemType
 
 Teosluettelo-objektin tyyppi.
 

@@ -1,4 +1,4 @@
-## items.\*.sources
+# items.\*.sources
 
 `array`
 

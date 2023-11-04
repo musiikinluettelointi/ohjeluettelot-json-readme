@@ -1,4 +1,4 @@
-## items.\*.note
+# items.\*.note
 
 `string`
 

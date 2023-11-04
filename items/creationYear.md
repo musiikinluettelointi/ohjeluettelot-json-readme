@@ -1,4 +1,4 @@
-## items.\*.creationYear
+# items.\*.creationYear
 
 `array`
 
@@ -11,7 +11,7 @@ Tämä rakenne sisältää teosluettelo-objektin luomisajat. Kaikilla teosluette
 ]
 ```
 
-### items.\*.creationYear.\*
+## items.\*.creationYear.\*
 
 `object`
 
@@ -47,7 +47,7 @@ Tämä rakenne sisältää teosluettelo-objektin luomisajat.
 | [`publications`](#itemscreationyearpublications) | joskus | array | Luomisaikaan liittyvät julkaisut | |
 | [`sources`](#itemscreationyearsources) | joskus | array | Luomisajan lähteet | |
 
-#### items.\*.creationYear.\*.label
+## items.\*.creationYear.\*.label
 
 Tämä rakenne sisältää luomisajan otsikon kieliversiot.
 
@@ -59,7 +59,7 @@ Tämä rakenne sisältää luomisajan otsikon kieliversiot.
 ]
 ```
 
-#### items.\*.creationYear.\*.label.\*
+### items.\*.creationYear.\*.label.\*
 
 
 Tämä rakenne sisältää luomisajan otsikon kieliversion.
@@ -99,7 +99,7 @@ Luomisajan otsikko.
 ```
 
 
-### items.\*.creationYear.\*.years
+## items.\*.creationYear.\*.years
 
 `array`
 
@@ -153,7 +153,7 @@ Luomisajan vuosiluku on epävarma.
 "yearIsUncertain": true
 ```
 
-### items.\*.creationYear.\*.timespan
+## items.\*.creationYear.\*.timespan
 
 `boolean`
 
@@ -163,7 +163,7 @@ Luomisajan vuosiluvut muodostavat aikavälin. Tieto merkitään vain, kun luomis
 "timespan": true
 ```
 
-### items.\*.creationYear.\*.separateYears
+## items.\*.creationYear.\*.separateYears
 
 `boolean`
 

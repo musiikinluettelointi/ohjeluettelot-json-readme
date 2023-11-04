@@ -1,4 +1,4 @@
-## items.\*.secondaryAuthor
+# items.\*.secondaryAuthor
 
 `array`
 

@@ -1,4 +1,4 @@
-## items.\*.publications
+# items.\*.publications
 
 `array`
 

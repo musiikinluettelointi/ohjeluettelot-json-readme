@@ -1,4 +1,4 @@
-## items.\*.children
+# items.\*.children
 
 `array`
 

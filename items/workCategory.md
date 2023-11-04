@@ -1,4 +1,4 @@
-## items.\*.workCategory
+# items.\*.workCategory
 
 `array`
 
@@ -10,7 +10,7 @@ Tämä rakenne sisältää teosluettelo-objektin teoskategoriat. Kaikilla teoslu
 ]
 ```
 
-### items.\*.workCategory.\*
+## items.\*.workCategory.\*
 
 `object`
 

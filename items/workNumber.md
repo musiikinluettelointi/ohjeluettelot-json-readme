@@ -1,4 +1,4 @@
-## items.\*.workNumber
+# items.\*.workNumber
 
 `array`
 
@@ -10,7 +10,7 @@ Tämä rakenne sisältää teosluettelo-objektin teosnumerot. Kaikilla teosluett
 ]
 ```
 
-### items.\*.workNumber.\*
+## items.\*.workNumber.\*
 
 `object`
 
@@ -40,7 +40,7 @@ Tämä rakenne sisältää teosluettelo-objektin teosnumeron.
 | [`publications`](#itemsworknumbernumberpublications) | joskus | array | Teosnumeroon liittyvät julkaisut | |
 | [`sources`](#itemsworknumbersources) | joskus | array |  Teosnumeron lähteet |  |
 
-### items.\*.workNumber.\*.number
+## items.\*.workNumber.\*.number
 
 `string`
 
@@ -51,7 +51,7 @@ Teosnumero.
 ```
 
 
-### items.\*.workNumber.\*.type
+## items.\*.workNumber.\*.type
 
 `object`
 
@@ -71,7 +71,7 @@ Tämä rakenne sisältää teosnumeron tyypin.
 | [`code`](#itemsworknumbertypecode) | aina | string |  Teosnumeron tyypin koodi | ISO 639-1  |
 | [`label`](#itemsworknumbertypelabel) | aina | array | teosnumeron tyypin otsikon kieliversiot | |
 
-#### items.\*.workNumber.\*.type.code
+### items.\*.workNumber.\*.type.code
 
 `string`
 
@@ -80,7 +80,7 @@ Teosnumeron tyypin koodi.
 ```JSON
 "code": "opusNumber",
 ```
-#### items.\*.workNumber.\*.type.label
+### items.\*.workNumber.\*.type.label
 
 `array`
 
@@ -129,7 +129,7 @@ Teosnumeron tyypin otsikko.
 "literal": "opusnumero"
 ```
 
-#### items.\*.workNumber.\*.note
+## items.\*.workNumber.\*.note
 
 `string`
 
@@ -139,7 +139,7 @@ Huomautus teosnumerosta.
  "note": "Poroila 2013"
 ```
 
-#### items.\*.workNumber.\*.publications
+## items.\*.workNumber.\*.publications
 
 `array`
 
@@ -151,7 +151,7 @@ Tämä rakenne sisältää teosnumeroon liittyvät julkaisut.
 ]
 ```
 
-#### items.\*.workNumber.\*.publications.\*
+### items.\*.workNumber.\*.publications.\*
 
 `object`
 
@@ -189,7 +189,7 @@ Julkaisun tunniste teosluettelossa.
 "id": ""
 ```
 
-#### items.\*.workNumber.\*.sources
+## items.\*.workNumber.\*.sources
 
 `array`
 
@@ -201,7 +201,7 @@ Tämä rakenne sisältää teosnumeron lähteet.
 ]
 ```
 
-#### items.\*.workNumber.\*.sources.\*
+### items.\*.workNumber.\*.sources.\*
 
 `object`
 

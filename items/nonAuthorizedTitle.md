@@ -1,4 +1,4 @@
-## items.\*.nonAuthorizedTitle
+# items.\*.nonAuthorizedTitle
 
 `object`
 
@@ -38,7 +38,7 @@ Tämä rakenne sisältää teosluettelo-objektin auktorisoimattoman nimekkeen.
 | [`publications`](#itemsnonauthorizedtitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut | |
 | [`sources`](#itemsnonauthorizedtitlesources) | joskus | array | Nimekkeen lähteet | |
 
-### items.\*.nonAuthorizedTitle.title
+## items.\*.nonAuthorizedTitle.title
 
 Auktorisoimaton nimeke.
 
@@ -48,7 +48,7 @@ Auktorisoimaton nimeke.
 "title": ""
 ```
 
-### items.\*.nonAuthorizedTitle.offset
+## items.\*.nonAuthorizedTitle.offset
 
 `integer`
 
@@ -58,7 +58,7 @@ Ohitettavat merkit.
 "offset": 3
 ```
 
-### items.\*.nonAuthorizedTitle.language
+## items.\*.nonAuthorizedTitle.language
 
 `object`
 
@@ -78,7 +78,7 @@ Tämä rakenne sisältää nimekkeen kielen.
 | [`code`](#itemsnonauthorizedtitlelanguagecode) | aina | string | Kielen koodi | ISO 639-2 |
 | [`label`](#itemsnonauthorizedtitlelanguagelabel) | aina | array | Kielen otsikko | |
 
-#### items.\*.nonAuthorizedTitle.language.code
+### items.\*.nonAuthorizedTitle.language.code
 
 `string`
 
@@ -88,7 +88,7 @@ Kielen koodi.
 "code": "rus"
 ```
 
-#### items.\*.nonAuthorizedTitle.language.label
+### items.\*.nonAuthorizedTitle.language.label
 
 `array`
 
@@ -137,7 +137,7 @@ Kielen otsikko.
 "literal": "venäjä"
 ```
 
-### items.\*.nonAuthorizedTitle.alphabet
+## items.\*.nonAuthorizedTitle.alphabet
 
 `object`
 
@@ -157,7 +157,7 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä 
 | [`code`](#itemsnonauthorizedtitlealphabetcode) | aina | string | Merkistön koodi | `latin` \| `cyrillic` |
 | [`label`](#itemsnonauthorizedtitlealphabetlabel) | aina | array | Merkistön otsikko | |
 
-#### items.\*.nonAuthorizedTitle.alphabet.code
+### items.\*.nonAuthorizedTitle.alphabet.code
 
 `string`
 
@@ -167,7 +167,7 @@ Merkistön koodi.
 "code": "latin"
 ```
 
-#### items.\*.nonAuthorizedTitle.alphabet.label
+### items.\*.nonAuthorizedTitle.alphabet.label
 
 `array`
 
@@ -212,7 +212,7 @@ Tämä rakenne sisältää merkistön otsikon kieliversion.
 "literal": "latinalainen"
 ```
 
-### items.\*.nonAuthorizedTitle.transliteration
+## items.\*.nonAuthorizedTitle.transliteration
 
 `string`
 
@@ -228,7 +228,7 @@ Nimekkeen translitterointi.
 | `sfs4900`| Kansallinen standardi |
 
 
-### items.\*.nonAuthorizedTitle.note
+## items.\*.nonAuthorizedTitle.note
 
 `string`
 
@@ -238,7 +238,7 @@ Huomautus nimekkeestä.
  "note": "Poroila 2013"
 ```
 
-### items.\*.nonAuthorizedTitle.publications
+## items.\*.nonAuthorizedTitle.publications
 
 `array`
 
@@ -250,7 +250,7 @@ Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 ]
 ```
 
-#### items.\*.nonAuthorizedTitle.publications.\*
+### items.\*.nonAuthorizedTitle.publications.\*
 
 `object`
 
@@ -288,7 +288,7 @@ Julkaisun tunniste teosluettelossa.
 "id": ""
 ```
 
-### items.\*.nonAuthorizedTitle.sources
+## items.\*.nonAuthorizedTitle.sources
 
 `array`
 
@@ -300,7 +300,7 @@ Tämä rakenne sisältää nimekkeen lähteet.
 ]
 ```
 
-#### items.\*.nonAuthorizedTitle.sources.\*
+### items.\*.nonAuthorizedTitle.sources.\*
 
 `object`
 

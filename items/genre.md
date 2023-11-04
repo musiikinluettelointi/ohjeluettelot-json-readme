@@ -1,4 +1,4 @@
-## items.\*.genre
+# items.\*.genre
 
 `array`
 

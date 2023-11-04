@@ -1,4 +1,4 @@
-## items.\*.mediumOfPerformance
+# items.\*.mediumOfPerformance
 
 `array`
 

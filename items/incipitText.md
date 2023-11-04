@@ -1,4 +1,4 @@
-## items.\*.incipitText
+# items.\*.incipitText
 
 `array`
 

@@ -1,4 +1,4 @@
-## items.\*.linkedWork
+# items.\*.linkedWork
 
 `array`
 

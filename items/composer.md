@@ -1,4 +1,4 @@
-## items.\*.composer
+# items.\*.composer
 
 `object`
 
@@ -18,7 +18,7 @@ Tämä rakenne sisältää teosluettelo-objektin säveltäjän tiedot. Anonyymei
 | [`name`](#itemscomposername) | aina | string | Säveltäjän nimi | |
 | [`kantoUri`](#itemscomposerkantouri) | joskus | string | Säveltäjän KANTO URI | |
 
-### items.\*.composer.id
+## items.\*.composer.id
 
 `string`
 
@@ -28,7 +28,7 @@ Säveltäjän tunniste teosluettelossa.
 "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8"
 ```
 
-### items.\*.composer.name
+## items.\*.composer.name
 
 `string`
 
@@ -38,7 +38,7 @@ Säveltäjän nimi.
 "name": "Pingoud, Ernest, 1887-1942"
 ```
 
-### items.\*.composer.kantoUri
+## items.\*.composer.kantoUri
 
 `string`
 
