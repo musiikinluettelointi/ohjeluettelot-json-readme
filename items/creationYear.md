@@ -173,7 +173,7 @@ Luomisajan vuosiluvut ovat erillisiä. Tieto merkitään vain, kun luomisaika ko
 "separateYears": true
 ```
 
-### items.\*.creationYear.\*.note
+## items.\*.creationYear.\*.note
 
 `string`
 
@@ -183,7 +183,7 @@ Huomautus luomisajasta.
 "note": "\"1930-luku?\" (Poroila 2012)",
 ```
 
-### items.\*.creationYear.\*.publications
+## items.\*.creationYear.\*.publications
 
 `array`
 
@@ -195,7 +195,7 @@ Tämä rakenne sisältää luomisaikaan liittyvät julkaisut.
 ]
 ```
 
-#### items.\*.creationYear.\*.publications.\*
+### items.\*.creationYear.\*.publications.\*
 
 `object`
 
@@ -233,7 +233,7 @@ Julkaisun tunniste teosluettelossa.
 "id": ""
 ```
 
-#### items.\*.creationYear.\*.sources
+## items.\*.creationYear.\*.sources
 
 `array`
 
@@ -245,7 +245,7 @@ Tämä rakenne sisältää nimekkeen lähteet.
 ]
 ```
 
-#### items.\*.creationYear.\*.sources.\*
+### items.\*.creationYear.\*.sources.\*
 
 `object`
 
