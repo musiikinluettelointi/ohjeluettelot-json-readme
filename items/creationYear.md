@@ -1,13 +1,45 @@
 # items.\*.creationYear
 
-`array`
-
 Tämä rakenne sisältää teosluettelo-objektin luomisajat. Kaikilla teosluettelo-objekteilla ei ole luomisaikaa.
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| [`label`](#itemscreationyearlabel) | aina | array | Luomisajan otsikko |  |
+| [`years`](#itemscreationyearyears) | joskus | array | Luomisajan vuosiluvut | |
+| [`timespan`](#itemscreationyeartimespan) | joskus | boolean | Luomisajan vuosiluvut muodostavat aikavälin | |
+| [`separateYears`](#itemscreationyearseparateyears) | joskus | boolean | Luomisajan vuosiluvut ovat erillisiä| |
+| [`note`](#itemscreationyearnote) | joskus | string | Huomautus luomisajasta | |
+| [`publications`](#itemscreationyearpublications) | joskus | array | Luomisaikaan liittyvät julkaisut | |
+| [`sources`](#itemscreationyearsources) | joskus | array | Luomisajan lähteet | |
+
+## Esimerkki
 
 
 ```JSON
 "creationYear": [
-
+  {
+    "label": [
+      {
+        "locale": "fi",
+        "literal": "1915-1916"
+      }
+    ],
+    "years": [
+      {
+        "year": 1915
+      },
+      {
+        "year": 1916
+      }
+    ],
+    "timespan": true,
+    "sources": [
+      {
+        "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
+        "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
+      }
+    ]
+  }
 ]
 ```
 
@@ -37,15 +69,7 @@ Tämä rakenne sisältää teosluettelo-objektin luomisajat.
 }
 ```
 
-| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | --- | --- | --- |
-| [`label`](#itemscreationyearlabel) | aina | array | Luomisajan otsikko |  |
-| [`years`](#itemscreationyearyears) | joskus | array | Luomisajan vuosiluvut | |
-| [`timespan`](#itemscreationyeartimespan) | joskus | boolean | Luomisajan vuosiluvut muodostavat aikavälin | |
-| [`separateYears`](#itemscreationyearseparateyears) | joskus | boolean | Luomisajan vuosiluvut ovat erillisiä| |
-| [`note`](#itemscreationyearnote) | joskus | string | Huomautus luomisajasta | |
-| [`publications`](#itemscreationyearpublications) | joskus | array | Luomisaikaan liittyvät julkaisut | |
-| [`sources`](#itemscreationyearsources) | joskus | array | Luomisajan lähteet | |
+
 
 ## items.\*.creationYear.\*.label
 
