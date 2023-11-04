@@ -42,9 +42,7 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 
 ## items.\*.alternativeTitle.\*.title
 
-| Tyyppi | Kuvaus |
-| --- | --- |
-| string | Vaihtoehtoinen nimeke. |
+Vaihtoehtoinen nimeke.
 
 ```JSON
 "title": "Kotimaan kaikuja"
@@ -52,9 +50,7 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 
 ## items.\*.alternativeTitle.\*.offset
 
-| Tyyppi | Kuvaus |
-| --- | --- |
-| integer | Ohitettavat merkit. |
+ Ohitettavat merkit.
 
 ```JSON
 "offset": 3
@@ -62,9 +58,7 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 
 ## items.\*.alternativeTitle.\*.language
 
-| Tyyppi | Kuvaus |
-| --- | --- |
-| object | Tämä rakenne sisältää nimekkeen kielen. |
+Tämä rakenne sisältää nimekkeen kielen.
 
 ```JSON
 "language": {
@@ -82,8 +76,6 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 | --- | --- | --- | --- | --- |
 | `code` | aina | string | Kielen koodi. | ISO 639-2 |
 | [`label`](#itemsalternativetitlelanguagelabel) | aina | array | Tämä rakenne sisältää kielen otsikon kieliversiot. |
-
-
 
 ### items.\*.alternativeTitle.\*.language.label.\*
 
