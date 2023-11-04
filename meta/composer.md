@@ -76,7 +76,7 @@ Tämä rakenne sisältää teoskategorian otsikon kieliversiot.
 ]
 ```
 
-> [!INFORMATION]
+> [!NOTE]
 > Avain `literal` oli aiemmin `text`.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
