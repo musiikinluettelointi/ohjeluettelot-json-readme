@@ -1,8 +1,6 @@
 # items.\*.alternativeTitle
 
-| Tyyppi | Kuvaus |
-| --- | --- |
-| array | Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nimekkeen eri kieliversiot, lempinimet ja nimekkeen viittausmuodot. |
+Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nimekkeen eri kieliversiot, lempinimet ja nimekkeen viittausmuodot.
 
 
 ## Esimerkki
@@ -28,36 +26,6 @@
     ]
   }
 ]
-```
-
-## items.\*.alternativeTitle.\*
-
-| Tyyppi | Kuvaus |
-| --- | --- |
-| object | Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoisen nimekkeen. |
-
-
-```JSON
-{
-  "title": ,
-  "offset": ,
-  "language": {
-
-  },
-  "alphabet": {
-
-  },
-  "transliteration": {
-
-  },
-  "note": ,
-  "publications": [
-
-  ],
-  "sources": [
-
-  ]
-}
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
@@ -248,5 +216,5 @@
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `reference` | aina | string | Lähteen lähdeviite | |
-| `id` | aina | string | Lähteen tunniste teosluettelossa | source-{uuid} |
+| `reference` | aina | string | Lähteen lähdeviite. | |
+| `id` | aina | string | Lähteen tunniste teosluettelossa. | source-{uuid} |
