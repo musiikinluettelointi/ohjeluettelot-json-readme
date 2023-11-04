@@ -239,7 +239,10 @@
 
 ```JSON
 "sources": [
-
+  {
+    "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
+    "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
+  }
 ]
 ```
 
