@@ -112,11 +112,11 @@
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `code` | aina | string | Kielen koodi. | ISO 639-2 |
-| `label` | aina | array | Tämä rakenne sisältää kielen otsikon kieliversiot. |
+| [`label`](#itemsalternativetitlelanguagelabel) | aina | array | Tämä rakenne sisältää kielen otsikon kieliversiot. |
 
 
 
-## items.\*.alternativeTitle.\*.language.label.\*
+### items.\*.alternativeTitle.\*.language.label.\*
 
 | Tyyppi | Kuvaus |
 | --- | --- |
