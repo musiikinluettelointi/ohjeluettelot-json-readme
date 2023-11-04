@@ -13,16 +13,16 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
       "code": "swe",
       "label": [
         {
-            "locale": "fi",
-            "literal": "ruotsi"
+          "locale": "fi",
+          "literal": "ruotsi"
         }
       ]
     },
     "note": "Poroila 2011",
     "sources": [
       {
-          "reference": "Poroila, Heikki (2011). Yhtenäistetty Yrjö Kilpinen. Yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 144. PDF. ISBN 978-952-5363-43-2. ",
-          "id": "source-0148bad1-5255-4fca-832d-d3813fad7de9"
+        "reference": "Poroila, Heikki (2011). Yhtenäistetty Yrjö Kilpinen. Yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 144. PDF. ISBN 978-952-5363-43-2. ",
+        "id": "source-0148bad1-5255-4fca-832d-d3813fad7de9"
       }
     ]
   }
