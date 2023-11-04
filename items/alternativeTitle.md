@@ -228,28 +228,8 @@
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`reference`](#itemsalternativetitlepublicationsreference) | aina | string | Julkaisun lähdeviite | |
-| [`id`](#itemsalternativetitlepublicationsid) | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
-
-### items.\*.alternativeTitle.\*.publications.\*.reference
-
-| Tyyppi | Kuvaus |
-| --- | --- |
-| string | Julkaisun lähdeviite. |
-
-```JSON
-"reference": ""
-```
-
-### items.\*.alternativeTitle.\*.publications.\*.id
-
-| Tyyppi | Kuvaus |
-| --- | --- |
-| string | Julkaisun tunniste teosluettelossa. |
-
-```JSON
-"id": ""
-```
+| `reference` | aina | string | Julkaisun lähdeviite | |
+| `id` | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
 
 ## items.\*.alternativeTitle.\*.sources
 
@@ -271,33 +251,12 @@
 
 ```JSON
 {
-  "reference": ,
-  "id":
+  "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
+  "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
 }
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`reference`](#itemsalternativetitlesourcesreference) | aina | string | Lähteen lähdeviite | |
-| [`id`](#itemsalternativetitlesourcesid) | aina | string | Lähteen tunniste teosluettelossa | source-{uuid} |
-
-### items.\*.alternativeTitle.\*.sources.\*.reference
-
-| Tyyppi | Kuvaus |
-| --- | --- |
-| string | Lähteen lähdeviite. |
-
-
-```JSON
-"reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1."
-```
-
-### items.\*.alternativeTitle.\*.sources.\*.id
-
-| Tyyppi | Kuvaus |
-| --- | --- |
-| string | Lähteen tunniste teosluettelossa.|
-
-```JSON
-"id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
-```
+| `reference` | aina | string | Lähteen lähdeviite | |
+| `id` | aina | string | Lähteen tunniste teosluettelossa | source-{uuid} |
