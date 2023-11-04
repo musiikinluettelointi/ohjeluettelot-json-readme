@@ -31,7 +31,7 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`title`](#itemsalternativetitletitle) | aina | string | Auktorisoitu nimeke. |  |
+| [`title`](#itemsalternativetitletitle) | aina | string | Vaihtoehtoinen nimeke. |  |
 | [`offset`](#itemsalternativetitleoffset) | joskus | integer | Ohitettavat merkit. | |
 | [`language`](#itemsalternativetitlelanguage) | joskus | object | Nimekkeen kieli. | |
 | [`alphabet`](#itemsalternativetitlealphabet) | joskus | object | Nimekkeen merkistö. |  |
