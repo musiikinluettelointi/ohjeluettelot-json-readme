@@ -214,7 +214,7 @@ Teoskategorian otsikon kielikoodi.
 Teoskategorian otsikko.
 
 ```JSON
-"text": "Opusnumeroidut teokset"
+"literal": "Opusnumeroidut teokset"
 ```
 
 #### meta.apiVersion
