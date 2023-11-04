@@ -108,8 +108,6 @@ Nimekkeen translitterointi. Tieto on tallennettu kyrillisestä merkistöstä lat
 
 ## items.\*.authorizedTitle.publications
 
-`array`
-
 Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 
 ```JSON
@@ -123,8 +121,8 @@ Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`reference`](#itemsauthorizedtitlepublicationsreference) | aina | string | Julkaisun lähdeviite | |
-| [`id`](#itemsauthorizedtitlepublicationsid) | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
+| `reference` | aina | string | Julkaisun lähdeviite | |
+| `id` | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
 
 ## items.\*.authorizedTitle.sources
 
