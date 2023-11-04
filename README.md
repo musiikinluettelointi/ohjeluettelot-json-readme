@@ -53,7 +53,7 @@ Tämä rakenne sisältää dokumentin metatiedot.
 Dokumentin tuottaja.
 
 ```JSON
-"createdBy": "info@musiikinluettelointi.fi",
+"createdBy": "info@musiikinluettelointi.fi"
 ```
 
 #### meta.createdAt
@@ -61,7 +61,7 @@ Dokumentin tuottaja.
 Dokumentin luomisaika.
 
 ```JSON
-"createdAt": "2023-10-31T16:54:50.265847Z",
+"createdAt": "2023-10-31T16:54:50.265847Z"
 ```
 
 #### meta.license
@@ -114,7 +114,7 @@ Tämä rakenne sisältää säveltäjän tiedot.
 Säveltäjän nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktorisoituja nimenmuotoja.
 
 ```JSON
-"name": "Pingoud, Ernest, 1887-1942",
+"name": "Pingoud, Ernest, 1887-1942"
 ```
 
 #### meta.composer.id
@@ -122,7 +122,7 @@ Säveltäjän nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktoris
 Säveltäjän tunniste teosluettelossa.
 
 ```JSON
-"id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8",
+"id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8"
 ```
 
 #### meta.composer.kantoUri
@@ -130,7 +130,7 @@ Säveltäjän tunniste teosluettelossa.
 Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 
 ```JSON
-"kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455",
+"kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455"
 ```
 
 #### meta.composer.url
@@ -138,7 +138,7 @@ Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 
 ```JSON
-"url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud",
+"url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud"
 ```
 
 #### meta.composer.introduction.\*
@@ -184,7 +184,7 @@ Tämä rakenne sisältää säveltäjälle määritellyt teoskategoriat. Kaikill
 #### meta.composer.workCategories.\*.label
 
 > [!WARNING]
-> Avain `text` tullaan muuttamaan avaimeksi `literal`.
+> Avain `literal` oli aiemmin avain `text`.
 
 Tämä rakenne sisältää teoskategorian otsikon.
 
@@ -197,19 +197,19 @@ Tämä rakenne sisältää teoskategorian otsikon.
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `locale` | aina | string |  Teoskategorian otsikon kielikoodi | ISO 639-1  |
-| `text` | aina | string | Teoskategorian otsikko | |
+| `literal` | aina | string | Teoskategorian otsikko | |
 
 #### meta.composer.workCategories.\*.label.locale
 
 Teoskategorian otsikon kielikoodi.
 
 ```JSON
-"locale": "fi",
+"locale": "fi"
 ```
-#### meta.composer.workCategories.\*.label.text
+#### meta.composer.workCategories.\*.label.literal
 
 > [!WARNING]
-> Avain `text` tullaan muuttamaan avaimeksi `literal`.
+> Avain `literal` oli aiemmin `text`.
 
 Teoskategorian otsikko.
 
@@ -288,7 +288,7 @@ Tämä rakenne sisältää teosluettelon teosluettelo-objektit.
 Teosluettelo-objektin tyyppi.
 
 ```JSON
-"itemType": "work",
+"itemType": "work"
 ```
 | Arvo | Kuvaus |
 | --- | --- |
@@ -302,7 +302,7 @@ Teosluettelo-objektin tyyppi.
 Teosluettelo-objektin tunniste teosluettelossa.
 
 ```JSON
-"id": "work-c10de676-0115-474f-895e-26940602371b",
+"id": "work-c10de676-0115-474f-895e-26940602371b"
 ```
 #### items.\*.composer
 
@@ -327,7 +327,7 @@ Tämä rakenne sisältää teosluettelo-objektin säveltäjän tiedot. Anonyymei
 Säveltäjän tunniste teosluettelossa.
 
 ```JSON
-"id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8",
+"id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8"
 ```
 
 #### items.\*.composer.name
@@ -335,7 +335,7 @@ Säveltäjän tunniste teosluettelossa.
 Säveltäjän nimi.
 
 ```JSON
-"name": "Pingoud, Ernest, 1887-1942",
+"name": "Pingoud, Ernest, 1887-1942"
 ```
 
 #### items.\*.composer.kantoUri
@@ -388,7 +388,7 @@ Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen. Kaikil
 Auktorisoitu nimeke.
 
 ```JSON
-"title": "Vremena goda, op37a",
+"title": "Vremena goda, op37a"
 ```
 
 #### items.\*.authorizedTitle.offset
@@ -396,7 +396,7 @@ Auktorisoitu nimeke.
 Ohitettavat merkit.
 
 ```JSON
-"offset": 3,
+"offset": 3
 ```
 
 #### items.\*.authorizedTitle.language
@@ -422,7 +422,7 @@ Tämä rakenne sisältää nimekkeen kielen.
 Kielen koodi.
 
 ```JSON
-"code": "rus",
+"code": "rus"
 ```
 
 #### items.\*.authorizedTitle.language.label.\*
@@ -448,7 +448,7 @@ Tämä rakenne sisältää kielen otsikon.
 Kielen otsikon kielikoodi.
 
 ```JSON
-"locale": "fi",
+"locale": "fi"
 ```
 #### items.\*.authorizedTitle.language.label.\*.literal
 
@@ -480,7 +480,7 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä 
 Merkistön koodi.
 
 ```JSON
-"code": "latin",
+"code": "latin"
 ```
 
 #### items.\*.authorizedTitle.alphabet.label.\*
@@ -503,7 +503,7 @@ Tämä rakenne sisältää merkistön otsikon.
 #### items.\*.authorizedTitle.alphabet.label.\*.locale
 
 ```JSON
-"locale": "fi",
+"locale": "fi"
 ```
 
 #### items.\*.authorizedTitle.alphabet.label.\*.literal
@@ -517,7 +517,7 @@ Tämä rakenne sisältää merkistön otsikon.
 Nimekkeen translitterointi.
 
 ```JSON
-"transliteration": "sfs4900",
+"transliteration": "sfs4900"
 ```
 
 | Arvo | Kuvaus |
@@ -531,7 +531,7 @@ Nimekkeen translitterointi.
 Huomautus nimekkeestä.
 
 ```JSON
- "note": "Poroila 2013",
+ "note": "Poroila 2013"
 ```
 
 #### items.\*.authorizedTitle.publications.\*
@@ -557,7 +557,7 @@ Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 Julkaisun lähdeviite.
 
 ```JSON
-"reference": "",
+"reference": ""
 ```
 
 #### items.\*.authorizedTitle.publications.\*.id
@@ -591,7 +591,7 @@ Tämä rakenne sisältää nimekkeen lähteet.
 Lähteen lähdeviite.
 
 ```JSON
-"reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
+"reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1."
 ```
 
 #### items.\*.authorizedTitle.sources.\*.id
@@ -625,7 +625,7 @@ Tämä rakenne sisältää auktorisoidun nimekkeen muutoshistorian, mikäli teos
 
 Auktorisoidun nimekkeen luomispäivämäärä. Mikäli kuukautta tai päivää ei ole tiedossa, on ne merkitty numerolla yksi.
 ```JSON
-"createdAt": "2014-07-01",
+"createdAt": "2014-07-01"
 ```
 
 #### items.\*.authorizedTitleHistory.\*.authorizedTitle
@@ -696,7 +696,7 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 Vaihtoehtoinen nimeke.
 
 ```JSON
-"title": "Vremena goda, op37a",
+"title": ""
 ```
 
 #### items.\*.alternativeTitle.\*.offset
@@ -704,7 +704,7 @@ Vaihtoehtoinen nimeke.
 Ohitettavat merkit.
 
 ```JSON
-"offset": 3,
+"offset": 3
 ```
 
 #### items.\*.alternativeTitle.\*.language
@@ -730,7 +730,7 @@ Tämä rakenne sisältää nimekkeen kielen.
 Kielen koodi.
 
 ```JSON
-"code": "rus",
+"code": "rus"
 ```
 
 #### items.\*.alternativeTitle.\*.language.label.\*
@@ -756,7 +756,7 @@ Tämä rakenne sisältää kielen otsikon.
 Kielen otsikon kielikoodi.
 
 ```JSON
-"locale": "fi",
+"locale": "fi"
 ```
 #### items.\*.alternativeTitle.\*.language.label.\*.literal
 
@@ -788,7 +788,7 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä 
 Merkistön koodi.
 
 ```JSON
-"code": "latin",
+"code": "latin"
 ```
 
 #### items.\*.alternativeTitle.\*.alphabet.label.\*
@@ -811,7 +811,7 @@ Tämä rakenne sisältää merkistön otsikon.
 #### items.\*.alternativeTitle.\*.alphabet.label.\*.locale
 
 ```JSON
-"locale": "fi",
+"locale": "fi"
 ```
 
 #### items.\*.alternativeTitle.\*.alphabet.label.\*.literal
@@ -825,7 +825,7 @@ Tämä rakenne sisältää merkistön otsikon.
 Nimekkeen translitterointi.
 
 ```JSON
-"transliteration": "sfs4900",
+"transliteration": "sfs4900"
 ```
 
 | Arvo | Kuvaus |
@@ -839,7 +839,7 @@ Nimekkeen translitterointi.
 Huomautus nimekkeestä.
 
 ```JSON
- "note": "Poroila 2013",
+ "note": "Poroila 2013"
 ```
 
 #### items.\*.alternativeTitle.\*.publications.\*
@@ -865,7 +865,7 @@ Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 Julkaisun lähdeviite.
 
 ```JSON
-"reference": "",
+"reference": ""
 ```
 
 #### items.\*.alternativeTitle.\*.publications.\*.id
@@ -899,7 +899,7 @@ Tämä rakenne sisältää nimekkeen lähteet.
 Lähteen lähdeviite.
 
 ```JSON
-"reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
+"reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1."
 ```
 
 #### items.\*.alternativeTitle.\*.sources.\*.id
@@ -914,42 +914,42 @@ Lähteen tunniste teosluettelossa.
 
 #### items.\*.workCategory
 
-Teoskategoria. Kaikilla teosluettelo-objekteilla ei ole teoskategoriaa.
+Tämä rakenne sisältää teosluettelo-objektin teoskategorian. Kaikilla teosluettelo-objekteilla ei ole teoskategoriaa.
 
 ```JSON
 
 ```
 #### items.\*.workNumber
 
-Numerointi. Kaikilla teosluettelo-objekteilla ei ole numerointia.
+Tämä rakenne sisältää teosluettelo-objektin numeroinnin. Kaikilla teosluettelo-objekteilla ei ole numerointia.
 
 ```JSON
 
 ```
 #### items.\*.creationYear
 
-Luomisaika. Kaikilla teosluettelo-objekteilla ei ole luomisaikaa.
+Tämä rakenne sisältää teosluettelo-objektin luomisajan. Kaikilla teosluettelo-objekteilla ei ole luomisaikaa.
 
 ```JSON
 
 ```
 #### items.\*.mediumOfPerformance
 
-Esityskokoonpano. Kaikilla teosluettelo-objekteilla ei ole esityskokoonpano.
+Tämä rakenne sisältää teosluettelo-objektin esityskokoonpanon. Kaikilla teosluettelo-objekteilla ei ole esityskokoonpano.
 
 ```JSON
 
 ```
 #### items.\*.genre
 
-Muoto tai lajityyppi. Kaikilla teosluettelo-objekteilla ei ole muotoa tai lajityyppiä.
+Tämä rakenne sisältää teosluettelo-objektin muodon tai lajityypin. Kaikilla teosluettelo-objekteilla ei ole muotoa tai lajityyppiä.
 
 ```JSON
 
 ```
 #### items.\*.sources
 
-Lähteet. Kaikilla teosluettelo-objekteilla ei ole lähteitä.
+Tämä rakenne sisältää teosluettelo-objektin lähteet. Kaikilla teosluettelo-objekteilla ei ole lähteitä.
 
 ```JSON
 
