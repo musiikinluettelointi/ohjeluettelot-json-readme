@@ -178,21 +178,11 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 
 ```JSON
 "publications": [
-
+  {
+    "reference": ,
+    "id":
+  }
 ]
-```
-
-## items.\*.alternativeTitle.\*.publications.\*
-
-| Tyyppi | Kuvaus |
-| --- | --- |
-| object | Tämä rakenne sisältää nimekkeeseen liittyvän julkaisun.|
-
-```JSON
-{
-  "reference": ,
-  "id":
-}
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
@@ -202,9 +192,7 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 
 ## items.\*.alternativeTitle.\*.sources
 
-| Tyyppi | Kuvaus |
-| --- | --- |
-| array | Tämä rakenne sisältää nimekkeen lähteet. |
+Tämä rakenne sisältää nimekkeen lähteet.
 
 ```JSON
 "sources": [
