@@ -108,7 +108,7 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä 
       "literal": "latinalainen"
     }
   ]
-},
+}
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
