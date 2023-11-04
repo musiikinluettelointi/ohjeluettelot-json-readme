@@ -604,7 +604,7 @@ Lähteen tunniste teosluettelossa.
 
 #### items.\*.authorizedTitleHistory.\*
 
-Tämä rakenne sisältää auktorisoidun nimekkeen muutoshistorian, mikäli teosluettelo-objektilla on auktorisoitu nimeke.
+Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen muutoshistorian, mikäli teosluettelo-objektilla on auktorisoitu nimeke.
 
 ```JSON
 "authorizedTitleHistory": [
@@ -909,8 +909,6 @@ Lähteen tunniste teosluettelossa.
 ```JSON
 "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
 ```
-
-
 
 #### items.\*.workCategory
 
