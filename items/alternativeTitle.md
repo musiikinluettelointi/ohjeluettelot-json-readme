@@ -1,6 +1,7 @@
 # items.\*.alternativeTitle
- | Tyyppi | Kuvaus |
- | --- | --- |
+
+| Tyyppi | Kuvaus |
+| --- | --- |
 | array | Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nimekkeen eri kieliversiot, lempinimet ja nimekkeen viittausmuodot. |
 
 
@@ -31,9 +32,10 @@
 
 ## items.\*.alternativeTitle.\*
 
-`object`
+| Tyyppi | Kuvaus |
+| --- | --- |
+| object | Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoisen nimekkeen. |
 
-Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoisen nimekkeen.
 
 ```JSON
 {
@@ -71,9 +73,9 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoisen nimekkeen.
 
 ### items.\*.alternativeTitle.\*.title
 
-Vaihtoehtoinen nimeke.
-
-`string`
+| Tyyppi | Kuvaus |
+| --- | --- |
+| string | Vaihtoehtoinen nimeke. |
 
 ```JSON
 "title": ""
@@ -81,9 +83,9 @@ Vaihtoehtoinen nimeke.
 
 ### items.\*.alternativeTitle.\*.offset
 
-`integer`
-
-Ohitettavat merkit.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| integer | Ohitettavat merkit. |
 
 ```JSON
 "offset": 3
@@ -91,9 +93,9 @@ Ohitettavat merkit.
 
 ### items.\*.alternativeTitle.\*.language
 
-`object`
-
-Tämä rakenne sisältää nimekkeen kielen.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| object | Tämä rakenne sisältää nimekkeen kielen. |
 
 ```JSON
 "language": {
@@ -111,9 +113,10 @@ Tämä rakenne sisältää nimekkeen kielen.
 
 #### items.\*.alternativeTitle.\*.language.code
 
-`string`
 
-Kielen koodi.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| string | Kielen koodi. |
 
 ```JSON
 "code": "rus"
@@ -121,9 +124,9 @@ Kielen koodi.
 
 #### items.\*.alternativeTitle.\*.language.label
 
-`array`
-
-Tämä rakenne sisältää kielen otsikon kieliversiot.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| array | Tämä rakenne sisältää kielen otsikon kieliversiot.|
 
 ```JSON
 "label": [
@@ -133,9 +136,10 @@ Tämä rakenne sisältää kielen otsikon kieliversiot.
 
 #### items.\*.alternativeTitle.\*.language.label.\*
 
-`object`
+| Tyyppi | Kuvaus |
+| --- | --- |
+| object | Tämä rakenne sisältää kielen otsikon kieliversion.|
 
-Tämä rakenne sisältää kielen otsikon kieliversion.
 
 ```JSON
 {
@@ -151,18 +155,18 @@ Tämä rakenne sisältää kielen otsikon kieliversion.
 
 #### items.\*.alternativeTitle.\*.language.label.\*.locale
 
-`string`
-
-Kielen otsikon kielikoodi.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| string | Kielen otsikon kielikoodi.|
 
 ```JSON
 "locale": "fi"
 ```
 #### items.\*.alternativeTitle.\*.language.label.\*.literal
 
-`string`
-
-Kielen otsikko.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| string | Kielen otsikko.|
 
 ```JSON
 "literal": "venäjä"
@@ -170,9 +174,9 @@ Kielen otsikko.
 
 ### items.\*.alternativeTitle.\*.alphabet
 
-`object`
-
-Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä kyrillisestä merkistöstä latinalaiselle merkistölle translitteroiduille nimekkeille.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| object | Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä kyrillisestä merkistöstä latinalaiselle merkistölle translitteroiduille nimekkeille.|
 
 ```JSON
 "alphabet": {
@@ -190,9 +194,9 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä 
 
 #### items.\*.alternativeTitle.\*.alphabet.code
 
-`string`
-
-Merkistön koodi.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| string | Merkistön koodi.|
 
 ```JSON
 "code": "latin"
@@ -200,9 +204,9 @@ Merkistön koodi.
 
 #### items.\*.alternativeTitle.\*.alphabet.label
 
-`array`
-
-Tämä rakenne sisältää merkistön otsikon kieliversiot.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| array | Tämä rakenne sisältää merkistön otsikon kieliversiot.|
 
 ```JSON
 "label": [
@@ -212,9 +216,9 @@ Tämä rakenne sisältää merkistön otsikon kieliversiot.
 
 #### items.\*.alternativeTitle.\*.alphabet.label.\*
 
-`object`
-
-Tämä rakenne sisältää merkistön otsikon kieliversion.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| object | Tämä rakenne sisältää merkistön otsikon kieliversion. |
 
 ```JSON
 {
@@ -229,7 +233,9 @@ Tämä rakenne sisältää merkistön otsikon kieliversion.
 
 #### items.\*.alternativeTitle.\*.alphabet.label.\*.locale
 
-`string`
+| Tyyppi | Kuvaus |
+| --- | --- |
+| string | Merkistön otsikon kielikoodi. |
 
 ```JSON
 "locale": "fi"
@@ -237,7 +243,9 @@ Tämä rakenne sisältää merkistön otsikon kieliversion.
 
 #### items.\*.alternativeTitle.\*.alphabet.label.\*.literal
 
-`string`
+| Tyyppi | Kuvaus |
+| --- | --- |
+| string | Merkistön otsikko. |
 
 ```JSON
 "literal": "latinalainen"
@@ -245,9 +253,9 @@ Tämä rakenne sisältää merkistön otsikon kieliversion.
 
 ### items.\*.alternativeTitle.\*.transliteration
 
-`string`
-
-Nimekkeen translitterointi.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| string | Nimekkeen translitterointi. |
 
 ```JSON
 "transliteration": "sfs4900"
@@ -261,9 +269,9 @@ Nimekkeen translitterointi.
 
 ### items.\*.alternativeTitle.\*.note
 
-`string`
-
-Huomautus nimekkeestä.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| string | Huomautus nimekkeestä.|
 
 ```JSON
  "note": "Poroila 2013"
@@ -271,9 +279,9 @@ Huomautus nimekkeestä.
 
 ### items.\*.alternativeTitle.\*.publications
 
-`array`
-
-Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| array | Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.|
 
 ```JSON
 "publications": [
@@ -283,9 +291,9 @@ Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 
 ### items.\*.alternativeTitle.\*.publications.\*
 
-`object`
-
-Tämä rakenne sisältää nimekkeeseen liittyvän julkaisun.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| object | Tämä rakenne sisältää nimekkeeseen liittyvän julkaisun.|
 
 ```JSON
 {
@@ -301,9 +309,9 @@ Tämä rakenne sisältää nimekkeeseen liittyvän julkaisun.
 
 #### items.\*.alternativeTitle.\*.publications.\*.reference
 
-`string`
-
-Julkaisun lähdeviite.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| string | Julkaisun lähdeviite. |
 
 ```JSON
 "reference": ""
@@ -311,9 +319,9 @@ Julkaisun lähdeviite.
 
 #### items.\*.alternativeTitle.\*.publications.\*.id
 
-`string`
-
-Julkaisun tunniste teosluettelossa.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| string | Julkaisun tunniste teosluettelossa. |
 
 ```JSON
 "id": ""
@@ -321,9 +329,9 @@ Julkaisun tunniste teosluettelossa.
 
 ### items.\*.alternativeTitle.\*.sources
 
-`array`
-
-Tämä rakenne sisältää nimekkeen lähteet.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| array | Tämä rakenne sisältää nimekkeen lähteet. |
 
 ```JSON
 "sources": [
@@ -333,9 +341,9 @@ Tämä rakenne sisältää nimekkeen lähteet.
 
 ### items.\*.alternativeTitle.\*.sources.\*
 
-`object`
-
-Tämä rakenne sisältää nimekkeen lähteen.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| object | Tämä rakenne sisältää nimekkeen lähteen. |
 
 ```JSON
 {
@@ -351,9 +359,10 @@ Tämä rakenne sisältää nimekkeen lähteen.
 
 #### items.\*.alternativeTitle.\*.sources.\*.reference
 
-`string`
+| Tyyppi | Kuvaus |
+| --- | --- |
+| string | Lähteen lähdeviite. |
 
-Lähteen lähdeviite.
 
 ```JSON
 "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1."
@@ -361,9 +370,9 @@ Lähteen lähdeviite.
 
 #### items.\*.alternativeTitle.\*.sources.\*.id
 
-`string`
-
-Lähteen tunniste teosluettelossa.
+| Tyyppi | Kuvaus |
+| --- | --- |
+| string | Lähteen tunniste teosluettelossa.|
 
 ```JSON
 "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
