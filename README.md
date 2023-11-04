@@ -1989,7 +1989,6 @@ Lähteen tunniste teosluettelossa.
 ```JSON
 "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
 ```
-
 ## items.\*.creationYear
 
 `array`
@@ -2031,13 +2030,13 @@ Tämä rakenne sisältää teosluettelo-objektin luomisajat.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`label`](#itemcreationyearlabel) | aina | array | Luomisajan otsikko |  |
-| [`years`](#itemcreationyearyears) | joskus | array | Luomisajan vuosiluvut | |
-| [`timespan`](#itemcreationyeartimespan) | joskus | boolean | Luomisajan vuosiluvut muodostavat aikavälin | |
-| [`separateYears`](#itemcreationyearseparateyears) | joskus | boolean | Luomisajan vuosiluvut ovat erillisiä| |
-| [`note`](#itemcreationyearnote) | joskus | string | Huomautus luomisajasta | |
-| [`publications`](#itemcreationyearpublications) | joskus | array | Luomisaikaan liittyvät julkaisut | |
-| [`sources`](#itemcreationyearsources) | joskus | array | Luomisajan lähteet | |
+| [`label`](#itemscreationyearlabel) | aina | array | Luomisajan otsikko |  |
+| [`years`](#itemscreationyearyears) | joskus | array | Luomisajan vuosiluvut | |
+| [`timespan`](#itemscreationyeartimespan) | joskus | boolean | Luomisajan vuosiluvut muodostavat aikavälin | |
+| [`separateYears`](#itemscreationyearseparateyears) | joskus | boolean | Luomisajan vuosiluvut ovat erillisiä| |
+| [`note`](#itemscreationyearnote) | joskus | string | Huomautus luomisajasta | |
+| [`publications`](#itemscreationyearpublications) | joskus | array | Luomisaikaan liittyvät julkaisut | |
+| [`sources`](#itemscreationyearsources) | joskus | array | Luomisajan lähteet | |
 
 #### items.\*.creationYear.\*.label
 
@@ -2067,8 +2066,8 @@ Tämä rakenne sisältää luomisajan otsikon kieliversion.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`locale`](#itemcreationyearlabellocale) | aina | string | Luomisajan otsikon kielikoodi | ISO 639-2 |
-| [`literal`](#itemcreationyearlabelliteral) | aina | array | Luomisajan otsikko | |
+| [`locale`](#itemscreationyearlabellocale) | aina | string | Luomisajan otsikon kielikoodi | ISO 639-2 |
+| [`literal`](#itemscreationyearlabelliteral) | aina | array | Luomisajan otsikko | |
 
 #### items.\*.creationYear.\*.label.\*.locale
 
@@ -2121,8 +2120,8 @@ Tämä rakenne sisältää luomisajan vuosiluvun.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`label`](#itemcreationyearyearsyear) | aina | integer | Luomisajan vuosiluku |  |
-| [`years`](#itemcreationyearyearsyearisuncertain) | joskus | boolean | Luomisajan vuosiluku epävarma | |
+| [`label`](#itemscreationyearyearsyear) | aina | integer | Luomisajan vuosiluku |  |
+| [`years`](#itemscreationyearyearsyearisuncertain) | joskus | boolean | Luomisajan vuosiluku epävarma | |
 
 
 ### items.\*.creationYear.\*.years.\*.year
@@ -2274,7 +2273,6 @@ Lähteen tunniste teosluettelossa.
 ```JSON
 "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
 ```
-
 
 ## items.\*.mediumOfPerformance
 
