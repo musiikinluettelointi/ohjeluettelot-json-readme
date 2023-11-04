@@ -124,12 +124,10 @@
 
 
 ```JSON
-  "label": [
-    {
-      "locale": "fi",
-      "literal": "venäjä"
-    }
-  ]
+{
+  "locale": "fi",
+  "literal": "venäjä"
+}
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
