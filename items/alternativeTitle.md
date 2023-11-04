@@ -77,18 +77,17 @@ Tämä rakenne sisältää nimekkeen kielen.
 | `code` | aina | string | Kielen koodi. | ISO 639-2 |
 | [`label`](#itemsalternativetitlelanguagelabel) | aina | array | Tämä rakenne sisältää kielen otsikon kieliversiot. |
 
-### items.\*.alternativeTitle.\*.language.label.\*
+### items.\*.alternativeTitle.\*.language.label
 
-| Tyyppi | Kuvaus |
-| --- | --- |
-| object | Tämä rakenne sisältää kielen otsikon kieliversion.|
-
+Tämä rakenne sisältää kielen otsikon kieliversiot.
 
 ```JSON
-{
-  "locale": "fi",
-  "literal": "venäjä"
-}
+"label": [
+  {
+    "locale": "fi",
+    "literal": "venäjä"
+  }
+]
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
