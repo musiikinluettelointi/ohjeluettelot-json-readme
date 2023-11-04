@@ -4,7 +4,9 @@
 
 To do
 
-## Dokumentin rakenne
+## Dokumentti
+
+`object`
 
 Dokumentti sisältää metatiedot rakenteessa `meta` ja teosluettelo-objektit rakenteessa `items`.
 
