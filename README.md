@@ -52,7 +52,7 @@ Tämä rakenne sisältää dokumentin metatiedot.
 
 #### meta.createdBy
 
-`string` `email`
+`string``email
 
 Dokumentin tuottaja.
 
@@ -62,7 +62,7 @@ Dokumentin tuottaja.
 
 #### meta.createdAt
 
-`string` `ISO 8601`
+`string` ISO 8601
 
 Dokumentin luomisaika.
 
@@ -100,7 +100,7 @@ Dokumentin lisenssi.
 
 #### meta.license.url
 
-`string` `url` 
+`string` url
 
 Lisenssin osoite.
 
@@ -149,7 +149,7 @@ Säveltäjän nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktoris
 
 #### meta.composer.id
 
-`string` `name-{uuid}`
+`string` name-{uuid}
 
 Säveltäjän tunniste teosluettelossa.
 
@@ -159,7 +159,7 @@ Säveltäjän tunniste teosluettelossa.
 
 #### meta.composer.kantoUri
 
-`string` `uri`
+`string` uri
 
 Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 
@@ -169,7 +169,7 @@ Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 
 #### meta.composer.url
 
-`string` `url`
+`string` url
 
 Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 
@@ -202,7 +202,7 @@ Tämä rakenne sisältää teoksen esipuheen. Kaikille säveltäjille ei ole laa
 
 #### meta.composer.introduction.\*.locale
 
-`string` `ISO 639-1`
+`string` ISO 639-1
 
 Esipuheen kielikoodi.
 
@@ -232,7 +232,7 @@ Esipuheen kirjoittaja.
 
 #### meta.composer.introduction.\*.url
 
-`string` `url`
+`string` url
 
 Esipuheen osoite.
 
@@ -258,20 +258,32 @@ Tämä rakenne sisältää säveltäjälle määritellyt teoskategoriat. Kaikill
 ```
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `code`  | aina | string | Teoskategorian koodi  |   |
+| [`code`](#metacomposerworkcategoriescode)   | aina | string | Teoskategorian koodi  |   |
 | [`label`](#metacomposerworkcategorieslabel)  | aina | string | Teoskategorian otsikko | |
+
+#### meta.composer.workCategories.\*.code
+
+`string`
+
+Teoskategorian koodi
+
+```JSON
+"code": "withOpusNumber"
+```
 
 #### meta.composer.workCategories.\*.label
 
 > [!WARNING]
 > Avain `literal` oli aiemmin `text`.
 
+`object`
+
 Tämä rakenne sisältää teoskategorian otsikon.
 
 ```JSON
 "label": {
-  "locale": "fi",
-  "literal": "Opusnumeroidut teokset"
+  "locale": ,
+  "literal": 
 }
 ```
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
