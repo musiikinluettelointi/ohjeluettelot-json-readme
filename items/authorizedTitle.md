@@ -1,6 +1,8 @@
 # items.\*.authorizedTitle
 
-Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen. Kaikilla teosluettelo-objekteilla ei ole auktorisoitua nimekettä. Kts. [`items.*.nonAuthorizedTitle`](nonAuthorizedTitle.md)
+Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen.
+
+Kaikilla teosluettelo-objekteilla ei ole auktorisoitua nimekettä, katso [`items.*.nonAuthorizedTitle`](nonAuthorizedTitle.md).
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
