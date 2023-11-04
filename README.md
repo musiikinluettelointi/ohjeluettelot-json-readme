@@ -141,7 +141,7 @@ Tämä rakenne sisältää säveltäjän tiedot.
 | [`introduction`](#metacomposerintroduction) | joskus | array |  Teosluettelon esipuhe  |  |
 | [`workCategories`](#metacomposerworkcategories) | joskus | array |  Säveltäjälle määritellyt teoskategoriat  |  |
 
-#### meta.composer.name
+### meta.composer.name
 
 `string`
 
@@ -151,7 +151,7 @@ Säveltäjän nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktoris
 "name": "Pingoud, Ernest, 1887-1942"
 ```
 
-#### meta.composer.id
+### meta.composer.id
 
 `string`
 
@@ -161,7 +161,7 @@ Säveltäjän tunniste teosluettelossa.
 "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8"
 ```
 
-#### meta.composer.kantoUri
+### meta.composer.kantoUri
 
 `string`
 
@@ -171,7 +171,7 @@ Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455"
 ```
 
-#### meta.composer.url
+### meta.composer.url
 
 `string`
 
@@ -181,7 +181,7 @@ Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 "url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud"
 ```
 
-#### meta.composer.introduction.\*
+### meta.composer.introduction.\*
 
 `array`
 
@@ -252,7 +252,7 @@ Esipuheen osoite.
 "url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud/esipuhe"
 ```
 
-#### meta.composer.workCategories
+### meta.composer.workCategories
 
 `array`
 
@@ -334,7 +334,7 @@ Teoskategorian otsikko.
 "literal": "Opusnumeroidut teokset"
 ```
 
-#### meta.apiVersion
+## meta.apiVersion
 
 `string`
 
@@ -344,7 +344,7 @@ Dokumentin tuottanut rajapinta.
 "apiVersion": "v1"
 ```
 
-### items\*
+## items
 
 `array`
 
@@ -356,7 +356,7 @@ Tämä rakenne sisältää teosluettelon teosluettelo-objektit.
 ]
 ```
 
-### items\*
+## items.\*
 
 `object`
 
@@ -414,7 +414,7 @@ Tämä rakenne sisältää teosluettelo-objektin.
 | [`genre`](#itemsgenre) | joskus | array | Muoto tai lajityyppi | |
 | [`sources`](#itemssources) | joskus  | array | Lähteet | |
 
-#### items.\*.itemType
+### items.\*.itemType
 
 Teosluettelo-objektin tyyppi.
 
@@ -431,7 +431,7 @@ Teosluettelo-objektin tyyppi.
 | `arrangement`| Teoksen tai teoksen osan sovitus |
 | `translation`| Teoksen, teoksen osan tai sovituksen käännös |
 
-#### items.\*.id
+### items.\*.id
 
 `string`
 
@@ -440,7 +440,7 @@ Teosluettelo-objektin tunniste teosluettelossa.
 ```JSON
 "id": "work-c10de676-0115-474f-895e-26940602371b"
 ```
-#### items.\*.composer
+### items.\*.composer
 
 `object`
 
@@ -490,7 +490,7 @@ Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455"
 ```
 
-#### items.\*.authorizedTitle
+## items.\*.authorizedTitle
 
 `object`
 
@@ -529,7 +529,7 @@ Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen. Kaikil
 | [`publications`](#itemsauthorizedtitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut | |
 | [`sources`](#itemsauthorizedtitlesources) | joskus | array | Nimekkeen lähteet | |
 
-#### items.\*.authorizedTitle.title
+### items.\*.authorizedTitle.title
 
 `string`
 
@@ -625,7 +625,7 @@ Kielen otsikko.
 ```JSON
 "literal": "venäjä"
 ```
-#### items.\*.authorizedTitle.alphabet
+### items.\*.authorizedTitle.alphabet
 
 `object`
 
@@ -698,7 +698,7 @@ Tämä rakenne sisältää merkistön otsikon.
 "literal": "latinalainen"
 ```
 
-#### items.\*.authorizedTitle.transliteration
+### items.\*.authorizedTitle.transliteration
 
 `string`
 
@@ -714,7 +714,7 @@ Nimekkeen translitterointi.
 | `sfs4900`| Kansallinen standardi |
 
 
-#### items.\*.authorizedTitle.note
+### items.\*.authorizedTitle.note
 
 `string`
 
@@ -724,7 +724,7 @@ Huomautus nimekkeestä.
  "note": "Poroila 2013"
 ```
 
-#### items.\*.authorizedTitle.publications
+### items.\*.authorizedTitle.publications
 
 `array`
 
@@ -772,7 +772,7 @@ Julkaisun tunniste teosluettelossa.
 "id": ""
 ```
 
-#### items.\*.authorizedTitle.sources
+### items.\*.authorizedTitle.sources
 
 `array`
 
@@ -820,7 +820,7 @@ Lähteen tunniste teosluettelossa.
 "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
 ```
 
-#### items.\*.authorizedTitleHistory
+### items.\*.authorizedTitleHistory
 
 `array`
 
@@ -832,7 +832,7 @@ Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen muutosh
 ]
 ```
 
-#### items.\*.authorizedTitleHistory.\*
+### items.\*.authorizedTitleHistory.\*
 
 `object`
 
@@ -884,8 +884,7 @@ Tämä rakenne sisältää auktorisoidun nimekkeen. Rakenne on identtinen rakent
 #### items.\*.authorizedTitleHistory.\*.authorizedTitle.sources.\*.reference
 #### items.\*.authorizedTitleHistory.\*.authorizedTitle.sources.\*.id
 
-
-#### items.\*.alternativeTitle
+## items.\*.alternativeTitle
 
 `array`
 
@@ -898,7 +897,7 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 
 ```
 
-#### items.\*.alternativeTitle.\*
+### items.\*.alternativeTitle.\*
 
 `object`
 
@@ -1065,7 +1064,7 @@ Tämä rakenne sisältää merkistön otsikon.
 "literal": "latinalainen"
 ```
 
-#### items.\*.alternativeTitle.\*.transliteration
+### items.\*.alternativeTitle.\*.transliteration
 
 Nimekkeen translitterointi.
 
@@ -1079,7 +1078,7 @@ Nimekkeen translitterointi.
 | `sfs4900`| Kansallinen standardi |
 
 
-#### items.\*.alternativeTitle.\*.note
+### items.\*.alternativeTitle.\*.note
 
 Huomautus nimekkeestä.
 
@@ -1087,7 +1086,7 @@ Huomautus nimekkeestä.
  "note": "Poroila 2013"
 ```
 
-#### items.\*.alternativeTitle.\*.publications.\*
+### items.\*.alternativeTitle.\*.publications.\*
 
 Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 
@@ -1121,7 +1120,7 @@ Julkaisun tunniste teosluettelossa.
 "id": ""
 ```
 
-#### items.\*.alternativeTitle.\*.sources.\*
+### items.\*.alternativeTitle.\*.sources.\*
 
 Tämä rakenne sisältää nimekkeen lähteet.
 
@@ -1155,42 +1154,42 @@ Lähteen tunniste teosluettelossa.
 "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
 ```
 
-#### items.\*.workCategory
+## items.\*.workCategory
 
 Tämä rakenne sisältää teosluettelo-objektin teoskategorian. Kaikilla teosluettelo-objekteilla ei ole teoskategoriaa.
 
 ```JSON
 
 ```
-#### items.\*.workNumber
+## items.\*.workNumber
 
 Tämä rakenne sisältää teosluettelo-objektin numeroinnin. Kaikilla teosluettelo-objekteilla ei ole numerointia.
 
 ```JSON
 
 ```
-#### items.\*.creationYear
+## items.\*.creationYear
 
 Tämä rakenne sisältää teosluettelo-objektin luomisajan. Kaikilla teosluettelo-objekteilla ei ole luomisaikaa.
 
 ```JSON
 
 ```
-#### items.\*.mediumOfPerformance
+## items.\*.mediumOfPerformance
 
 Tämä rakenne sisältää teosluettelo-objektin esityskokoonpanon. Kaikilla teosluettelo-objekteilla ei ole esityskokoonpano.
 
 ```JSON
 
 ```
-#### items.\*.genre
+## items.\*.genre
 
 Tämä rakenne sisältää teosluettelo-objektin muodon tai lajityypin. Kaikilla teosluettelo-objekteilla ei ole muotoa tai lajityyppiä.
 
 ```JSON
 
 ```
-#### items.\*.sources
+## items.\*.sources
 
 Tämä rakenne sisältää teosluettelo-objektin lähteet. Kaikilla teosluettelo-objekteilla ei ole lähteitä.
 
