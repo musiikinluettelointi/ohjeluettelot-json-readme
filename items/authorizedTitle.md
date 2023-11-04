@@ -138,3 +138,8 @@ Tämä rakenne sisältää nimekkeen lähteet.
   }
 ]
 ```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `reference` | aina | string | Lähteen lähdeviite. | |
+| `id` | aina | string | Lähteen tunniste teosluettelossa. | source-{uuid} |
