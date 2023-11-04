@@ -16,8 +16,6 @@ Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen. Kaikil
 
 ## items.\*.authorizedTitle.language
 
-`object`
-
 Tämä rakenne sisältää nimekkeen kielen.
 
 ```JSON
@@ -39,8 +37,6 @@ Tämä rakenne sisältää nimekkeen kielen.
 
 ### items.\*.authorizedTitle.language.label
 
-`array`
-
 Tämä rakenne sisältää kielen otsikon kieliversiot.
 
 ```JSON
@@ -58,8 +54,6 @@ Tämä rakenne sisältää kielen otsikon kieliversiot.
 | `literal` | aina | array | Kielen otsikko. | |
 
 ## items.\*.authorizedTitle.alphabet
-
-`object`
 
 Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu kyrillisestä merkistöstä latinalaiselle merkistölle translitteroiduille nimekkeille, mikäli se on saatavilla.
 
