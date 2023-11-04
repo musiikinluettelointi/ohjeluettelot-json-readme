@@ -26,7 +26,7 @@ Dokumentti sisältää metatiedot rakenteessa `meta` ja teosluettelo-objektit ra
 | [`meta`](#meta) | aina | object | Sisältää dokumentin metatiedot |
 | [`items`](#items) | aina  | array | Sisältää teosluettelo-objektit |
 
-### meta
+## meta
 
 `object`
 
@@ -54,7 +54,7 @@ Tämä rakenne sisältää dokumentin metatiedot.
 | [`composer`](#metacomposer) | aina | object | Säveltäjän tiedot |  |
 | [`apiVersion`](#metaapiversion) | aina | string |  Dokumentin tuottanut rajapinta |  |
 
-#### meta.createdBy
+## meta.createdBy
 
 `string`
 
@@ -64,7 +64,7 @@ Dokumentin tuottaja.
 "createdBy": "info@musiikinluettelointi.fi"
 ```
 
-#### meta.createdAt
+## meta.createdAt
 
 `string`
 
@@ -74,7 +74,7 @@ Dokumentin luomisaika.
 "createdAt": "2023-10-31T16:54:50.265847Z"
 ```
 
-#### meta.license
+## meta.license
 
 `object`
 
@@ -92,7 +92,7 @@ Tämä rakenne sisältää dokumentin käyttöehdot.
 | [`name`](#metalicensename) | aina | string |  Dokumentin lisenssi |  |
 | [`url`](#metalicenseurl) | aina | string |  Lisenssin osoite | url |
 
-#### meta.license.name
+### meta.license.name
 
 `string`
 
@@ -102,7 +102,7 @@ Dokumentin lisenssi.
 "name": "CC0 1.0 Universal"
 ```
 
-#### meta.license.url
+### meta.license.url
 
 `string`
 
@@ -111,7 +111,7 @@ Lisenssin osoite.
 ```JSON
 "url": "http://creativecommons.org/publicdomain/zero/1.0"
 ```
-#### meta.composer
+## meta.composer
 
 `object`
 
