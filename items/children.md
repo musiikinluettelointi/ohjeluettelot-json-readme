@@ -1,7 +1,6 @@
 # items.\*.children
 
-`array`
-
+Teosluettelo-objektin poikaset.
 
 ```JSON
 "children": [

@@ -1,7 +1,5 @@
 # items.\*.id
 
-`string`
-
 Teosluettelo-objektin tunniste teosluettelossa.
 
 ```JSON

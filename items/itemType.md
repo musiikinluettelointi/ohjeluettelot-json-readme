@@ -2,8 +2,6 @@
 
 Teosluettelo-objektin tyyppi.
 
-`string`
-
 ```JSON
 "itemType": "work"
 
