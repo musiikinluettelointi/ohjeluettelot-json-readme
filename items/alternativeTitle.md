@@ -106,53 +106,36 @@
       "literal": "venäjä"
     }
   ]
-},
+}
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`code`](#itemsalternativetitlelanguagecode) | aina | string | Kielen koodi. | ISO 639-2 |
-| [`label`](#itemsalternativetitlelanguagelabel) | aina | array | Kielen otsikko | |
+| `code` | aina | string | Kielen koodi. | ISO 639-2 |
+| `label` | aina | array | Tämä rakenne sisältää kielen otsikon kieliversiot. |
 
 
-### items.\*.alternativeTitle.\*.language.label
 
-| Tyyppi | Kuvaus |
-| --- | --- |
-| array | Tämä rakenne sisältää kielen otsikon kieliversiot.|
-
-
-### items.\*.alternativeTitle.\*.language.label.\*
+## items.\*.alternativeTitle.\*.language.label.\*
 
 | Tyyppi | Kuvaus |
 | --- | --- |
 | object | Tämä rakenne sisältää kielen otsikon kieliversion.|
 
 
-
+```JSON
+  "label": [
+    {
+      "locale": "fi",
+      "literal": "venäjä"
+    }
+  ]
+```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`locale`](#itemsalternativetitlelanguagelabellocale) | aina | string | Kielen otsikon kielikoodi | ISO 639-2 |
-| [`literal`](#itemsalternativetitlelanguagelabelliteral) | aina | array | Kielen otsikko | |
-
-### items.\*.alternativeTitle.\*.language.label.\*.locale
-
-| Tyyppi | Kuvaus |
-| --- | --- |
-| string | Kielen otsikon kielikoodi.|
-
-
-
-### items.\*.alternativeTitle.\*.language.label.\*.literal
-
-| Tyyppi | Kuvaus |
-| --- | --- |
-| string | Kielen otsikko.|
-
-```JSON
-
-```
+| `locale` | aina | string | Kielen otsikon kielikoodi | ISO 639-2 |
+| `literal` | aina | array | Kielen otsikko | |
 
 ## items.\*.alternativeTitle.\*.alphabet
 
