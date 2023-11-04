@@ -2,21 +2,6 @@
 
 Tämä rakenne sisältää säveltäjän tiedot.
 
-```JSON
-"composer": {
-  "name": "Pingoud, Ernest, 1887-1942",
-  "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8",
-  "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455",
-  "url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud",
-  "introduction": [
-
-  ],
-  "workCategories": [
-
-  ]
-}
-```
-
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `name` | aina | string | Säveltäjän nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktorisoituja nimenmuotoja.  |  |
@@ -197,3 +182,5 @@ Teoskategorian otsikko.
 ```JSON
 "literal": "Opusnumeroidut teokset"
 ```
+
+## Esimerkki
