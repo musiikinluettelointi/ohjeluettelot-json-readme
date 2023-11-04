@@ -2120,8 +2120,8 @@ Tämä rakenne sisältää luomisajan vuosiluvun.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`label`](#itemscreationyearyearsyear) | aina | integer | Luomisajan vuosiluku |  |
-| [`years`](#itemscreationyearyearsyearisuncertain) | joskus | boolean | Luomisajan vuosiluku epävarma | |
+| [`year`](#itemscreationyearyearsyear) | aina | integer | Luomisajan vuosiluku |  |
+| [`yearIsUncertain`](#itemscreationyearyearsyearisuncertain) | joskus | boolean | Luomisajan vuosiluku epävarma | |
 
 
 ### items.\*.creationYear.\*.years.\*.year
