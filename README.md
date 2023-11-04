@@ -24,6 +24,8 @@ To do
 
 ### meta
 
+`object`
+
 Tämä rakenne sisältää dokumentin metatiedot.
 
 ```JSON
@@ -50,6 +52,8 @@ Tämä rakenne sisältää dokumentin metatiedot.
 
 #### meta.createdBy
 
+`string` `email`
+
 Dokumentin tuottaja.
 
 ```JSON
@@ -57,6 +61,8 @@ Dokumentin tuottaja.
 ```
 
 #### meta.createdAt
+
+`string` `ISO 8601`
 
 Dokumentin luomisaika.
 
@@ -66,22 +72,44 @@ Dokumentin luomisaika.
 
 #### meta.license
 
+`object`
+
 Tämä rakenne sisältää dokumentin käyttöehdot.
 
 ```JSON
 "license": {
-  "name": "CC0 1.0 Universal",
-  "url": "http://creativecommons.org/publicdomain/zero/1.0"
+  "name": ,
+  "url": 
 },
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `name` | aina | string |  Dokumentin lisenssi |  |
-| `url` | aina | string |  Lisenssin osoite | url |
+| [`name`](#metalicensename) | aina | string |  Dokumentin lisenssi |  |
+| [`url`](#metalicenseurl) | aina | string |  Lisenssin osoite | url |
 
+#### meta.license.name
 
+`string`
+
+Dokumentin lisenssi.
+
+```JSON
+"name": "CC0 1.0 Universal"
+```
+
+#### meta.license.url
+
+`string` `url` 
+
+Lisenssin osoite.
+
+```JSON
+"url": "http://creativecommons.org/publicdomain/zero/1.0"
+```
 #### meta.composer
+
+`object`
 
 Tämä rakenne sisältää säveltäjän tiedot.
 
@@ -111,6 +139,8 @@ Tämä rakenne sisältää säveltäjän tiedot.
 
 #### meta.composer.name
 
+`string`
+
 Säveltäjän nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktorisoituja nimenmuotoja.
 
 ```JSON
@@ -118,6 +148,8 @@ Säveltäjän nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktoris
 ```
 
 #### meta.composer.id
+
+`string` `name-{uuid}`
 
 Säveltäjän tunniste teosluettelossa.
 
@@ -127,6 +159,8 @@ Säveltäjän tunniste teosluettelossa.
 
 #### meta.composer.kantoUri
 
+`string` `uri`
+
 Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 
 ```JSON
@@ -135,6 +169,8 @@ Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 
 #### meta.composer.url
 
+`string`
+
 Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 
 ```JSON
@@ -142,6 +178,8 @@ Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 ```
 
 #### meta.composer.introduction.\*
+
+`array`
 
 Tämä rakenne sisältää teoksen esipuheen. Kaikille säveltäjille ei ole laadittu esipuhetta.
 
@@ -157,12 +195,54 @@ Tämä rakenne sisältää teoksen esipuheen. Kaikille säveltäjille ei ole laa
 ```
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `locale` | aina | string |  Esipuheen kieli  | ISO 639-1  |
+| `locale` | aina | string |  Esipuheen kielikoodi  | ISO 639-1  |
 | `text` | aina | string | Teosluettelon esipuhe | |
 | `author` | joskus | string | Esipuheen kirjoittaja | |
 | `url` | joskus | string |  Esipuheen osoite  | url |
 
+#### meta.composer.introduction.\*.locale
+
+`string` `ISO 639-1`
+
+Esipuheen kielikoodi.
+
+```JSON
+"locale": "fi"
+```
+
+#### meta.composer.introduction.\*.text
+
+`string`
+
+Teosluettelon esipuhe.
+
+```JSON
+"text": "Opusnumerot\nSeuraavia opusnumeroita ei ole käytetty Pingoudin teosten yhteydessä: opus 1, opus 2, opus 3, opus 16, opus 19, opus 24, opus 25, opus 26 (Poroila 2014).\nPseudonyymit\nTaidemusiikin lisäksi Pingoud sävelsi iskelmiä salanimillä \"Lauri Ilari\" ja \"Jonny Loke\" (Poroila 2014). Nämä salanimet on tässä tietokannassa merkitty \"muiksi tekijöiksi\" tekijäroolilla \"säveltäjä\".\n"
+```
+
+#### meta.composer.introduction.\*.author
+
+`string`
+
+Esipuheen kirjoittaja.
+
+```JSON
+"author": "Jaska Järvilehto"
+```
+
+#### meta.composer.introduction.\*.url
+
+`string` `url`
+
+Esipuheen osoite.
+
+```JSON
+"url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud/esipuhe"
+```
+
 #### meta.composer.workCategories.\*
+
+`array`
 
 Tämä rakenne sisältää säveltäjälle määritellyt teoskategoriat. Kaikille säveltäjille ei ole määritelty teoskategorioita.
 
