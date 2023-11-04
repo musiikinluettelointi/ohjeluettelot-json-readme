@@ -11,5 +11,5 @@ Tämä rakenne sisältää dokumentin käyttöehdot.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `name` | aina | string |  Dokumentin lisenssi |  |
-| `url` | aina | string |  Lisenssin osoite | url |
+| `name` | aina | string |  Dokumentin lisenssi. |  |
+| `url` | aina | string |  Lisenssin osoite. | url |

@@ -1,7 +1,5 @@
 # meta.createdAt
 
-`string`
-
 Dokumentin luomisaika.
 
 ```JSON

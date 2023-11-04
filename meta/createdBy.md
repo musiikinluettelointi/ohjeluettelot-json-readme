@@ -1,7 +1,5 @@
 # meta.createdBy
 
-`string`
-
 Dokumentin tuottaja.
 
 ```JSON

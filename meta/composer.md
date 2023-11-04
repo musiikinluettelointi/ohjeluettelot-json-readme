@@ -1,7 +1,5 @@
 # meta.composer
 
-`object`
-
 Tämä rakenne sisältää säveltäjän tiedot.
 
 ```JSON
@@ -16,7 +14,7 @@ Tämä rakenne sisältää säveltäjän tiedot.
   "workCategories": [
 
   ]
-},
+}
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
