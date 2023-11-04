@@ -48,11 +48,11 @@ Tämä rakenne sisältää dokumentin metatiedot.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`createdBy`](#metacreatedby) | aina | string |  Dokumentin tuottaja | email |
-| [`createdAt`](#metacreatedat) | aina | string |  Dokumentin luomisaika | ISO 8601 |
-| [`license`](#metalicense) | aina | object |  Dokumentin käyttöehdot |  |
-| [`composer`](#metacomposer) | aina | object | Säveltäjän tiedot |  |
-| [`apiVersion`](#metaapiversion) | aina | string |  Dokumentin tuottanut rajapinta |  |
+| [`createdBy`](meta/createdBy.md) | aina | string |  Dokumentin tuottaja | email |
+| [`createdAt`](meta/createdAt.md) | aina | string |  Dokumentin luomisaika | ISO 8601 |
+| [`license`](meta/license.md) | aina | object |  Dokumentin käyttöehdot |  |
+| [`composer`](meta/composer.md) | aina | object | Säveltäjän tiedot |  |
+| [`apiVersion`](meta/apiVersion.md) | aina | string |  Dokumentin tuottanut rajapinta |  |
 
 ## meta.createdBy
 
