@@ -1,7 +1,5 @@
 # items.\*.authorizedTitleHistory
 
-`array`
-
 Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen muutoshistorian, mikäli teosluettelo-objektilla on auktorisoitu nimeke.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
