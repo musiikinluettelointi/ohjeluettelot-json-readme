@@ -842,7 +842,7 @@ Huomautus nimekkeestä.
  "note": "Poroila 2013",
 ```
 
-#### items.\*.alternativeTitle.*.publications.*
+#### items.\*.alternativeTitle.\*.publications.*
 
 Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 
@@ -860,7 +860,7 @@ Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 | [`reference`](#itemsalternativetitlepublicationsreference) | aina | string | Julkaisun lähdeviite | |
 | [`id`](#itemsalternativetitlepublicationsid) | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
 
-#### items.\*.alternativeTitle.*.publications.*.reference
+#### items.\*.alternativeTitle.\*.publications.*.reference
 
 Julkaisun lähdeviite.
 
@@ -868,7 +868,7 @@ Julkaisun lähdeviite.
 "reference": "",
 ```
 
-#### items.\*.alternativeTitle.*.publications.*.id
+#### items.\*.alternativeTitle.\*.publications.*.id
 
 Julkaisun tunniste teosluettelossa.
 
@@ -876,7 +876,7 @@ Julkaisun tunniste teosluettelossa.
 "id": ""
 ```
 
-#### items.\*.alternativeTitle.*.sources.*
+#### items.\*.alternativeTitle.\*.sources.*
 
 Tämä rakenne sisältää nimekkeen lähteet.
 
@@ -894,7 +894,7 @@ Tämä rakenne sisältää nimekkeen lähteet.
 | [`reference`](#itemsalternativetitlesourcesreference) | aina | string | Lähteen lähdeviite | |
 | [`id`](#itemsalternativetitlesourcesid) | aina | string | Lähteen tunniste teosluettelossa | source-{uuid} |
 
-#### items.\*.alternativeTitle.*.sources.*.reference
+#### items.\*.alternativeTitle.\*.sources.*.reference
 
 Lähteen lähdeviite.
 
@@ -902,7 +902,7 @@ Lähteen lähdeviite.
 "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
 ```
 
-#### items.\*.alternativeTitle.*.sources.*.id
+#### items.\*.alternativeTitle.\*.sources.*.id
 
 Lähteen tunniste teosluettelossa.
 
