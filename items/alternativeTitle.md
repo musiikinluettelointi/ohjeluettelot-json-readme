@@ -62,14 +62,14 @@
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`title`](#itemsalternativetitletitle) | aina | string | Auktorisoitu nimeke |  |
-| [`offset`](#itemsalternativetitleoffset) | joskus | integer | Ohitettavat merkit | |
-| [`language`](#itemsalternativetitlelanguage) | joskus | object | Nimekkeen kieli | |
-| [`alphabet`](#itemsalternativetitlealphabet) | joskus | object | Nimekkeen merkistö |  |
-| [`transliteration`](#itemsalternativetitletransliteration) | joskus | object | Nimekkeen translitterointi | `iso9` \| `sfs4900` |
-| [`note`](#itemsalternativetitlenote) | joskus | string | Huomautus nimekkeestä | |
-| [`publications`](#itemsalternativetitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut | |
-| [`sources`](#itemsalternativetitlesources) | joskus | array | Nimekkeen lähteet | |
+| [`title`](#itemsalternativetitletitle) | aina | string | Auktorisoitu nimeke. |  |
+| [`offset`](#itemsalternativetitleoffset) | joskus | integer | Ohitettavat merkit. | |
+| [`language`](#itemsalternativetitlelanguage) | joskus | object | Nimekkeen kieli. | |
+| [`alphabet`](#itemsalternativetitlealphabet) | joskus | object | Nimekkeen merkistö. |  |
+| [`transliteration`](#itemsalternativetitletransliteration) | joskus | object | Nimekkeen translitterointi. | `iso9` \| `sfs4900` |
+| [`note`](#itemsalternativetitlenote) | joskus | string | Huomautus nimekkeestä. | |
+| [`publications`](#itemsalternativetitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut. | |
+| [`sources`](#itemsalternativetitlesources) | joskus | array | Nimekkeen lähteet. | |
 
 ## items.\*.alternativeTitle.\*.title
 
@@ -143,39 +143,20 @@
 
 ```JSON
 "alphabet": {
-  "code": ,
+  "code": "latin",
   "label": [
-
+    {
+      "locale": "fi",
+      "literal": "latinalainen"
+    }
   ]
 },
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`code`](#itemsalternativetitlealphabetcode) | aina | string | Merkistön koodi | `latin` \| `cyrillic` |
+| `code` | aina | string | Merkistön koodi | `latin` \| `cyrillic` |
 | [`label`](#itemsalternativetitlealphabetlabel) | aina | array | Merkistön otsikko | |
-
-### items.\*.alternativeTitle.\*.alphabet.code
-
-| Tyyppi | Kuvaus |
-| --- | --- |
-| string | Merkistön koodi.|
-
-```JSON
-"code": "latin"
-```
-
-### items.\*.alternativeTitle.\*.alphabet.label
-
-| Tyyppi | Kuvaus |
-| --- | --- |
-| array | Tämä rakenne sisältää merkistön otsikon kieliversiot.|
-
-```JSON
-"label": [
-
-]
-```
 
 ### items.\*.alternativeTitle.\*.alphabet.label.\*
 
@@ -185,34 +166,14 @@
 
 ```JSON
 {
-  "locale": ,
-  "literal":
+  "locale": "fi",
+  "literal": "latinalainen"
 }
 ```
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`locale`](#itemsalternativetitlealphabetlabellocale) | aina | string | Merkistön otsikon kielikoodi | ISO 639-2 |
-| [`literal`](#itemsalternativetitlealphabetlabelliteral) | aina | array | Merkistön otsikko | |
-
-### items.\*.alternativeTitle.\*.alphabet.label.\*.locale
-
-| Tyyppi | Kuvaus |
-| --- | --- |
-| string | Merkistön otsikon kielikoodi. |
-
-```JSON
-"locale": "fi"
-```
-
-### items.\*.alternativeTitle.\*.alphabet.label.\*.literal
-
-| Tyyppi | Kuvaus |
-| --- | --- |
-| string | Merkistön otsikko. |
-
-```JSON
-"literal": "latinalainen"
-```
+| `locale` | aina | string | Merkistön otsikon kielikoodi. | ISO 639-2 |
+| `literal` | aina | array | Merkistön otsikko. | |
 
 ## items.\*.alternativeTitle.\*.transliteration
 
