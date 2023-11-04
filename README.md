@@ -28,20 +28,6 @@ Dokumentti sisältää metatiedot rakenteessa `meta` ja teosluettelo-objektit ra
 
 Tämä rakenne sisältää dokumentin metatiedot.
 
-```JSON
- "meta": {
-    "createdBy": ,
-    "createdAt": ,
-    "license": {
-
-    },
-    "composer": {
-
-    },
-    "apiVersion":
-  },
-```
-
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | [`createdBy`](meta/createdBy.md) | aina | string |  Dokumentin tuottaja | email |
@@ -55,7 +41,7 @@ Tämä rakenne sisältää dokumentin metatiedot.
 
 Tämä rakenne sisältää teosluettelon teosluettelo-objektit.
 
-## Teosluettelo-objekti
+### Teosluettelo-objekti
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
