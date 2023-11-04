@@ -655,7 +655,7 @@ Tämä rakenne sisältää auktorisoidun nimekkeen. Rakenne on identtinen rakent
 
 #### items.\*.alternativeTitle.*
 
-Tämä rakenne sisältää vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nimekkeen eri kieliversiot, lempinimet ja nimekkeen viittausmuodot.
+Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nimekkeen eri kieliversiot, lempinimet ja nimekkeen viittausmuodot.
 
 ```JSON
 "alternativeTitle": {
@@ -682,14 +682,14 @@ Tämä rakenne sisältää vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat au
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`title`](#itemsauthorizedtitletitle) | aina | string | Auktorisoitu nimeke |  |
-| [`offset`](#itemsauthorizedtitleoffset) | joskus | integer | Ohitettavat merkit | |
-| [`language`](#itemsauthorizedtitlelanguage) | joskus | object | Nimekkeen kieli | |
-| [`alphabet`](#itemsauthorizedtitlealphabet) | joskus | object | Nimekkeen merkistö |  |
-| [`transliteration`](#itemsauthorizedtitletransliteration) | joskus | object | Nimekkeen translitterointi | `iso9` \| `sfs4900` |
-| [`note`](#itemsauthorizedtitlenote) | joskus | string | Huomautus nimekkeestä | |
-| [`publications`](#itemsauthorizedtitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut | |
-| [`sources`](#itemsauthorizedtitlesources) | joskus | array | Nimekkeen lähteet | |
+| [`title`](#itemsalternativetitletitle) | aina | string | Auktorisoitu nimeke |  |
+| [`offset`](#itemsalternativetitleoffset) | joskus | integer | Ohitettavat merkit | |
+| [`language`](#itemsalternativetitlelanguage) | joskus | object | Nimekkeen kieli | |
+| [`alphabet`](#itemsalternativetitlealphabet) | joskus | object | Nimekkeen merkistö |  |
+| [`transliteration`](#itemsalternativetitletransliteration) | joskus | object | Nimekkeen translitterointi | `iso9` \| `sfs4900` |
+| [`note`](#itemsalternativetitlenote) | joskus | string | Huomautus nimekkeestä | |
+| [`publications`](#itemsalternativetitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut | |
+| [`sources`](#itemsalternativetitlesources) | joskus | array | Nimekkeen lähteet | |
 
 #### items.\*.alternativeTitle.*.title
 
@@ -722,8 +722,8 @@ Tämä rakenne sisältää nimekkeen kielen.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`code`](#itemsauthorizedtitlelanguagecode) | aina | string | Kielen koodi | ISO 639-2 |
-| [`label`](#itemsauthorizedtitlelanguagelabel) | aina | array | Kielen otsikko | |
+| [`code`](#itemsalternativetitlelanguagecode) | aina | string | Kielen koodi | ISO 639-2 |
+| [`label`](#itemsalternativetitlelanguagelabel) | aina | array | Kielen otsikko | |
 
 #### items.\*.alternativeTitle.*.language.code
 
@@ -748,8 +748,8 @@ Tämä rakenne sisältää kielen otsikon.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`locale`](#itemsauthorizedtitlelanguagelabellocale) | aina | string | Kielen otsikon kielikoodi | ISO 639-2 |
-| [`literal`](#itemsauthorizedtitlelanguagelabelliteral) | aina | array | Kielen otsikko | |
+| [`locale`](#itemsalternativetitlelanguagelabellocale) | aina | string | Kielen otsikon kielikoodi | ISO 639-2 |
+| [`literal`](#itemsalternativetitlelanguagelabelliteral) | aina | array | Kielen otsikko | |
 
 #### items.\*.alternativeTitle.*.language.label.*.locale
 
@@ -780,8 +780,8 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä 
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`code`](#itemsauthorizedtitlealphabetcode) | aina | string | Merkistön koodi | `latin` \| `cyrillic` |
-| [`label`](#itemsauthorizedtitlealphabetlabel) | aina | array | Merkistön otsikko | |
+| [`code`](#itemsalternativetitlealphabetcode) | aina | string | Merkistön koodi | `latin` \| `cyrillic` |
+| [`label`](#itemsalternativetitlealphabetlabel) | aina | array | Merkistön otsikko | |
 
 #### items.\*.alternativeTitle.*.alphabet.code
 
@@ -805,8 +805,8 @@ Tämä rakenne sisältää merkistön otsikon.
 ```
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`locale`](#itemsauthorizedtitlealphabetlabellocale) | aina | string | Merkistön otsikon kielikoodi | ISO 639-2 |
-| [`literal`](#itemsauthorizedtitlealphabetlabelliteral) | aina | array | Merkistön otsikko | |
+| [`locale`](#itemsalternativetitlealphabetlabellocale) | aina | string | Merkistön otsikon kielikoodi | ISO 639-2 |
+| [`literal`](#itemsalternativetitlealphabetlabelliteral) | aina | array | Merkistön otsikko | |
 
 #### items.\*.alternativeTitle.*.alphabet.label.*.locale
 
@@ -857,8 +857,8 @@ Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`reference`](#itemsauthorizedtitlepublicationsreference) | aina | string | Julkaisun lähdeviite | |
-| [`id`](#itemsauthorizedtitlepublicationsid) | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
+| [`reference`](#itemsalternativetitlepublicationsreference) | aina | string | Julkaisun lähdeviite | |
+| [`id`](#itemsalternativetitlepublicationsid) | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
 
 #### items.\*.alternativeTitle.*.publications.*.reference
 
@@ -891,8 +891,8 @@ Tämä rakenne sisältää nimekkeen lähteet.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`reference`](#itemsauthorizedtitlesourcesreference) | aina | string | Lähteen lähdeviite | |
-| [`id`](#itemsauthorizedtitlesourcesid) | aina | string | Lähteen tunniste teosluettelossa | source-{uuid} |
+| [`reference`](#itemsalternativetitlesourcesreference) | aina | string | Lähteen lähdeviite | |
+| [`id`](#itemsalternativetitlesourcesid) | aina | string | Lähteen tunniste teosluettelossa | source-{uuid} |
 
 #### items.\*.alternativeTitle.*.sources.*.reference
 
