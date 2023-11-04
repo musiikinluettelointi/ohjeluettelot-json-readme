@@ -20,24 +20,15 @@ Tämä rakenne sisältää teoksen esipuheen kieliversiot. Kaikille säveltäjil
 
 ```JSON
 "introduction": [
-
+  {
+    "locale": "fi",
+    "text": "Opusnumerot\nSeuraavia opusnumeroita ei ole käytetty Pingoudin teosten yhteydessä: opus 1, opus 2, opus 3, opus 16, opus 19, opus 24, opus 25, opus 26 (Poroila 2014).\nPseudonyymit\nTaidemusiikin lisäksi Pingoud sävelsi iskelmiä salanimillä \"Lauri Ilari\" ja \"Jonny Loke\" (Poroila 2014). Nämä salanimet on tässä tietokannassa merkitty \"muiksi tekijöiksi\" tekijäroolilla \"säveltäjä\".\n",
+    "author": "Jaska Järvilehto",
+    "url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud/esipuhe",
+  }
 ]
 ```
 
-### meta.composer.introduction.\*
-
-`object`
-
-Tämä rakenne sisältää teoksen esipuheen kieliversion.
-
-```JSON
-{
-  "locale": ,
-  "text": ,
-  "author": ,
-  "url":
-}
-```
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `locale` | aina | string |  Esipuheen kielikoodi  | ISO 639-1  |
@@ -45,45 +36,6 @@ Tämä rakenne sisältää teoksen esipuheen kieliversion.
 | `author` | joskus | string | Esipuheen kirjoittaja | |
 | `url` | joskus | string |  Esipuheen osoite  | url |
 
-#### meta.composer.introduction.\*.locale
-
-`string`
-
-Esipuheen kielikoodi.
-
-```JSON
-"locale": "fi"
-```
-
-#### meta.composer.introduction.\*.text
-
-`string`
-
-Teosluettelon esipuhe.
-
-```JSON
-"text": "Opusnumerot\nSeuraavia opusnumeroita ei ole käytetty Pingoudin teosten yhteydessä: opus 1, opus 2, opus 3, opus 16, opus 19, opus 24, opus 25, opus 26 (Poroila 2014).\nPseudonyymit\nTaidemusiikin lisäksi Pingoud sävelsi iskelmiä salanimillä \"Lauri Ilari\" ja \"Jonny Loke\" (Poroila 2014). Nämä salanimet on tässä tietokannassa merkitty \"muiksi tekijöiksi\" tekijäroolilla \"säveltäjä\".\n"
-```
-
-#### meta.composer.introduction.\*.author
-
-`string`
-
-Esipuheen kirjoittaja.
-
-```JSON
-"author": "Jaska Järvilehto"
-```
-
-#### meta.composer.introduction.\*.url
-
-`string`
-
-Esipuheen osoite.
-
-```JSON
-"url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud/esipuhe"
-```
 
 ## meta.composer.workCategories
 
@@ -93,94 +45,77 @@ Tämä rakenne sisältää säveltäjälle määritellyt teoskategoriat. Kaikill
 
 ```JSON
 "workCategories": [
-
+  {
+    "code": "withOpusNumber",
+    "label": [
+      {
+        "locale": "fi",
+        "literal": "Opusnumeroidut teokset"
+      }
+    ]
+  }
 ]
-```
-
-### meta.composer.workCategories.\*
-
-`object`
-
-Tämä rakenne sisältää säveltäjälle määritellyn teoskategorian.
-
-```JSON
-{
-  "code": "withOpusNumber",
-  "label": [
-
-  ]
-}
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`code`](#metacomposerworkcategoriescode)   | aina | string | Teoskategorian koodi  |   |
+| `code`  | aina | string | Teoskategorian koodi  |   |
 | [`label`](#metacomposerworkcategorieslabel)  | aina | array | Teoskategorian otsikko | |
 
-#### meta.composer.workCategories.\*.code
 
-`string`
-
-Teoskategorian koodi
-
-```JSON
-"code": "withOpusNumber"
-```
-
-#### meta.composer.workCategories.\*.label
-
-`array`
+### meta.composer.workCategories.\*.label
 
 Tämä rakenne sisältää teoskategorian otsikon kieliversiot.
 
 ```JSON
-{
 "label": [
-
+  {
+    "locale": "fi",
+    "literal": "Opusnumeroidut teokset"
+  }
 ]
-}
 ```
 
-#### meta.composer.workCategories.\*.label.\*
-
-> [!WARNING]
+> [!INFO]
 > Avain `literal` oli aiemmin `text`.
 
-`object`
-
-Tämä rakenne sisältää teoskategorian otsikon kieliversion.
-
-```JSON
-{
-  "locale": ,
-  "literal":
-}
-```
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`locale`](#metacomposerworkcategorieslabellocale) | aina | string |  Teoskategorian otsikon kielikoodi | ISO 639-1  |
-| [`literal`](#metacomposerworkcategorieslabelliteral) | aina | string | Teoskategorian otsikko | |
+| `locale` | aina | string |  Teoskategorian otsikon kielikoodi. | ISO 639-1  |
+| `literal` | aina | string | Teoskategorian otsikko. | |
 
-#### meta.composer.workCategories.\*.label.\*.locale
-
-`string`
-
-Teoskategorian otsikon kielikoodi.
-
-```JSON
-"locale": "fi"
-```
-#### meta.composer.workCategories.\*.label.\*.literal
-
-`string`
-
-> [!WARNING]
-> Avain `literal` oli aiemmin `text`.
-
-Teoskategorian otsikko.
-
-```JSON
-"literal": "Opusnumeroidut teokset"
-```
 
 ## Esimerkki
+
+```JSON
+"composer": {
+  "name": "Pingoud, Ernest, 1887-1942",
+  "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8",
+  "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455",
+  "url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud",
+  "introduction": [
+    {
+      "locale": "fi",
+      "text": "Opusnumerot\nSeuraavia opusnumeroita ei ole käytetty Pingoudin teosten yhteydessä: opus 1, opus 2, opus 3, opus 16, opus 19, opus 24, opus 25, opus 26 (Poroila 2014).\nPseudonyymit\nTaidemusiikin lisäksi Pingoud sävelsi iskelmiä salanimillä \"Lauri Ilari\" ja \"Jonny Loke\" (Poroila 2014). Nämä salanimet on tässä tietokannassa merkitty \"muiksi tekijöiksi\" tekijäroolilla \"säveltäjä\".\n",
+      "author": "Jaska Järvilehto",
+      "url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud/esipuhe"
+    }
+  ],
+  "workCategories": [
+    {
+      "code": "withOpusNumber",
+      "label": {
+          "locale": "fi",
+          "literal": "Opusnumeroidut teokset"
+      }
+    },
+    {
+      "code": "withoutOpusNumber",
+      "label": {
+          "locale": "fi",
+          "literal": "Opusnumerottomat teokset"
+      }
+    }
+  ]
+}
+```
