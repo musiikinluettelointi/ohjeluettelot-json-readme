@@ -2,6 +2,17 @@
 
 Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nimekkeen eri kieliversiot, lempinimet ja nimekkeen viittausmuodot.
 
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `title` | aina | string | Vaihtoehtoinen nimeke. |  |
+| `offset` | joskus | integer | Ohitettavat merkit. | |
+| [`language`](#itemsalternativetitlelanguage) | joskus | object | Nimekkeen kieli. | |
+| [`alphabet`](#itemsalternativetitlealphabet) | joskus | object | Nimekkeen merkistö. |  |
+| [`transliteration`](#itemsalternativetitletransliteration) | joskus | object | Nimekkeen translitterointi. | `iso9` \| `sfs4900` |
+| `note` | joskus | string | Huomautus nimekkeestä. | |
+| [`publications`](#itemsalternativetitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut. | |
+| [`sources`](#itemsalternativetitlesources) | joskus | array | Nimekkeen lähteet. | |
+
 
 ## Esimerkki
 
@@ -29,32 +40,6 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 ]
 ```
 
-| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | --- | --- | --- |
-| [`title`](#itemsalternativetitletitle) | aina | string | Vaihtoehtoinen nimeke. |  |
-| [`offset`](#itemsalternativetitleoffset) | joskus | integer | Ohitettavat merkit. | |
-| [`language`](#itemsalternativetitlelanguage) | joskus | object | Nimekkeen kieli. | |
-| [`alphabet`](#itemsalternativetitlealphabet) | joskus | object | Nimekkeen merkistö. |  |
-| [`transliteration`](#itemsalternativetitletransliteration) | joskus | object | Nimekkeen translitterointi. | `iso9` \| `sfs4900` |
-| [`note`](#itemsalternativetitlenote) | joskus | string | Huomautus nimekkeestä. | |
-| [`publications`](#itemsalternativetitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut. | |
-| [`sources`](#itemsalternativetitlesources) | joskus | array | Nimekkeen lähteet. | |
-
-## items.\*.alternativeTitle.\*.title
-
-Vaihtoehtoinen nimeke.
-
-```JSON
-"title": "Kotimaan kaikuja"
-```
-
-## items.\*.alternativeTitle.\*.offset
-
- Ohitettavat merkit.
-
-```JSON
-"offset": 3
-```
 
 ## items.\*.alternativeTitle.\*.language
 
@@ -75,7 +60,7 @@ Tämä rakenne sisältää nimekkeen kielen.
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `code` | aina | string | Kielen koodi. | ISO 639-2 |
-| [`label`](#itemsalternativetitlelanguagelabel) | aina | array | Tämä rakenne sisältää kielen otsikon kieliversiot. |
+| [`label`](#itemsalternativetitlelanguagelabel) | aina | array | Kielen otsikon kieliversiot. | |
 
 ### items.\*.alternativeTitle.\*.language.label
 
@@ -92,12 +77,12 @@ Tämä rakenne sisältää kielen otsikon kieliversiot.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `locale` | aina | string | Kielen otsikon kielikoodi | ISO 639-2 |
-| `literal` | aina | array | Kielen otsikko | |
+| `locale` | aina | string | Kielen otsikon kielikoodi. | ISO 639-2 |
+| `literal` | aina | array | Kielen otsikko. | |
 
 ## items.\*.alternativeTitle.\*.alphabet
 
-Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä kyrillisestä merkistöstä latinalaiselle merkistölle translitteroiduille nimekkeille.
+Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu kyrillisestä merkistöstä latinalaiselle merkistölle translitteroiduille nimekkeille, mikäli se on saatavilla.
 
 ```JSON
 "alphabet": {
@@ -108,34 +93,36 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä 
       "literal": "latinalainen"
     }
   ]
-}
+},
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `code` | aina | string | Merkistön koodi | `latin` \| `cyrillic` |
-| [`label`](#itemsalternativetitlealphabetlabel) | aina | array | Merkistön otsikko | |
+| `code` | aina | string | Merkistön koodi. | `latin` \| `cyrillic` |
+| [`label`](#itemsalternativetitlealphabetlabel) | aina | array | Merkistön otsikon kieliversiot. | |
 
 ### items.\*.alternativeTitle.\*.alphabet.label
 
- Tämä rakenne sisältää merkistön otsikon kieliversiot.
+Tämä rakenne sisältää merkistön otsikon kieliversiot.
 
 ```JSON
-"label": [
-  {
-    "locale": "fi",
-    "literal": "latinalainen"
-  }
-]
+  "label": [
+    {
+      "locale": "fi",
+      "literal": "latinalainen"
+    }
+  ]
 ```
+
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `locale` | aina | string | Merkistön otsikon kielikoodi. | ISO 639-2 |
 | `literal` | aina | array | Merkistön otsikko. | |
 
+
 ## items.\*.alternativeTitle.\*.transliteration
 
-Nimekkeen translitterointi.
+Nimekkeen translitterointi. Tieto on tallennettu kyrillisestä merkistöstä latinalaiselle merkistölle translitteroiduille nimekkeille, mikäli se on saatavilla.
 
 ```JSON
 "transliteration": "sfs4900"
@@ -146,15 +133,6 @@ Nimekkeen translitterointi.
 | `iso9`| Kansainvälinen standardi |
 | `sfs4900`| Kansallinen standardi |
 
-
-## items.\*.alternativeTitle.\*.note
-
- Huomautus nimekkeestä.
-
-```JSON
- "note": "Poroila 2013"
-```
-
 ## items.\*.alternativeTitle.\*.publications
 
 Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
@@ -162,8 +140,8 @@ Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 ```JSON
 "publications": [
   {
-    "reference": ,
-    "id":
+    "reference": "",
+    "id": ""
   }
 ]
 ```
