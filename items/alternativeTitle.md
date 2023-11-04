@@ -78,7 +78,7 @@
 | string | Vaihtoehtoinen nimeke. |
 
 ```JSON
-"title": ""
+"title": "Kotimaan kaikuja"
 ```
 
 ### items.\*.alternativeTitle.\*.offset
