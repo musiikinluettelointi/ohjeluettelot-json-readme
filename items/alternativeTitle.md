@@ -71,7 +71,7 @@
 | [`publications`](#itemsalternativetitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut | |
 | [`sources`](#itemsalternativetitlesources) | joskus | array | Nimekkeen lähteet | |
 
-### items.\*.alternativeTitle.\*.title
+## items.\*.alternativeTitle.\*.title
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -81,7 +81,7 @@
 "title": "Kotimaan kaikuja"
 ```
 
-### items.\*.alternativeTitle.\*.offset
+## items.\*.alternativeTitle.\*.offset
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -91,7 +91,7 @@
 "offset": 3
 ```
 
-### items.\*.alternativeTitle.\*.language
+## items.\*.alternativeTitle.\*.language
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -111,7 +111,7 @@
 | [`code`](#itemsalternativetitlelanguagecode) | aina | string | Kielen koodi | ISO 639-2 |
 | [`label`](#itemsalternativetitlelanguagelabel) | aina | array | Kielen otsikko | |
 
-#### items.\*.alternativeTitle.\*.language.code
+### items.\*.alternativeTitle.\*.language.code
 
 
 | Tyyppi | Kuvaus |
@@ -122,7 +122,7 @@
 "code": "rus"
 ```
 
-#### items.\*.alternativeTitle.\*.language.label
+### items.\*.alternativeTitle.\*.language.label
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -134,7 +134,7 @@
 ]
 ```
 
-#### items.\*.alternativeTitle.\*.language.label.\*
+### items.\*.alternativeTitle.\*.language.label.\*
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -153,7 +153,7 @@
 | [`locale`](#itemsalternativetitlelanguagelabellocale) | aina | string | Kielen otsikon kielikoodi | ISO 639-2 |
 | [`literal`](#itemsalternativetitlelanguagelabelliteral) | aina | array | Kielen otsikko | |
 
-#### items.\*.alternativeTitle.\*.language.label.\*.locale
+### items.\*.alternativeTitle.\*.language.label.\*.locale
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -162,7 +162,8 @@
 ```JSON
 "locale": "fi"
 ```
-#### items.\*.alternativeTitle.\*.language.label.\*.literal
+
+### items.\*.alternativeTitle.\*.language.label.\*.literal
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -172,7 +173,7 @@
 "literal": "venäjä"
 ```
 
-### items.\*.alternativeTitle.\*.alphabet
+## items.\*.alternativeTitle.\*.alphabet
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -192,7 +193,7 @@
 | [`code`](#itemsalternativetitlealphabetcode) | aina | string | Merkistön koodi | `latin` \| `cyrillic` |
 | [`label`](#itemsalternativetitlealphabetlabel) | aina | array | Merkistön otsikko | |
 
-#### items.\*.alternativeTitle.\*.alphabet.code
+### items.\*.alternativeTitle.\*.alphabet.code
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -202,7 +203,7 @@
 "code": "latin"
 ```
 
-#### items.\*.alternativeTitle.\*.alphabet.label
+### items.\*.alternativeTitle.\*.alphabet.label
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -214,7 +215,7 @@
 ]
 ```
 
-#### items.\*.alternativeTitle.\*.alphabet.label.\*
+### items.\*.alternativeTitle.\*.alphabet.label.\*
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -231,7 +232,7 @@
 | [`locale`](#itemsalternativetitlealphabetlabellocale) | aina | string | Merkistön otsikon kielikoodi | ISO 639-2 |
 | [`literal`](#itemsalternativetitlealphabetlabelliteral) | aina | array | Merkistön otsikko | |
 
-#### items.\*.alternativeTitle.\*.alphabet.label.\*.locale
+### items.\*.alternativeTitle.\*.alphabet.label.\*.locale
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -241,7 +242,7 @@
 "locale": "fi"
 ```
 
-#### items.\*.alternativeTitle.\*.alphabet.label.\*.literal
+### items.\*.alternativeTitle.\*.alphabet.label.\*.literal
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -251,7 +252,7 @@
 "literal": "latinalainen"
 ```
 
-### items.\*.alternativeTitle.\*.transliteration
+## items.\*.alternativeTitle.\*.transliteration
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -267,7 +268,7 @@
 | `sfs4900`| Kansallinen standardi |
 
 
-### items.\*.alternativeTitle.\*.note
+## items.\*.alternativeTitle.\*.note
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -277,7 +278,7 @@
  "note": "Poroila 2013"
 ```
 
-### items.\*.alternativeTitle.\*.publications
+## items.\*.alternativeTitle.\*.publications
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -289,7 +290,7 @@
 ]
 ```
 
-### items.\*.alternativeTitle.\*.publications.\*
+## items.\*.alternativeTitle.\*.publications.\*
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -307,7 +308,7 @@
 | [`reference`](#itemsalternativetitlepublicationsreference) | aina | string | Julkaisun lähdeviite | |
 | [`id`](#itemsalternativetitlepublicationsid) | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
 
-#### items.\*.alternativeTitle.\*.publications.\*.reference
+### items.\*.alternativeTitle.\*.publications.\*.reference
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -317,7 +318,7 @@
 "reference": ""
 ```
 
-#### items.\*.alternativeTitle.\*.publications.\*.id
+### items.\*.alternativeTitle.\*.publications.\*.id
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -327,7 +328,7 @@
 "id": ""
 ```
 
-### items.\*.alternativeTitle.\*.sources
+## items.\*.alternativeTitle.\*.sources
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -357,7 +358,7 @@
 | [`reference`](#itemsalternativetitlesourcesreference) | aina | string | Lähteen lähdeviite | |
 | [`id`](#itemsalternativetitlesourcesid) | aina | string | Lähteen tunniste teosluettelossa | source-{uuid} |
 
-#### items.\*.alternativeTitle.\*.sources.\*.reference
+### items.\*.alternativeTitle.\*.sources.\*.reference
 
 | Tyyppi | Kuvaus |
 | --- | --- |
@@ -368,7 +369,7 @@
 "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1."
 ```
 
-#### items.\*.alternativeTitle.\*.sources.\*.id
+### items.\*.alternativeTitle.\*.sources.\*.id
 
 | Tyyppi | Kuvaus |
 | --- | --- |
