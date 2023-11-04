@@ -169,7 +169,7 @@ Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 
 #### meta.composer.url
 
-`string`
+`string` `url`
 
 Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 
