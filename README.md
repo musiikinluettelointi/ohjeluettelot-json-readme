@@ -181,7 +181,7 @@ Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 "url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud"
 ```
 
-### meta.composer.introduction.\*
+### meta.composer.introduction
 
 `array`
 
