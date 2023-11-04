@@ -6,7 +6,7 @@ To do
 
 ## Dokumentin rakenne
 
-Dokumentti sisältää metatiedot ja teosluettelo-objektit.
+Dokumentti sisältää metatiedot rakenteessa `meta` ja teosluettelo-objektit rakenteessa `items`.
 
 ```JSON
 {
