@@ -97,9 +97,7 @@ Tämä rakenne sisältää kielen otsikon kieliversiot.
 
 ## items.\*.alternativeTitle.\*.alphabet
 
-| Tyyppi | Kuvaus |
-| --- | --- |
-| object | Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä kyrillisestä merkistöstä latinalaiselle merkistölle translitteroiduille nimekkeille.|
+Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä kyrillisestä merkistöstä latinalaiselle merkistölle translitteroiduille nimekkeille.
 
 ```JSON
 "alphabet": {
