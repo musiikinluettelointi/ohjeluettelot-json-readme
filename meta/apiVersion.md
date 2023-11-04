@@ -1,7 +1,5 @@
 # meta.apiVersion
 
-`string`
-
 Dokumentin tuottanut rajapinta.
 
 ```JSON
