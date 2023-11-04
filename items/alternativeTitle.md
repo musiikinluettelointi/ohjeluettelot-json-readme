@@ -246,13 +246,6 @@
 ]
 ```
 
-### items.\*.alternativeTitle.\*.sources.\*
-
-| Tyyppi | Kuvaus |
-| --- | --- |
-| object | Tämä rakenne sisältää nimekkeen lähteen. |
-
-
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `reference` | aina | string | Lähteen lähdeviite | |
