@@ -1,4 +1,4 @@
-## items.\*.authorizedTitleHistory
+# items.\*.authorizedTitleHistory
 
 `array`
 
@@ -10,7 +10,7 @@ Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen muutosh
 ]
 ```
 
-### items.\*.authorizedTitleHistory.\*
+## items.\*.authorizedTitleHistory.\*
 
 `object`
 

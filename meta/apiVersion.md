@@ -1,4 +1,4 @@
-## meta.apiVersion
+# meta.apiVersion
 
 `string`
 

@@ -1,4 +1,4 @@
-## meta.createdBy
+# meta.createdBy
 
 `string`
 

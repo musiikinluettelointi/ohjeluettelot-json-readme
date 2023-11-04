@@ -1,4 +1,4 @@
-## items.\*.authorizedTitle
+# items.\*.authorizedTitle
 
 `object`
 
@@ -37,7 +37,7 @@ Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen. Kaikil
 | [`publications`](#itemsauthorizedtitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut | |
 | [`sources`](#itemsauthorizedtitlesources) | joskus | array | Nimekkeen lähteet | |
 
-### items.\*.authorizedTitle.title
+## items.\*.authorizedTitle.title
 
 `string`
 
@@ -47,7 +47,7 @@ Auktorisoitu nimeke.
 "title": "Vremena goda, op37a"
 ```
 
-### items.\*.authorizedTitle.offset
+## items.\*.authorizedTitle.offset
 
 `integer`
 
@@ -57,7 +57,7 @@ Ohitettavat merkit.
 "offset": 3
 ```
 
-### items.\*.authorizedTitle.language
+## items.\*.authorizedTitle.language
 
 `object`
 
@@ -77,7 +77,7 @@ Tämä rakenne sisältää nimekkeen kielen.
 | [`code`](#itemsauthorizedtitlelanguagecode) | aina | string | Kielen koodi | ISO 639-2 |
 | [`label`](#itemsauthorizedtitlelanguagelabel) | aina | array | Kielen otsikko | |
 
-#### items.\*.authorizedTitle.language.code
+### items.\*.authorizedTitle.language.code
 
 `string`
 
@@ -87,7 +87,7 @@ Kielen koodi.
 "code": "rus"
 ```
 
-#### items.\*.authorizedTitle.language.label
+### items.\*.authorizedTitle.language.label
 
 `array`
 
@@ -137,7 +137,7 @@ Kielen otsikko.
 "literal": "venäjä"
 ```
 
-### items.\*.authorizedTitle.alphabet
+## items.\*.authorizedTitle.alphabet
 
 `object`
 
@@ -157,7 +157,7 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu kyrillises
 | [`code`](#itemsauthorizedtitlealphabetcode) | aina | string | Merkistön koodi | `latin` \| `cyrillic` |
 | [`label`](#itemsauthorizedtitlealphabetlabel) | aina | array | Merkistön otsikko | |
 
-#### items.\*.authorizedTitle.alphabet.code
+### items.\*.authorizedTitle.alphabet.code
 
 `string`
 
@@ -167,7 +167,7 @@ Merkistön koodi.
 "code": "latin"
 ```
 
-#### items.\*.authorizedTitle.alphabet.label
+### items.\*.authorizedTitle.alphabet.label
 
 `array`
 
@@ -212,7 +212,7 @@ Tämä rakenne sisältää merkistön otsikon kieliversion.
 "literal": "latinalainen"
 ```
 
-### items.\*.authorizedTitle.transliteration
+## items.\*.authorizedTitle.transliteration
 
 `string`
 
@@ -228,7 +228,7 @@ Nimekkeen translitterointi. Tieto on tallennettu kyrillisestä merkistöstä lat
 | `sfs4900`| Kansallinen standardi |
 
 
-### items.\*.authorizedTitle.note
+## items.\*.authorizedTitle.note
 
 `string`
 
@@ -238,7 +238,7 @@ Huomautus nimekkeestä.
  "note": "Poroila 2013"
 ```
 
-### items.\*.authorizedTitle.publications
+## items.\*.authorizedTitle.publications
 
 `array`
 
@@ -250,7 +250,7 @@ Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 ]
 ```
 
-#### items.\*.authorizedTitle.publications.\*
+### items.\*.authorizedTitle.publications.\*
 
 `object`
 
@@ -288,7 +288,7 @@ Julkaisun tunniste teosluettelossa.
 "id": ""
 ```
 
-### items.\*.authorizedTitle.sources
+## items.\*.authorizedTitle.sources
 
 `array`
 
@@ -300,7 +300,7 @@ Tämä rakenne sisältää nimekkeen lähteet.
 ]
 ```
 
-#### items.\*.authorizedTitle.sources.\*
+### items.\*.authorizedTitle.sources.\*
 
 `object`
 

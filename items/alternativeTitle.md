@@ -1,4 +1,4 @@
-## items.\*.alternativeTitle
+# items.\*.alternativeTitle
 
 `array`
 
@@ -11,7 +11,7 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 
 ```
 
-### items.\*.alternativeTitle.\*
+## items.\*.alternativeTitle.\*
 
 `object`
 

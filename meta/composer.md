@@ -1,4 +1,4 @@
-## meta.composer
+# meta.composer
 
 `object`
 
@@ -28,7 +28,7 @@ Tämä rakenne sisältää säveltäjän tiedot.
 | [`introduction`](#metacomposerintroduction) | joskus | array |  Teosluettelon esipuhe  |  |
 | [`workCategories`](#metacomposerworkcategories) | joskus | array |  Säveltäjälle määritellyt teoskategoriat  |  |
 
-### meta.composer.name
+## meta.composer.name
 
 `string`
 
@@ -38,7 +38,7 @@ Säveltäjän nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktoris
 "name": "Pingoud, Ernest, 1887-1942"
 ```
 
-### meta.composer.id
+## meta.composer.id
 
 `string`
 
@@ -48,7 +48,7 @@ Säveltäjän tunniste teosluettelossa.
 "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8"
 ```
 
-### meta.composer.kantoUri
+## meta.composer.kantoUri
 
 `string`
 
@@ -58,7 +58,7 @@ Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455"
 ```
 
-### meta.composer.url
+## meta.composer.url
 
 `string`
 
@@ -68,7 +68,7 @@ Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 "url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud"
 ```
 
-### meta.composer.introduction
+## meta.composer.introduction
 
 `array`
 
@@ -80,7 +80,7 @@ Tämä rakenne sisältää teoksen esipuheen kieliversiot. Kaikille säveltäjil
 ]
 ```
 
-#### meta.composer.introduction.\*
+### meta.composer.introduction.\*
 
 `object`
 
@@ -141,7 +141,7 @@ Esipuheen osoite.
 "url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud/esipuhe"
 ```
 
-### meta.composer.workCategories
+## meta.composer.workCategories
 
 `array`
 
@@ -153,7 +153,7 @@ Tämä rakenne sisältää säveltäjälle määritellyt teoskategoriat. Kaikill
 ]
 ```
 
-#### meta.composer.workCategories.\*
+### meta.composer.workCategories.\*
 
 `object`
 

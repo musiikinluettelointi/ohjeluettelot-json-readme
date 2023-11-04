@@ -1,4 +1,4 @@
-## meta.license
+# meta.license
 
 `object`
 
@@ -16,7 +16,7 @@ Tämä rakenne sisältää dokumentin käyttöehdot.
 | [`name`](#metalicensename) | aina | string |  Dokumentin lisenssi |  |
 | [`url`](#metalicenseurl) | aina | string |  Lisenssin osoite | url |
 
-### meta.license.name
+## meta.license.name
 
 `string`
 
@@ -26,7 +26,7 @@ Dokumentin lisenssi.
 "name": "CC0 1.0 Universal"
 ```
 
-### meta.license.url
+## meta.license.url
 
 `string`
 
