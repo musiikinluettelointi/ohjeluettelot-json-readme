@@ -1178,7 +1178,7 @@ Tämä rakenne sisältää teosluettelo-objektin luomisajan. Kaikilla teosluette
 ```
 ## items.\*.mediumOfPerformance
 
-Tämä rakenne sisältää teosluettelo-objektin esityskokoonpanon. Kaikilla teosluettelo-objekteilla ei ole esityskokoonpano.
+Tämä rakenne sisältää teosluettelo-objektin esityskokoonpanon. Kaikilla teosluettelo-objekteilla ei ole esityskokoonpanoa.
 
 ```JSON
 
