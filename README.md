@@ -6,8 +6,6 @@ To do
 
 ## Dokumentti
 
-`object`
-
 Dokumentti sisältää metatiedot rakenteessa `meta` ja teosluettelo-objektit rakenteessa `items`.
 
 ```JSON
@@ -27,8 +25,6 @@ Dokumentti sisältää metatiedot rakenteessa `meta` ja teosluettelo-objektit ra
 | [`items`](#items) | aina  | array | Sisältää teosluettelo-objektit |
 
 ## meta
-
-`object`
 
 Tämä rakenne sisältää dokumentin metatiedot.
 
@@ -57,74 +53,9 @@ Tämä rakenne sisältää dokumentin metatiedot.
 
 ## items
 
-`array`
-
 Tämä rakenne sisältää teosluettelon teosluettelo-objektit.
 
-```JSON
-"items": [
-
-]
-```
-
-## items.\*
-
-`object`
-
-Tämä rakenne sisältää teosluettelo-objektin.
-
-```JSON
-{
-  "itemType": ,
-  "id": ,
-  "parent": ,
-  "children": [
-
-  ],
-  "composer": {
-
-  },
-  "authorizedTitle": {
-
-  },
-  "authorizedTitleHistory": [
-
-  ],
-  "alternativeTitle": [
-
-  ],
-  "workCategory": [
-
-  ],
-  "workNumber": [
-
-  ],
-  "creationYear": [
-
-  ],
-  "mediumOfPerformance": [
-
-  ],
-  "genre": [
-
-  ],
-  "language": [
-
-  ],
-  "secondaryAuthor": [
-
-  ],
-  "note": [
-
-  ],
-  "publications": [
-
-  ],
-  "sources": [
-
-  ]
-}
-```
+## Teosluettelo-objekti
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
