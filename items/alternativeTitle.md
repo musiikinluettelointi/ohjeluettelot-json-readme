@@ -127,17 +127,17 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 | `code` | aina | string | Merkistön koodi | `latin` \| `cyrillic` |
 | [`label`](#itemsalternativetitlealphabetlabel) | aina | array | Merkistön otsikko | |
 
-### items.\*.alternativeTitle.\*.alphabet.label.\*
+### items.\*.alternativeTitle.\*.alphabet.label
 
-| Tyyppi | Kuvaus |
-| --- | --- |
-| object | Tämä rakenne sisältää merkistön otsikon kieliversion. |
+ Tämä rakenne sisältää merkistön otsikon kieliversiot.
 
 ```JSON
-{
-  "locale": "fi",
-  "literal": "latinalainen"
-}
+"label": [
+  {
+    "locale": "fi",
+    "literal": "latinalainen"
+  }
+]
 ```
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
@@ -146,9 +146,7 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 
 ## items.\*.alternativeTitle.\*.transliteration
 
-| Tyyppi | Kuvaus |
-| --- | --- |
-| string | Nimekkeen translitterointi. |
+Nimekkeen translitterointi.
 
 ```JSON
 "transliteration": "sfs4900"
@@ -162,9 +160,7 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 
 ## items.\*.alternativeTitle.\*.note
 
-| Tyyppi | Kuvaus |
-| --- | --- |
-| string | Huomautus nimekkeestä.|
+ Huomautus nimekkeestä.
 
 ```JSON
  "note": "Poroila 2013"
@@ -172,9 +168,7 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 
 ## items.\*.alternativeTitle.\*.publications
 
-| Tyyppi | Kuvaus |
-| --- | --- |
-| array | Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.|
+Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 
 ```JSON
 "publications": [
