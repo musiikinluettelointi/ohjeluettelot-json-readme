@@ -14,8 +14,6 @@ Tämä rakenne sisältää säveltäjän tiedot.
 
 ## meta.composer.introduction
 
-`array`
-
 Tämä rakenne sisältää teoksen esipuheen kieliversiot. Kaikille säveltäjille ei ole laadittu esipuhetta.
 
 ```JSON
@@ -38,8 +36,6 @@ Tämä rakenne sisältää teoksen esipuheen kieliversiot. Kaikille säveltäjil
 
 
 ## meta.composer.workCategories
-
-`array`
 
 Tämä rakenne sisältää säveltäjälle määritellyt teoskategoriat. Kaikille säveltäjille ei ole määritelty teoskategorioita.
 
