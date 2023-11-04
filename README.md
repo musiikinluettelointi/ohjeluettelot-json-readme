@@ -141,7 +141,7 @@ Teosluettelon osoite. Kaikilla säveltäjillä ei ole julkista teosluetteloa.
 "url": "https://musiikinluettelointi.fi/ohjeluettelot/ernestpingoud",
 ```
 
-#### meta.composer.introduction\*
+#### meta.composer.introduction.\*
 
 Tämä rakenne sisältää teoksen esipuheen. Kaikille säveltäjille ei ole laadittu esipuhetta.
 
@@ -162,7 +162,7 @@ Tämä rakenne sisältää teoksen esipuheen. Kaikille säveltäjille ei ole laa
 | `author` | joskus | string | Esipuheen kirjoittaja | |
 | `url` | joskus | string |  Esipuheen osoite  | url |
 
-#### meta.composer.workCategories\*
+#### meta.composer.workCategories.\*
 
 Tämä rakenne sisältää säveltäjälle määritellyt teoskategoriat. Kaikille säveltäjille ei ole määritelty teoskategorioita.
 
@@ -181,7 +181,7 @@ Tämä rakenne sisältää säveltäjälle määritellyt teoskategoriat. Kaikill
 | `code`  | aina | string | Teoskategorian koodi  |   |
 | [`label`](#metacomposerworkcategorieslabel)  | aina | string | Teoskategorian otsikko | |
 
-#### meta.composer.workCategories\*.label
+#### meta.composer.workCategories.\*.label
 
 > [!WARNING]
 > Avain `text` tullaan muuttamaan avaimeksi `literal`.
@@ -199,14 +199,14 @@ Tämä rakenne sisältää teoskategorian otsikon.
 | `locale` | aina | string |  Teoskategorian otsikon kielikoodi | ISO 639-1  |
 | `text` | aina | string | Teoskategorian otsikko | |
 
-#### meta.composer.workCategories\*.label.locale
+#### meta.composer.workCategories.\*.label.locale
 
 Teoskategorian otsikon kielikoodi.
 
 ```JSON
 "locale": "fi",
 ```
-#### meta.composer.workCategories\*.label.text
+#### meta.composer.workCategories.\*.label.text
 
 > [!WARNING]
 > Avain `text` tullaan muuttamaan avaimeksi `literal`.
@@ -283,7 +283,7 @@ Tämä rakenne sisältää teosluettelon teosluettelo-objektit.
 | [`genre`](#itemsgenre) | joskus | array | Muoto tai lajityyppi | |
 | [`sources`](#itemssources) | joskus  | array | Lähteet | |
 
-#### items\*.itemType
+#### items.\*.itemType
 
 Teosluettelo-objektin tyyppi.
 
@@ -297,14 +297,14 @@ Teosluettelo-objektin tyyppi.
 | `arrangement`| Teoksen tai teoksen osan sovitus |
 | `translation`| Teoksen, teoksen osan tai sovituksen käännös |
 
-#### items\*.id
+#### items.\*.id
 
 Teosluettelo-objektin tunniste teosluettelossa.
 
 ```JSON
 "id": "work-c10de676-0115-474f-895e-26940602371b",
 ```
-#### items\*.composer
+#### items.\*.composer
 
 Tämä rakenne sisältää teosluettelo-objektin säveltäjän tiedot. Anonyymeillä teosluettelo-objekteilla ei ole säveltäjää.
 
@@ -322,7 +322,7 @@ Tämä rakenne sisältää teosluettelo-objektin säveltäjän tiedot. Anonyymei
 | [`name`](#itemscomposername) | aina | string | Säveltäjän nimi | |
 | [`kantoUri`](#itemscomposerkantouri) | joskus | string | Säveltäjän KANTO URI | |
 
-#### items\*.composer.id
+#### items.\*.composer.id
 
 Säveltäjän tunniste teosluettelossa.
 
@@ -330,7 +330,7 @@ Säveltäjän tunniste teosluettelossa.
 "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8",
 ```
 
-#### items\*.composer.name
+#### items.\*.composer.name
 
 Säveltäjän nimi.
 
@@ -338,7 +338,7 @@ Säveltäjän nimi.
 "name": "Pingoud, Ernest, 1887-1942",
 ```
 
-#### items\*.composer.kantoUri
+#### items.\*.composer.kantoUri
 
 Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 
@@ -346,7 +346,7 @@ Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta.
 "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455"
 ```
 
-#### items\*.authorizedTitle
+#### items.\*.authorizedTitle
 
 Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen. Kaikilla teosluettelo-objekteilla ei ole auktorisoitua nimekettä.
 
@@ -383,7 +383,7 @@ Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen. Kaikil
 | [`publications`](#itemsauthorizedtitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut | |
 | [`sources`](#itemsauthorizedtitlesources) | joskus | array | Nimekkeen lähteet | |
 
-#### items\*.authorizedTitle.title
+#### items.\*.authorizedTitle.title
 
 Auktorisoitu nimeke.
 
@@ -391,7 +391,7 @@ Auktorisoitu nimeke.
 "title": "Vremena goda, op37a",
 ```
 
-#### items\*.authorizedTitle.offset
+#### items.\*.authorizedTitle.offset
 
 Ohitettavat merkit.
 
@@ -399,7 +399,7 @@ Ohitettavat merkit.
 "offset": 3,
 ```
 
-#### items\*.authorizedTitle.language
+#### items.\*.authorizedTitle.language
 
 Tämä rakenne sisältää nimekkeen kielen.
 
@@ -417,7 +417,7 @@ Tämä rakenne sisältää nimekkeen kielen.
 | [`code`](#itemsauthorizedtitlelanguagecode) | aina | string | Kielen koodi | ISO 639-2 |
 | [`label`](#itemsauthorizedtitlelanguagelabel) | aina | array | Kielen otsikko | |
 
-#### items\*.authorizedTitle.language.code
+#### items.\*.authorizedTitle.language.code
 
 Kielen koodi.
 
@@ -425,7 +425,7 @@ Kielen koodi.
 "code": "rus",
 ```
 
-#### items.\*.authorizedTitle.language.label\*
+#### items.\*.authorizedTitle.language.label.\*
 
 Tämä rakenne sisältää kielen otsikon.
 
@@ -443,21 +443,21 @@ Tämä rakenne sisältää kielen otsikon.
 | [`locale`](#itemsauthorizedtitlelanguagelabellocale) | aina | string | Kielen otsikon kielikoodi | ISO 639-2 |
 | [`literal`](#itemsauthorizedtitlelanguagelabelliteral) | aina | array | Kielen otsikko | |
 
-#### items.\*.authorizedTitle.language.label\*.locale
+#### items.\*.authorizedTitle.language.label.\*.locale
 
 Kielen otsikon kielikoodi.
 
 ```JSON
 "locale": "fi",
 ```
-#### items.\*.authorizedTitle.language.label\*.literal
+#### items.\*.authorizedTitle.language.label.\*.literal
 
 Kielen otsikko.
 
 ```JSON
 "literal": "venäjä"
 ```
-#### items\*.authorizedTitle.alphabet
+#### items.\*.authorizedTitle.alphabet
 
 Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä kyrillisestä merkistöstä latinalaiselle merkistölle translitteroiduille nimekkeille.
 
@@ -475,7 +475,7 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä 
 | [`code`](#itemsauthorizedtitlealphabetcode) | aina | string | Merkistön koodi | `latin` \| `cyrillic` |
 | [`label`](#itemsauthorizedtitlealphabetlabel) | aina | array | Merkistön otsikko | |
 
-#### items\*.authorizedTitle.alphabet.code
+#### items.\*.authorizedTitle.alphabet.code
 
 Merkistön koodi.
 
@@ -483,7 +483,7 @@ Merkistön koodi.
 "code": "latin",
 ```
 
-#### items.\*.authorizedTitle.alphabet.label\*
+#### items.\*.authorizedTitle.alphabet.label.\*
 
 Tämä rakenne sisältää merkistön otsikon.
 
@@ -500,19 +500,19 @@ Tämä rakenne sisältää merkistön otsikon.
 | [`locale`](#itemsauthorizedtitlealphabetlabellocale) | aina | string | Merkistön otsikon kielikoodi | ISO 639-2 |
 | [`literal`](#itemsauthorizedtitlealphabetlabelliteral) | aina | array | Merkistön otsikko | |
 
-#### items.\*.authorizedTitle.alphabet.label\*.locale
+#### items.\*.authorizedTitle.alphabet.label.\*.locale
 
 ```JSON
 "locale": "fi",
 ```
 
-#### items.\*.authorizedTitle.alphabet.label\*.literal
+#### items.\*.authorizedTitle.alphabet.label.\*.literal
 
 ```JSON
 "literal": "latinalainen"
 ```
 
-#### items\*.authorizedTitle.transliteration
+#### items.\*.authorizedTitle.transliteration
 
 Nimekkeen translitterointi.
 
@@ -526,7 +526,7 @@ Nimekkeen translitterointi.
 | `sfs4900`| Kansallinen standardi |
 
 
-#### items\*.authorizedTitle.note
+#### items.\*.authorizedTitle.note
 
 Huomautus nimekkeestä.
 
@@ -534,7 +534,7 @@ Huomautus nimekkeestä.
  "note": "Poroila 2013",
 ```
 
-#### items.\*.authorizedTitle.publications\*
+#### items.\*.authorizedTitle.publications.\*
 
 Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 
@@ -552,7 +552,7 @@ Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 | [`reference`](#itemsauthorizedtitlepublicationsreference) | aina | string | Julkaisun lähdeviite | |
 | [`id`](#itemsauthorizedtitlepublicationsid) | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
 
-#### items.\*.authorizedTitle.publications\*.reference
+#### items.\*.authorizedTitle.publications.\*.reference
 
 Julkaisun lähdeviite.
 
@@ -560,7 +560,7 @@ Julkaisun lähdeviite.
 "reference": "",
 ```
 
-#### items.\*.authorizedTitle.publications\*.id
+#### items.\*.authorizedTitle.publications.\*.id
 
 Julkaisun tunniste teosluettelossa.
 
@@ -568,7 +568,7 @@ Julkaisun tunniste teosluettelossa.
 "id": ""
 ```
 
-#### items.\*.authorizedTitle.sources\*
+#### items.\*.authorizedTitle.sources.\*
 
 Tämä rakenne sisältää nimekkeen lähteet.
 
@@ -586,7 +586,7 @@ Tämä rakenne sisältää nimekkeen lähteet.
 | [`reference`](#itemsauthorizedtitlesourcesreference) | aina | string | Lähteen lähdeviite | |
 | [`id`](#itemsauthorizedtitlesourcesid) | aina | string | Lähteen tunniste teosluettelossa | source-{uuid} |
 
-#### items.\*.authorizedTitle.sources\*.reference
+#### items.\*.authorizedTitle.sources.\*.reference
 
 Lähteen lähdeviite.
 
@@ -594,7 +594,7 @@ Lähteen lähdeviite.
 "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
 ```
 
-#### items.\*.authorizedTitle.sources\*.id
+#### items.\*.authorizedTitle.sources.\*.id
 
 Lähteen tunniste teosluettelossa.
 
@@ -602,7 +602,7 @@ Lähteen tunniste teosluettelossa.
 "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
 ```
 
-#### items.\*.authorizedTitleHistory\*
+#### items.\*.authorizedTitleHistory.\*
 
 Tämä rakenne sisältää auktorisoidun nimekkeen muutoshistorian, mikäli teosluettelo-objektilla on auktorisoitu nimeke.
 
@@ -621,14 +621,14 @@ Tämä rakenne sisältää auktorisoidun nimekkeen muutoshistorian, mikäli teos
 | [`createdAt`](#itemsauthorizedtitlehistorycreatedat) | aina | string | Auktorisoidun nimekkeen luomispäivämäärä | `YYYY`-`MM`-`DD` |
 | [`authorizedTitle`](#itemsauthorizedtitlehistoryauthorizedtitle) | aina | object | Auktorisoitu nimeke| |
 
-#### items.\*.authorizedTitleHistory\*.createdAt
+#### items.\*.authorizedTitleHistory.\*.createdAt
 
 Auktorisoidun nimekkeen luomispäivämäärä. Mikäli kuukautta tai päivää ei ole tiedossa, on ne merkitty numerolla yksi.
 ```JSON
 "createdAt": "2014-07-01",
 ```
 
-#### items.\*.authorizedTitleHistory\*.authorizedTitle
+#### items.\*.authorizedTitleHistory.\*.authorizedTitle
 
 Tämä rakenne sisältää auktorisoidun nimekkeen. Rakenne on identtinen rakenteen [`items\*.authorizedTitle`](#itemsauthorizedtitle) kanssa.
 
@@ -636,24 +636,24 @@ Tämä rakenne sisältää auktorisoidun nimekkeen. Rakenne on identtinen rakent
 #### items.\*.authorizedTitleHistory.\*.authorizedTitle.offset
 #### items.\*.authorizedTitleHistory.\*.authorizedTitle.language
 #### items.\*.authorizedTitleHistory.\*.authorizedTitle.language.code
-#### items.\*.authorizedTitleHistory.\*.authorizedTitle.language.label\*
-#### items.\*.authorizedTitleHistory.\*.authorizedTitle.label\*.locale
-#### items.\*.authorizedTitleHistory.\*.authorizedTitle.label\*.literal
+#### items.\*.authorizedTitleHistory.\*.authorizedTitle.language.label.\*
+#### items.\*.authorizedTitleHistory.\*.authorizedTitle.label.\*.locale
+#### items.\*.authorizedTitleHistory.\*.authorizedTitle.label.\*.literal
 #### items.\*.authorizedTitleHistory.\*.authorizedTitle.alphabet.code
-#### items.\*.authorizedTitleHistory.\*.authorizedTitle.alphabet.label\*
-#### items.\*.authorizedTitleHistory.\*.authorizedTitle.alphabet.label\*.locale
-#### items.\*.authorizedTitleHistory.\*.authorizedTitle.alphabet.label\*.literal
+#### items.\*.authorizedTitleHistory.\*.authorizedTitle.alphabet.label.\*
+#### items.\*.authorizedTitleHistory.\*.authorizedTitle.alphabet.label.\*.locale
+#### items.\*.authorizedTitleHistory.\*.authorizedTitle.alphabet.label.\*.literal
 #### items.\*.authorizedTitleHistory.\*.authorizedTitle.transliteration
 #### items.\*.authorizedTitleHistory.\*.authorizedTitle.note
-#### items.\*.authorizedTitleHistory.\*.authorizedTitle.publications\*
-#### items.\*.authorizedTitleHistory.\*.authorizedTitle.publications\*.reference
-#### items.\*.authorizedTitleHistory.\*.authorizedTitle.publications\*.id
-#### items.\*.authorizedTitleHistory.\*.authorizedTitle.sources\*
-#### items.\*.authorizedTitleHistory.\*.authorizedTitle.sources\*.reference
-#### items.\*.authorizedTitleHistory.\*.authorizedTitle.sources\*.id
+#### items.\*.authorizedTitleHistory.\*.authorizedTitle.publications.\*
+#### items.\*.authorizedTitleHistory.\*.authorizedTitle.publications.\*.reference
+#### items.\*.authorizedTitleHistory.\*.authorizedTitle.publications.\*.id
+#### items.\*.authorizedTitleHistory.\*.authorizedTitle.sources.\*
+#### items.\*.authorizedTitleHistory.\*.authorizedTitle.sources.\*.reference
+#### items.\*.authorizedTitleHistory.\*.authorizedTitle.sources.\*.id
 
 
-#### items.\*.alternativeTitle\*
+#### items.\*.alternativeTitle.\*
 
 Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nimekkeen eri kieliversiot, lempinimet ja nimekkeen viittausmuodot.
 
@@ -691,7 +691,7 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 | [`publications`](#itemsalternativetitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut | |
 | [`sources`](#itemsalternativetitlesources) | joskus | array | Nimekkeen lähteet | |
 
-#### items.\*.alternativeTitle\*.title
+#### items.\*.alternativeTitle.\*.title
 
 Vaihtoehtoinen nimeke.
 
@@ -699,7 +699,7 @@ Vaihtoehtoinen nimeke.
 "title": "Vremena goda, op37a",
 ```
 
-#### items.\*.alternativeTitle\*.offset
+#### items.\*.alternativeTitle.\*.offset
 
 Ohitettavat merkit.
 
@@ -707,7 +707,7 @@ Ohitettavat merkit.
 "offset": 3,
 ```
 
-#### items.\*.alternativeTitle\*.language
+#### items.\*.alternativeTitle.\*.language
 
 Tämä rakenne sisältää nimekkeen kielen.
 
@@ -733,7 +733,7 @@ Kielen koodi.
 "code": "rus",
 ```
 
-#### items.\*.alternativeTitle.\*.language.label\*
+#### items.\*.alternativeTitle.\*.language.label.\*
 
 Tämä rakenne sisältää kielen otsikon.
 
@@ -751,14 +751,14 @@ Tämä rakenne sisältää kielen otsikon.
 | [`locale`](#itemsalternativetitlelanguagelabellocale) | aina | string | Kielen otsikon kielikoodi | ISO 639-2 |
 | [`literal`](#itemsalternativetitlelanguagelabelliteral) | aina | array | Kielen otsikko | |
 
-#### items.\*.alternativeTitle.\*.language.label\*.locale
+#### items.\*.alternativeTitle.\*.language.label.\*.locale
 
 Kielen otsikon kielikoodi.
 
 ```JSON
 "locale": "fi",
 ```
-#### items.\*.alternativeTitle.\*.language.label\*.literal
+#### items.\*.alternativeTitle.\*.language.label.\*.literal
 
 Kielen otsikko.
 
@@ -783,7 +783,7 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä 
 | [`code`](#itemsalternativetitlealphabetcode) | aina | string | Merkistön koodi | `latin` \| `cyrillic` |
 | [`label`](#itemsalternativetitlealphabetlabel) | aina | array | Merkistön otsikko | |
 
-#### items.\*.alternativeTitle\*.alphabet.code
+#### items.\*.alternativeTitle.\*.alphabet.code
 
 Merkistön koodi.
 
@@ -791,7 +791,7 @@ Merkistön koodi.
 "code": "latin",
 ```
 
-#### items.\*.alternativeTitle.\*.alphabet.label\*
+#### items.\*.alternativeTitle.\*.alphabet.label.\*
 
 Tämä rakenne sisältää merkistön otsikon.
 
@@ -808,13 +808,13 @@ Tämä rakenne sisältää merkistön otsikon.
 | [`locale`](#itemsalternativetitlealphabetlabellocale) | aina | string | Merkistön otsikon kielikoodi | ISO 639-2 |
 | [`literal`](#itemsalternativetitlealphabetlabelliteral) | aina | array | Merkistön otsikko | |
 
-#### items.\*.alternativeTitle.\*.alphabet.label\*.locale
+#### items.\*.alternativeTitle.\*.alphabet.label.\*.locale
 
 ```JSON
 "locale": "fi",
 ```
 
-#### items.\*.alternativeTitle.\*.alphabet.label\*.literal
+#### items.\*.alternativeTitle.\*.alphabet.label.\*.literal
 
 ```JSON
 "literal": "latinalainen"
@@ -834,7 +834,7 @@ Nimekkeen translitterointi.
 | `sfs4900`| Kansallinen standardi |
 
 
-#### items.\*.alternativeTitle\*.note
+#### items.\*.alternativeTitle.\*.note
 
 Huomautus nimekkeestä.
 
@@ -842,7 +842,7 @@ Huomautus nimekkeestä.
  "note": "Poroila 2013",
 ```
 
-#### items.\*.alternativeTitle.\*.publications\*
+#### items.\*.alternativeTitle.\*.publications.\*
 
 Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 
@@ -860,7 +860,7 @@ Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 | [`reference`](#itemsalternativetitlepublicationsreference) | aina | string | Julkaisun lähdeviite | |
 | [`id`](#itemsalternativetitlepublicationsid) | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
 
-#### items.\*.alternativeTitle.\*.publications\*.reference
+#### items.\*.alternativeTitle.\*.publications.\*.reference
 
 Julkaisun lähdeviite.
 
@@ -868,7 +868,7 @@ Julkaisun lähdeviite.
 "reference": "",
 ```
 
-#### items.\*.alternativeTitle.\*.publications\*.id
+#### items.\*.alternativeTitle.\*.publications.\*.id
 
 Julkaisun tunniste teosluettelossa.
 
@@ -876,7 +876,7 @@ Julkaisun tunniste teosluettelossa.
 "id": ""
 ```
 
-#### items.\*.alternativeTitle.\*.sources\*
+#### items.\*.alternativeTitle.\*.sources.\*
 
 Tämä rakenne sisältää nimekkeen lähteet.
 
@@ -894,7 +894,7 @@ Tämä rakenne sisältää nimekkeen lähteet.
 | [`reference`](#itemsalternativetitlesourcesreference) | aina | string | Lähteen lähdeviite | |
 | [`id`](#itemsalternativetitlesourcesid) | aina | string | Lähteen tunniste teosluettelossa | source-{uuid} |
 
-#### items.\*.alternativeTitle.\*.sources\*.reference
+#### items.\*.alternativeTitle.\*.sources.\*.reference
 
 Lähteen lähdeviite.
 
@@ -902,7 +902,7 @@ Lähteen lähdeviite.
 "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
 ```
 
-#### items.\*.alternativeTitle.\*.sources\*.id
+#### items.\*.alternativeTitle.\*.sources.\*.id
 
 Lähteen tunniste teosluettelossa.
 
@@ -912,42 +912,42 @@ Lähteen tunniste teosluettelossa.
 
 
 
-#### items\*.workCategory
+#### items.\*.workCategory
 
 Teoskategoria. Kaikilla teosluettelo-objekteilla ei ole teoskategoriaa.
 
 ```JSON
 
 ```
-#### items\*.workNumber
+#### items.\*.workNumber
 
 Numerointi. Kaikilla teosluettelo-objekteilla ei ole numerointia.
 
 ```JSON
 
 ```
-#### items\*.creationYear
+#### items.\*.creationYear
 
 Luomisaika. Kaikilla teosluettelo-objekteilla ei ole luomisaikaa.
 
 ```JSON
 
 ```
-#### items\*.mediumOfPerformance
+#### items.\*.mediumOfPerformance
 
 Esityskokoonpano. Kaikilla teosluettelo-objekteilla ei ole esityskokoonpano.
 
 ```JSON
 
 ```
-#### items\*.genre
+#### items.\*.genre
 
 Muoto tai lajityyppi. Kaikilla teosluettelo-objekteilla ei ole muotoa tai lajityyppiä.
 
 ```JSON
 
 ```
-#### items\*.sources
+#### items.\*.sources
 
 Lähteet. Kaikilla teosluettelo-objekteilla ei ole lähteitä.
 
