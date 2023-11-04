@@ -414,7 +414,7 @@ Tämä rakenne sisältää teosluettelo-objektin.
 | [`genre`](#itemsgenre) | joskus | array | Muoto tai lajityyppi | |
 | [`sources`](#itemssources) | joskus  | array | Lähteet | |
 
-### items.\*.itemType
+## items.\*.itemType
 
 Teosluettelo-objektin tyyppi.
 
@@ -431,7 +431,7 @@ Teosluettelo-objektin tyyppi.
 | `arrangement`| Teoksen tai teoksen osan sovitus |
 | `translation`| Teoksen, teoksen osan tai sovituksen käännös |
 
-### items.\*.id
+## items.\*.id
 
 `string`
 
@@ -440,7 +440,7 @@ Teosluettelo-objektin tunniste teosluettelossa.
 ```JSON
 "id": "work-c10de676-0115-474f-895e-26940602371b"
 ```
-### items.\*.composer
+## items.\*.composer
 
 `object`
 
@@ -460,7 +460,7 @@ Tämä rakenne sisältää teosluettelo-objektin säveltäjän tiedot. Anonyymei
 | [`name`](#itemscomposername) | aina | string | Säveltäjän nimi | |
 | [`kantoUri`](#itemscomposerkantouri) | joskus | string | Säveltäjän KANTO URI | |
 
-#### items.\*.composer.id
+### items.\*.composer.id
 
 `string`
 
@@ -470,7 +470,7 @@ Säveltäjän tunniste teosluettelossa.
 "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8"
 ```
 
-#### items.\*.composer.name
+### items.\*.composer.name
 
 `string`
 
@@ -480,7 +480,7 @@ Säveltäjän nimi.
 "name": "Pingoud, Ernest, 1887-1942"
 ```
 
-#### items.\*.composer.kantoUri
+### items.\*.composer.kantoUri
 
 `string`
 
@@ -539,7 +539,7 @@ Auktorisoitu nimeke.
 "title": "Vremena goda, op37a"
 ```
 
-#### items.\*.authorizedTitle.offset
+### items.\*.authorizedTitle.offset
 
 `integer`
 
@@ -549,7 +549,7 @@ Ohitettavat merkit.
 "offset": 3
 ```
 
-#### items.\*.authorizedTitle.language
+### items.\*.authorizedTitle.language
 
 `object`
 
@@ -820,7 +820,7 @@ Lähteen tunniste teosluettelossa.
 "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
 ```
 
-### items.\*.authorizedTitleHistory
+## items.\*.authorizedTitleHistory
 
 `array`
 
@@ -849,7 +849,7 @@ Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen muutosh
 | [`createdAt`](#itemsauthorizedtitlehistorycreatedat) | aina | string | Auktorisoidun nimekkeen luomispäivämäärä | `YYYY`-`MM`-`DD` |
 | [`authorizedTitle`](#itemsauthorizedtitlehistoryauthorizedtitle) | aina | object | Auktorisoitu nimeke| |
 
-#### items.\*.authorizedTitleHistory.\*.createdAt
+### items.\*.authorizedTitleHistory.\*.createdAt
 
 `string`
 
@@ -858,7 +858,7 @@ Auktorisoidun nimekkeen luomispäivämäärä. Mikäli kuukautta tai päivää e
 "createdAt": "2014-07-01"
 ```
 
-#### items.\*.authorizedTitleHistory.\*.authorizedTitle
+### items.\*.authorizedTitleHistory.\*.authorizedTitle
 
 `object`
 
@@ -935,7 +935,7 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 | [`publications`](#itemsalternativetitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut | |
 | [`sources`](#itemsalternativetitlesources) | joskus | array | Nimekkeen lähteet | |
 
-#### items.\*.alternativeTitle.\*.title
+### items.\*.alternativeTitle.\*.title
 
 Vaihtoehtoinen nimeke.
 
@@ -943,7 +943,7 @@ Vaihtoehtoinen nimeke.
 "title": ""
 ```
 
-#### items.\*.alternativeTitle.\*.offset
+### items.\*.alternativeTitle.\*.offset
 
 Ohitettavat merkit.
 
@@ -951,7 +951,7 @@ Ohitettavat merkit.
 "offset": 3
 ```
 
-#### items.\*.alternativeTitle.\*.language
+### items.\*.alternativeTitle.\*.language
 
 Tämä rakenne sisältää nimekkeen kielen.
 
@@ -1009,7 +1009,8 @@ Kielen otsikko.
 ```JSON
 "literal": "venäjä"
 ```
-#### items.\*.alternativeTitle.\*.alphabet
+
+### items.\*.alternativeTitle.\*.alphabet
 
 Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu lähinnä kyrillisestä merkistöstä latinalaiselle merkistölle translitteroiduille nimekkeille.
 
