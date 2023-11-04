@@ -184,14 +184,14 @@ Tämä rakenne sisältää säveltäjälle määritellyt teoskategoriat. Kaikill
 #### meta.composer.workCategories.\*.label
 
 > [!WARNING]
-> Avain `literal` oli aiemmin avain `text`.
+> Avain `literal` oli aiemmin `text`.
 
 Tämä rakenne sisältää teoskategorian otsikon.
 
 ```JSON
 "label": {
   "locale": "fi",
-  "text": "Opusnumeroidut teokset"
+  "literal": "Opusnumeroidut teokset"
 }
 ```
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
