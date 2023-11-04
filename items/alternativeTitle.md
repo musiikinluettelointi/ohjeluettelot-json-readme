@@ -1,6 +1,6 @@
 # items.\*.alternativeTitle
 
-`array`
+| Tyyppi | `array` |
 
 Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näitä ovat mm. aiemmat auktorisoidut nimekkeet, nimekkeen eri kieliversiot, lempinimet ja nimekkeen viittausmuodot.
 
