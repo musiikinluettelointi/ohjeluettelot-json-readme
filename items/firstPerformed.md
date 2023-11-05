@@ -7,7 +7,7 @@ Tämä rakenne sisältää teosluettelo-objektin ensiesityksen.
 | [`label`](#itemsfirstperformedlabel) | aina | array | Ensiesityksen otsikko. |  |
 | `date` | joskus | string | Ensiesityksen päivämäärä. | |
 | `year` | joskus | integer | Ensiesityksen vuosiluku. | |
-| `place` | joskus | object | Ensiesityksen paikka. | |
+| [`place`](#itemsfirstperformedplace) | joskus | object | Ensiesityksen paikka. | |
 | `note` | joskus | string | Huomautus ensiesityksestä. | |
 | [`publications`](#itemsfirstperformedpublications) | joskus | array | Ensiesitykseen liittyvät julkaisut. | |
 | [`sources`](#itemsfirstperformedsources) | joskus | array | Ensiesityksen lähteet. | |
