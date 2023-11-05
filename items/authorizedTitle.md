@@ -78,7 +78,7 @@ Tämä rakenne sisältää kielen otsikon kieliversiot.
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `locale` | aina | string | Kielen otsikon kielikoodi. | ISO 639-1 |
-| `literal` | aina | array | Kielen otsikko. | |
+| `literal` | aina | string | Kielen otsikko. | |
 
 ## items.\*.authorizedTitle.alphabet
 
@@ -117,7 +117,7 @@ Tämä rakenne sisältää merkistön otsikon kieliversiot.
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `locale` | aina | string | Merkistön otsikon kielikoodi. | ISO 639-1 |
-| `literal` | aina | array | Merkistön otsikko. | |
+| `literal` | aina | string | Merkistön otsikko. | |
 
 
 ## items.\*.authorizedTitle.transliteration

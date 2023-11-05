@@ -58,7 +58,7 @@ Tämä rakenne sisältää luomisajan otsikon kieliversiot.
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `locale` | aina | string | Luomisajan otsikon kielikoodi. | ISO 639-2 |
-| `literal` | aina | array | Luomisajan otsikko. | |
+| `literal` | aina | string | Luomisajan otsikko. | |
 
 ## items.\*.creationYear.\*.years
 

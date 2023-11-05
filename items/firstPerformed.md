@@ -88,7 +88,7 @@ Tämä rakenne sisältää ensiesityksen otsikon kieliversiot.
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `locale` | aina | string | Luomisajan otsikon kielikoodi. | ISO 639-1 |
-| `literal` | aina | array | Luomisajan otsikko. | |
+| `literal` | aina | string | Luomisajan otsikko. | |
 
 
 ## items.\*.firstPerformed.\*.place
@@ -128,7 +128,7 @@ Tämä rakenne sisältää ensiesityksen paikan otsikon kieliversiot.
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `locale` | aina | string | Ensiesityksen paikan otsikon kielikoodi. | ISO 639-1 |
-| `literal` | aina | array | Ensiesityksen paikan otsikko. | |
+| `literal` | aina | string | Ensiesityksen paikan otsikko. | |
 
 ## items.\*.firstPerformed.\*.publications
 
