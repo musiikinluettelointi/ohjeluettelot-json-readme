@@ -1,6 +1,6 @@
 # items.\*.creationYear
 
-Tämä rakenne sisältää teosluettelo-objektin luomisajat.
+Tämä rakenne sisältää teosluettelo-objektin luomisajan.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
