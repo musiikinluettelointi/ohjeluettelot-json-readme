@@ -62,8 +62,6 @@ Tämä rakenne sisältää luomisajan otsikon kieliversiot.
 
 ## items.\*.creationYear.\*.years
 
-`array`
-
 Tämä rakenne sisältää luomisajan vuosiluvut.
 
 > [!NOTE]
