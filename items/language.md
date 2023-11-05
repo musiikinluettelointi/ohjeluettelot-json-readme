@@ -32,7 +32,7 @@ Tämä rakenne sisältää teosluettelo-objektin esityskielen.
 ]
 ```
 
-### items.\*.language.\*.language.label
+### items.\*.language.\*.label
 
 Tämä rakenne sisältää esityskielen otsikon kieliversiot.
 
