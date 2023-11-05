@@ -7,8 +7,8 @@ Tämä rakenne sisältää teosluettelo-objektiin liittyvät saman säveltäjän
 | `title` | aina | string | Liittyvän teoksen nimeke. |  |
 | `id` | aina | string | Liittyvän teoksen tunniste teosluettelossa. | `work-{uuid}` |
 | `note` | joskus | string | Huomautus liittyvästä teoksesta. | |
-| [`publications`](#itemslinkedworkpublications) | joskus | array | Esityskieleen liittyvät julkaisut. | |
-| [`sources`](#itemslinkedworksources) | joskus | array | Esityskielen lähteet. | |
+| [`publications`](#itemslinkedworkpublications) | joskus | array | Liittyvään teokseen liittyvät julkaisut. | |
+| [`sources`](#itemslinkedworksources) | joskus | array | Liittyvän teoksen lähteet. | |
 
 ## Esimerkki
 
