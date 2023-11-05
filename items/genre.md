@@ -14,15 +14,15 @@ Tämä rakenne sisältää teosluettelo-objektin muodon tai lajityypin. Muoto ta
 
 ```JSON
 "genre": [
-  {
-    "label": [
-      {
-        "locale": "fi",
-        "literal": "orkesterimusiikki"
-      }
-    ],
-    "slmUri": "http://urn.fi/URN:NBN:fi:au:slm:s1009"
-  }
+    {
+        "label": [
+            {
+                "locale": "fi",
+                "literal": "orkesterimusiikki"
+            }
+        ],
+        "slmUri": "http://urn.fi/URN:NBN:fi:au:slm:s1009"
+    }
 ]
 ```
 
@@ -32,10 +32,10 @@ Tämä rakenne sisältää muodon tai lajityypin otsikon kieliversiot.
 
 ```JSON
 "label": [
-  {
-    "locale": "fi",
-    "literal": "orkesterimusiikki"
-  }
+    {
+        "locale": "fi",
+        "literal": "orkesterimusiikki"
+    }
 ]
 ```
 
@@ -50,10 +50,10 @@ Tämä rakenne sisältää muotoon tai lajityyppiin liittyvät julkaisut.
 
 ```JSON
 "publications": [
-  {
-    "reference": "",
-    "id": ""
-  }
+    {
+        "reference": "",
+        "id": ""
+    }
 ]
 ```
 
@@ -68,10 +68,10 @@ Tämä rakenne sisältää muodon tai lajityypin lähteet.
 
 ```JSON
 "sources": [
-  {
-    "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
-    "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
-  }
+    {
+        "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
+        "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
+    }
 ]
 ```
 

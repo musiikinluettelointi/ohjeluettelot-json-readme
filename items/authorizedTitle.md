@@ -21,23 +21,23 @@ Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen.
 
 ```JSON
 "authorizedTitle": {
-  "title": "Aallon kehtolaulu",
-  "language": {
-    "code": "fin",
-    "label": [
+    "title": "Aallon kehtolaulu",
+    "language": {
+        "code": "fin",
+        "label": [
+            {
+                "locale": "fi",
+                "literal": "suomi"
+            }
+        ]
+    },
+    "note": "Poroila 2012",
+    "sources": [
         {
-          "locale": "fi",
-          "literal": "suomi"
+            "reference": "Poroila, Heikki (2012). Yhtenäistetty Armas Järnefelt. Yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 134. PDF. ISBN 978-952-5363-68-5. ",
+            "id": "source-e674f774-82d7-48a8-ad7d-6bb3834a747e"
         }
     ]
-  },
-  "note": "Poroila 2012",
-  "sources": [
-    {
-      "reference": "Poroila, Heikki (2012). Yhtenäistetty Armas Järnefelt. Yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 134. PDF. ISBN 978-952-5363-68-5. ",
-      "id": "source-e674f774-82d7-48a8-ad7d-6bb3834a747e"
-    }
-  ]
 }
 ```
 
@@ -47,13 +47,13 @@ Tämä rakenne sisältää nimekkeen kielen.
 
 ```JSON
 "language": {
-  "code": "rus",
-  "label": [
-    {
-      "locale": "fi",
-      "literal": "venäjä"
-    }
-  ]
+    "code": "rus",
+    "label": [
+        {
+            "locale": "fi",
+            "literal": "venäjä"
+        }
+    ]
 }
 ```
 
@@ -68,10 +68,10 @@ Tämä rakenne sisältää kielen otsikon kieliversiot.
 
 ```JSON
 "label": [
-  {
-    "locale": "fi",
-    "literal": "venäjä"
-  }
+    {
+        "locale": "fi",
+        "literal": "venäjä"
+    }
 ]
 ```
 
@@ -86,14 +86,14 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu kyrillises
 
 ```JSON
 "alphabet": {
-  "code": "latin",
-  "label": [
-    {
-      "locale": "fi",
-      "literal": "latinalainen"
-    }
-  ]
-},
+    "code": "latin",
+    "label": [
+        {
+            "locale": "fi",
+            "literal": "latinalainen"
+        }
+    ]
+}
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
@@ -106,12 +106,12 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu kyrillises
 Tämä rakenne sisältää merkistön otsikon kieliversiot.
 
 ```JSON
-  "label": [
+"label": [
     {
-      "locale": "fi",
-      "literal": "latinalainen"
+        "locale": "fi",
+        "literal": "latinalainen"
     }
-  ]
+]
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
@@ -139,10 +139,10 @@ Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 
 ```JSON
 "publications": [
-  {
-    "reference": "",
-    "id": ""
-  }
+    {
+        "reference": "",
+        "id": ""
+    }
 ]
 ```
 
@@ -157,10 +157,10 @@ Tämä rakenne sisältää nimekkeen lähteet.
 
 ```JSON
 "sources": [
-  {
-    "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
-    "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
-  }
+    {
+        "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
+        "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
+    }
 ]
 ```
 

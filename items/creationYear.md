@@ -16,29 +16,29 @@ Tämä rakenne sisältää teosluettelo-objektin luomisajan.
 
 ```JSON
 "creationYear": [
-  {
-    "label": [
-      {
-        "locale": "fi",
-        "literal": "1915-1916"
-      }
-    ],
-    "years": [
-      {
-        "year": 1915
-      },
-      {
-        "year": 1916
-      }
-    ],
-    "timespan": true,
-    "sources": [
-      {
-        "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
-        "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
-      }
-    ]
-  }
+    {
+        "label": [
+            {
+                "locale": "fi",
+                "literal": "1915-1916"
+            }
+        ],
+        "years": [
+            {
+                "year": 1915
+            },
+            {
+                "year": 1916
+            }
+        ],
+        "timespan": true,
+        "sources": [
+            {
+                "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
+                "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
+            }
+        ]
+    }
 ]
 ```
 
@@ -48,10 +48,10 @@ Tämä rakenne sisältää luomisajan otsikon kieliversiot.
 
 ```JSON
 "label": [
-  {
-    "locale": "fi",
-    "literal": "1930?-1939?"
-  }
+    {
+        "locale": "fi",
+        "literal": "1930?-1939?"
+    }
 ]
 ```
 
@@ -69,14 +69,14 @@ Tämä rakenne sisältää luomisajan vuosiluvut.
 
 ```JSON
 "years": [
-  {
-    "year": 1930,
-    "yearIsUncertain": true
-  },
-  {
-    "year": 1939,
-    "yearIsUncertain": true
-  }
+    {
+        "year": 1930,
+        "yearIsUncertain": true
+    },
+    {
+        "year": 1939,
+        "yearIsUncertain": true
+    }
 ]
 ```
 
@@ -108,10 +108,10 @@ Tämä rakenne sisältää luomisaikaan liittyvät julkaisut.
 
 ```JSON
 "publications": [
-  {
-    "reference": "",
-    "id": ""
-  }
+    {
+        "reference": "",
+        "id": ""
+    }
 ]
 ```
 
@@ -126,10 +126,10 @@ Tämä rakenne sisältää luomisajan lähteet.
 
 ```JSON
 "sources": [
-  {
-    "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
-    "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
-  }
+    {
+        "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
+        "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
+    }
 ]
 ```
 

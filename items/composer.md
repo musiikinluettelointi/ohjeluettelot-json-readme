@@ -12,8 +12,8 @@ Tämä rakenne sisältää teosluettelo-objektin säveltäjän tiedot.
 
 ```JSON
 "composer": {
-  "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8",
-  "name": "Pingoud, Ernest, 1887-1942",
-  "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455"
+    "id": "name-44c8f684-070b-49bd-b0bc-e1d881f07fd8",
+    "name": "Pingoud, Ernest, 1887-1942",
+    "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000064455"
 }
 ```

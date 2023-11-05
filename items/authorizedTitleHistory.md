@@ -11,28 +11,28 @@ Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen muutosh
 
 ```JSON
 "authorizedTitleHistory": [
-  {
-  "createdAt": "2012-11-01",
-  "authorizedTitle": {
-    "title": "Aallon kehtolaulu",
-    "language": {
-        "code": "fin",
-        "label": [
-            {
-              "locale": "fi",
-              "literal": "suomi"
-            }
-        ]
-    },
-    "note": "Poroila 2012",
-    "sources": [
-        {
-          "reference": "Poroila, Heikki (2012). Yhtenäistetty Armas Järnefelt. Yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 134. PDF. ISBN 978-952-5363-68-5. ",
-          "id": "source-e674f774-82d7-48a8-ad7d-6bb3834a747e"
+    {
+        "createdAt": "2012-11-01",
+        "authorizedTitle": {
+            "title": "Aallon kehtolaulu",
+            "language": {
+                "code": "fin",
+                "label": [
+                    {
+                        "locale": "fi",
+                        "literal": "suomi"
+                    }
+                ]
+            },
+            "note": "Poroila 2012",
+            "sources": [
+                {
+                    "reference": "Poroila, Heikki (2012). Yhtenäistetty Armas Järnefelt. Yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 134. PDF. ISBN 978-952-5363-68-5. ",
+                    "id": "source-e674f774-82d7-48a8-ad7d-6bb3834a747e"
+                }
+            ]
         }
-      ]
     }
-  }
 ]
 ```
 

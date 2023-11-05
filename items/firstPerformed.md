@@ -78,10 +78,10 @@ Tämä rakenne sisältää ensiesityksen otsikon kieliversiot.
 
 ```JSON
 "label": [
-  {
-    "locale": "fi",
-    "literal": "Pietari, 1917"
-  }
+    {
+        "locale": "fi",
+        "literal": "Pietari, 1917"
+    }
 ]
 ```
 
@@ -97,13 +97,13 @@ Tämä rakenne sisältää ensiesityksen paikan. Paikka on poimittu [YSO-paikat-
 
 ```JSON
 "place": {
-  "label": [
-    {
-      "locale": "fi",
-      "literal": "Suomi"
-    }
-  ],
-  "ysoUri": "http://www.yso.fi/onto/yso/p94426"
+    "label": [
+        {
+            "locale": "fi",
+            "literal": "Suomi"
+        }
+    ],
+    "ysoUri": "http://www.yso.fi/onto/yso/p94426"
 }
 ```
 
@@ -118,10 +118,10 @@ Tämä rakenne sisältää ensiesityksen paikan otsikon kieliversiot.
 
 ```JSON
 "label": [
-  {
-    "locale": "fi",
-    "literal": "Suomi"
-  }
+    {
+        "locale": "fi",
+        "literal": "Suomi"
+    }
 ]
 ```
 
@@ -136,10 +136,10 @@ Tämä rakenne sisältää ensiesitykseen liittyvät julkaisut.
 
 ```JSON
 "publications": [
-  {
-    "reference": "",
-    "id": ""
-  }
+    {
+        "reference": "",
+        "id": ""
+    }
 ]
 ```
 
@@ -154,10 +154,10 @@ Tämä rakenne sisältää ensiesityksen lähteet.
 
 ```JSON
 "sources": [
-  {
-    "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
-    "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
-  }
+    {
+        "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
+        "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
+    }
 ]
 ```
 

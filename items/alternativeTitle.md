@@ -18,25 +18,25 @@ Tämä rakenne sisältää teosluettelo-objektin vaihtoehtoiset nimekkeet. Näit
 
 ```JSON
 "alternativeTitle": [
-  {
-    "title": "15 sånger till dikter av Ernst Josephson",
-    "language": {
-      "code": "swe",
-      "label": [
-        {
-          "locale": "fi",
-          "literal": "ruotsi"
-        }
-      ]
-    },
-    "note": "Poroila 2011",
-    "sources": [
-      {
-        "reference": "Poroila, Heikki (2011). Yhtenäistetty Yrjö Kilpinen. Yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 144. PDF. ISBN 978-952-5363-43-2. ",
-        "id": "source-0148bad1-5255-4fca-832d-d3813fad7de9"
-      }
-    ]
-  }
+    {
+        "title": "15 sånger till dikter av Ernst Josephson",
+        "language": {
+              "code": "swe",
+              "label": [
+                  {
+                      "locale": "fi",
+                      "literal": "ruotsi"
+                  }
+              ]
+          },
+          "note": "Poroila 2011",
+          "sources": [
+              {
+                  "reference": "Poroila, Heikki (2011). Yhtenäistetty Yrjö Kilpinen. Yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 144. PDF. ISBN 978-952-5363-43-2. ",
+                  "id": "source-0148bad1-5255-4fca-832d-d3813fad7de9"
+              }
+        ]
+    }
 ]
 ```
 
@@ -47,13 +47,13 @@ Tämä rakenne sisältää nimekkeen kielen.
 
 ```JSON
 "language": {
-  "code": "rus",
-  "label": [
-    {
-      "locale": "fi",
-      "literal": "venäjä"
-    }
-  ]
+    "code": "rus",
+    "label": [
+        {
+            "locale": "fi",
+            "literal": "venäjä"
+        }
+    ]
 }
 ```
 
@@ -68,10 +68,10 @@ Tämä rakenne sisältää kielen otsikon kieliversiot.
 
 ```JSON
 "label": [
-  {
-    "locale": "fi",
-    "literal": "venäjä"
-  }
+    {
+        "locale": "fi",
+        "literal": "venäjä"
+    }
 ]
 ```
 
@@ -86,13 +86,13 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu kyrillises
 
 ```JSON
 "alphabet": {
-  "code": "latin",
-  "label": [
-    {
-      "locale": "fi",
-      "literal": "latinalainen"
-    }
-  ]
+    "code": "latin",
+    "label": [
+        {
+            "locale": "fi",
+            "literal": "latinalainen"
+        }
+    ]
 },
 ```
 
@@ -106,12 +106,12 @@ Tämä rakenne sisältää nimekkeen merkistön. Tieto on tallennettu kyrillises
 Tämä rakenne sisältää merkistön otsikon kieliversiot.
 
 ```JSON
-  "label": [
+"label": [
     {
-      "locale": "fi",
-      "literal": "latinalainen"
+        "locale": "fi",
+        "literal": "latinalainen"
     }
-  ]
+]
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
@@ -139,10 +139,10 @@ Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 
 ```JSON
 "publications": [
-  {
-    "reference": "",
-    "id": ""
-  }
+    {
+        "reference": "",
+        "id": ""
+    }
 ]
 ```
 
@@ -157,10 +157,10 @@ Tämä rakenne sisältää nimekkeen lähteet.
 
 ```JSON
 "sources": [
-  {
-    "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
-    "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
-  }
+    {
+        "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
+        "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
+    }
 ]
 ```
 
