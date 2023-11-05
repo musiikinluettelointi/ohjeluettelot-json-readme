@@ -8,17 +8,6 @@ To do
 
 Dokumentti sisältää metatiedot rakenteessa `meta` ja teosluettelo-objektit rakenteessa `items`.
 
-```JSON
-{
-  "meta": {
-
-  },
-  "items": [
-
-  ]
-}
-```
-
 | Avain | Läsnä | Tyyppi | Kuvaus |
 | --- | --- | --- | --- |
 | [`meta`](#meta) | aina | object | Sisältää dokumentin metatiedot |
