@@ -6,8 +6,8 @@ Tämä rakenne sisältää teosluettelo-objektin alkusanat.
 | --- | --- | --- | --- | --- |
 | `text` | aina | array | Alkusanat. |  |
 | [`language`](#itemsincipittextlanguage) | joskus | object | Alkusanojen kieli | |
-| [`alphabet`](#itemsincipittextalphabet) | joskus | object | Nimekkeen merkistö |  |
-| [`transliteration`](#itemsincipittexttransliteration) | joskus | string | Nimekkeen translitterointi | `iso9` \| `sfs4900` |
+| [`alphabet`](#itemsincipittextalphabet) | joskus | object | Alkusanojen merkistö |  |
+| [`transliteration`](#itemsincipittexttransliteration) | joskus | string | Alkusanojen translitterointi | `iso9` \| `sfs4900` |
 | `note` | joskus | string | Huomautus alkusanoista. | |
 | [`publications`](#itemsincipittextpublications) | joskus | array | Alkusanoihin liittyvät julkaisut. | |
 | [`sources`](#itemsincipittextsources) | joskus | array | Alkusanojen lähteet. | |
