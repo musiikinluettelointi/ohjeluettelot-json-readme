@@ -4,13 +4,13 @@ Tämä rakenne sisältää teosluettelo-objektin luomisajat.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`label`](#itemscreationyearlabel) | aina | array | Luomisajan otsikko |  |
-| [`years`](#itemscreationyearyears) | joskus | array | Luomisajan vuosiluvut | |
-| [`timespan`](#itemscreationyeartimespan) | joskus | boolean | Luomisajan vuosiluvut muodostavat aikavälin | |
-| [`separateYears`](#itemscreationyearseparateyears) | joskus | boolean | Luomisajan vuosiluvut ovat erillisiä| |
-| `note` | joskus | string | Huomautus luomisajasta | |
-| [`publications`](#itemscreationyearpublications) | joskus | array | Luomisaikaan liittyvät julkaisut | |
-| [`sources`](#itemscreationyearsources) | joskus | array | Luomisajan lähteet | |
+| [`label`](#itemscreationyearlabel) | aina | array | Luomisajan otsikko. |  |
+| [`years`](#itemscreationyearyears) | joskus | array | Luomisajan vuosiluku. | |
+| [`timespan`](#itemscreationyeartimespan) | joskus | boolean | Luomisajan vuosiluvut muodostavat aikavälin. | |
+| [`separateYears`](#itemscreationyearseparateyears) | joskus | boolean | Luomisajan vuosiluvut ovat erillisiä. | |
+| `note` | joskus | string | Huomautus luomisajasta. | |
+| [`publications`](#itemscreationyearpublications) | joskus | array | Luomisaikaan liittyvät julkaisut. | |
+| [`sources`](#itemscreationyearsources) | joskus | array | Luomisajan lähteet. | |
 
 ## Esimerkki
 
