@@ -5,7 +5,7 @@ Tämä rakenne sisältää teosluettelo-objektin muodon tai lajityypin. Muoto ta
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | [`label`](#itemsgenrelabel) | aina | array | Muodon tai lajityypin otsikko. |  |
-| `slmUri` | joskus | array | Muodon tai lajityypin SLM-URI. | `uri` |
+| `slmUri` | joskus | string | Muodon tai lajityypin SLM-URI. | `uri` |
 | `note` | joskus | string | Huomautus muodosta tai lajityypistä. | |
 | [`publications`](#itemsgenrepublications) | joskus | array | Muotoon tai lajityyppiin liittyvät julkaisut. | |
 | [`sources`](#itemsgenresources) | joskus | array | Muodon tai lajityypin lähteet. | |
