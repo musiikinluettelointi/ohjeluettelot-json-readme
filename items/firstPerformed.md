@@ -2,6 +2,9 @@
 
 Tämä rakenne sisältää teosluettelo-objektin ensiesityksen.
 
+> [!NOTE]
+> Teosluettelo-objektilla voi olla useita ensiesityksiä.
+
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | [`label`](#itemsfirstperformedlabel) | aina | array | Ensiesityksen otsikko. |  |
