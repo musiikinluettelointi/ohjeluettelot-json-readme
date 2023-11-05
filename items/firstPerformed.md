@@ -19,7 +19,7 @@ Tämä rakenne sisältää teosluettelo-objektin ensiesityksen.
 
 ```JSON
 "firstPerformed": [
-	{
+{
 		"label": [
 			{
 				"locale": "fi",
