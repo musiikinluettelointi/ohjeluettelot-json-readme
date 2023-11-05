@@ -1,6 +1,9 @@
 # items.\*.composer
 
-Tämä rakenne sisältää teosluettelo-objektin säveltäjän tiedot. Anonyymeillä teosluettelo-objekteilla ei ole säveltäjää.
+Tämä rakenne sisältää teosluettelo-objektin säveltäjän tiedot.
+
+> [!NOTE]
+>  Anonyymeillä teosluettelo-objekteilla ei ole säveltäjää.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
