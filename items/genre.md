@@ -1,6 +1,8 @@
 # items.\*.genre
 
-Tämä rakenne sisältää teosluettelo-objektin muodon tai lajityypin. Muoto tai lajityyppi on poimittu [Suomalaisesta lajityyppi- ja muotosanastosta (SLM)](https://finto.fi/slm/fi/).
+Tämä rakenne sisältää teosluettelo-objektin muodot tai lajityypit.
+
+Muoto tai lajityyppi on poimittu [Suomalaisesta lajityyppi- ja muotosanastosta (SLM)](https://finto.fi/slm/fi/).
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |

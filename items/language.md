@@ -1,6 +1,6 @@
 # items.\*.language
 
-Tämä rakenne sisältää teosluettelo-objektin esityskielen.
+Tämä rakenne sisältää teosluettelo-objektin esityskielet.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |

@@ -1,9 +1,6 @@
 # items.\*.firstPerformed
 
-Tämä rakenne sisältää teosluettelo-objektin ensiesityksen.
-
-> [!NOTE]
-> Teosluettelo-objektilla voi olla useita ensiesityksiä.
+Tämä rakenne sisältää teosluettelo-objektin ensiesitykset.
 
 | Avain | Läsnä  | Tyyppi  | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
