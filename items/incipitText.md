@@ -49,7 +49,7 @@ Tämä rakenne sisältää alkusanojen kielen.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `code` | aina | string | Kielen koodi. | ISO 639-2 |
+| `code` | aina | string | Kielen koodi. | ISO 639-3 |
 | [`label`](#itemsincipittextlanguagelabel) | aina | array | Kielen otsikon kieliversiot. | |
 
 ### items.\*.incipitText.\*.language.label
@@ -67,7 +67,7 @@ Tämä rakenne sisältää kielen otsikon kieliversiot.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `locale` | aina | string | Kielen otsikon kielikoodi. | ISO 639-2 |
+| `locale` | aina | string | Kielen otsikon kielikoodi. | ISO 639-1 |
 | `literal` | aina | array | Kielen otsikko. | |
 
 ## items.\*.incipitText.\*.alphabet
@@ -106,7 +106,7 @@ Tämä rakenne sisältää merkistön otsikon kieliversiot.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `locale` | aina | string | Merkistön otsikon kielikoodi. | ISO 639-2 |
+| `locale` | aina | string | Merkistön otsikon kielikoodi. | ISO 639-1 |
 | `literal` | aina | array | Merkistön otsikko. | |
 
 

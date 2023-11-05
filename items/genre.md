@@ -41,7 +41,7 @@ Tämä rakenne sisältää muodon tai lajityypin otsikon kieliversiot.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `locale` | aina | string | Muodon tai lajityypin otsikon kielikoodi. | ISO 639-2 |
+| `locale` | aina | string | Muodon tai lajityypin otsikon kielikoodi. | ISO 639-1 |
 | `literal` | aina | array | Muodon tai lajityypin otsikko. | |
 
 ## items.\*.genre.\*.publications
