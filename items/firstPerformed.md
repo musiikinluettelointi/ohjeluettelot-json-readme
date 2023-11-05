@@ -15,61 +15,11 @@ Tämä rakenne sisältää teosluettelo-objektin ensiesityksen.
 | [`publications`](#itemsfirstperformedpublications) | joskus | array | Ensiesitykseen liittyvät julkaisut. | |
 | [`sources`](#itemsfirstperformedsources) | joskus | array | Ensiesityksen lähteet. | |
 
- ## Esimerkki
+## Esimerkki
+
 
 ```JSON
-"firstPerformed": [
-  {
-		"label": [
-			{
-				"locale": "fi",
-				"literal": "Pietari, 1917"
-			}
-		],
-		"year": 1917,
-		"place": {
-			"label": [
-				{
-					"locale": "fi",
-					"literal": "Pietari"
-				}
-			],
-			"ysoUri": "http://www.yso.fi/onto/yso/p105354"
-		},
-		"note": "\"Kantaesitys oli vuonna 1917 Pietarissa, Suomessa 1918\" (Poroila 2014)",
-		"sources": [
-			{
-				"reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
-				"id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
-			}
-		]
-	},
-	{
-		"label": [
-			{
-				"locale": "fi",
-				"literal": "Suomi, 1918"
-			}
-		],
-		"year": 1918,
-		"place": {
-			"label": [
-				{
-					"locale": "fi",
-					"literal": "Suomi"
-				}
-			],
-			"ysoUri": "http://www.yso.fi/onto/yso/p94426"
-		},
-		"note": "\"Kantaesitys oli vuonna 1917 Pietarissa, Suomessa 1918\" (Poroila 2014)",
-		"sources": [
-			{
-				"reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
-				"id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
-			}
-		]
-	}
-]
+
 ```
 
 ## items.\*.firstPerformed.\*.label
@@ -89,6 +39,7 @@ Tämä rakenne sisältää ensiesityksen otsikon kieliversiot.
 | --- | --- | --- | --- | --- |
 | `locale` | aina | string | Luomisajan otsikon kielikoodi. | ISO 639-2 |
 | `literal` | aina | array | Luomisajan otsikko. | |
+
 
 ## items.\*.firstPerformed.\*.place
 
