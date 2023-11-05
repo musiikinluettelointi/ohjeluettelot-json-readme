@@ -1,6 +1,9 @@
 # items.\*.children
 
-Teosluettelo-objektin poikaset.
+Tämä rakenne sisältää teosluettelo-objektin poikasten tunnisteet teosluettelossa.
+
+> [!NOTE]
+> Rakenne sisältää ainoastaan teosluettelo-objektiin suoraan kiinnittyvät poikaset. Myös poikasilla voi olla poikasia.
 
 ## Esimerkki
 
