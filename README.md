@@ -1,9 +1,5 @@
 # ohjeluettelot-json-readme
 
-## In English
-
-To do
-
 ## Dokumentti
 
 Dokumentti sisältää metatiedot rakenteessa `meta` ja teosluettelo-objektit rakenteessa `items`.
