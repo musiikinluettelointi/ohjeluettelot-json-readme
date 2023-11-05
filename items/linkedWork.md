@@ -1,6 +1,6 @@
 # items.\*.linkedWork
 
-Tämä rakenne sisältää teosluettelo-objektiin liittyvän saman säveltäjän teoksen.
+Tämä rakenne sisältää teosluettelo-objektiin liittyvät saman säveltäjän teokset.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
