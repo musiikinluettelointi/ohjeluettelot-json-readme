@@ -1,88 +1,56 @@
-# items.\*.firstPerformed
+# items.\*.creationYear
 
-Tämä rakenne sisältää teosluettelo-objektin ensiesityksen.
+Tämä rakenne sisältää teosluettelo-objektin luomisajan.
 
-> [!NOTE]
-> Teosluettelo-objektilla voi olla useita ensiesityksiä.
-
-| Avain | Läsnä  | Tyyppi  | Kuvaus | Formaatti |
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`label`](#itemsfirstperformedlabel) | aina   | array   | Ensiesityksen otsikko. | |
-| `date` | joskus | string  | Ensiesityksen päivämäärä. |  `YYYY`-`MM`-`DD`  |
-| `year` | joskus | integer | Ensiesityksen vuosiluku. | `YYYY` |
-| [`place`](#itemsfirstperformedplace) | joskus | object  | Ensiesityksen paikka. | |
-| `note` | joskus | string  | Huomautus ensiesityksestä. | |
-| [`publications`](#itemsfirstperformedpublications) | joskus | array | Ensiesitykseen liittyvät julkaisut. | |
-| [`sources`](#itemsfirstperformedsources) | joskus | array | Ensiesityksen lähteet. | |
+| [`label`](#itemscreationyearlabel) | aina | array | Luomisajan otsikko. |  |
+| [`years`](#itemscreationyearyears) | joskus | array | Luomisajan vuosiluku. | `YYYY` |
+| [`timespan`](#itemscreationyeartimespan) | joskus | boolean | Luomisajan vuosiluvut muodostavat aikavälin. | |
+| [`separateYears`](#itemscreationyearseparateyears) | joskus | boolean | Luomisajan vuosiluvut ovat erillisiä. | |
+| `note` | joskus | string | Huomautus luomisajasta. | |
+| [`publications`](#itemscreationyearpublications) | joskus | array | Luomisaikaan liittyvät julkaisut. | |
+| [`sources`](#itemscreationyearsources) | joskus | array | Luomisajan lähteet. | |
 
 ## Esimerkki
 
-
-
 ```JSON
-"firstPerformed": [
+"creationYear": [
   {
-		"label": [
-			{
-				"locale": "fi",
-				"literal": "Pietari, 1917"
-			}
-		],
-		"year": 1917,
-		"place": {
-			"label": [
-				{
-					"locale": "fi",
-					"literal": "Pietari"
-				}
-			],
-			"ysoUri": "http://www.yso.fi/onto/yso/p105354"
-		},
-		"note": "\"Kantaesitys oli vuonna 1917 Pietarissa, Suomessa 1918\" (Poroila 2014)",
-		"sources": [
-			{
-				"reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
-				"id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
-			}
-		]
-	},
-	{
-		"label": [
-			{
-				"locale": "fi",
-				"literal": "Suomi, 1918"
-			}
-		],
-		"year": 1918,
-		"place": {
-			"label": [
-				{
-					"locale": "fi",
-					"literal": "Suomi"
-				}
-			],
-			"ysoUri": "http://www.yso.fi/onto/yso/p94426"
-		},
-		"note": "\"Kantaesitys oli vuonna 1917 Pietarissa, Suomessa 1918\" (Poroila 2014)",
-		"sources": [
-			{
-				"reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
-				"id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
-			}
-		]
-	}
+    "label": [
+      {
+        "locale": "fi",
+        "literal": "1915-1916"
+      }
+    ],
+    "years": [
+      {
+        "year": 1915
+      },
+      {
+        "year": 1916
+      }
+    ],
+    "timespan": true,
+    "sources": [
+      {
+        "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
+        "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
+      }
+    ]
+  }
 ]
 ```
 
-## items.\*.firstPerformed.\*.label
+## items.\*.creationYear.\*.label
 
-Tämä rakenne sisältää ensiesityksen otsikon kieliversiot.
+Tämä rakenne sisältää luomisajan otsikon kieliversiot.
 
 ```JSON
 "label": [
   {
     "locale": "fi",
-    "literal": "Pietari, 1917"
+    "literal": "1930?-1939?"
   }
 ]
 ```
@@ -92,49 +60,51 @@ Tämä rakenne sisältää ensiesityksen otsikon kieliversiot.
 | `locale` | aina | string | Luomisajan otsikon kielikoodi. | ISO 639-2 |
 | `literal` | aina | array | Luomisajan otsikko. | |
 
+## items.\*.creationYear.\*.years
 
-## items.\*.firstPerformed.\*.place
+Tämä rakenne sisältää luomisajan vuosiluvut.
 
-Tämä rakenne sisältää ensiesityksen paikan.
-
-```JSON
-"place": {
-  "label": [
-    {
-      "locale": "fi",
-      "literal": "Suomi"
-    }
-  ],
-  "ysoUri": "http://www.yso.fi/onto/yso/p94426"
-}
-```
-
-| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | --- | --- | --- |
-| [`label`](#itemsfirstperformedplacelabel) | aina | array | Ensiesityksen paikan otsikon kieliversiot. | |
-| `ysoUri` | aina | string | Ensiesityksen paikan YSO-paikat-URI | `uri` |
-
-### items.\*.firstPerformed.\*.place.label
-
-Tämä rakenne sisältää ensiesityksen paikan otsikon kieliversiot.
+> [!NOTE]
+> Rakenne sisältää enintään 2 luomisajan vuosilukua.
 
 ```JSON
-"label": [
+"years": [
   {
-    "locale": "fi",
-    "literal": "Suomi"
+    "year": 1930,
+    "yearIsUncertain": true
+  },
+  {
+    "year": 1939,
+    "yearIsUncertain": true
   }
 ]
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `locale` | aina | string | Ensiesityksen paikan otsikon kielikoodi. | ISO 639-2 |
-| `literal` | aina | array | Ensiesityksen paikan otsikko. | |
+| `year` | aina | integer | Luomisajan vuosiluku. |  |
+| `yearIsUncertain` | joskus | boolean | Luomisajan vuosiluku on epävarma. | |
 
-## items.\*.firstPerformed.\*.publications
 
-Tämä rakenne sisältää ensiesitykseen liittyvät julkaisut.
+## items.\*.creationYear.\*.timespan
+
+Luomisajan vuosiluvut muodostavat aikavälin. Tieto merkitään vain, kun luomisaika koostuu kahdesta vuosiluvusta ja ne muodostavat aikavälin.
+
+```JSON
+"timespan": true
+```
+
+## items.\*.creationYear.\*.separateYears
+
+Luomisajan vuosiluvut ovat erillisiä. Tieto merkitään vain, kun luomisaika koostuu kahdesta vuosiluvusta ja ne ovat erillisiä.
+
+```JSON
+"separateYears": true
+```
+
+## items.\*.creationYear.\*.publications
+
+Tämä rakenne sisältää luomisaikaan liittyvät julkaisut.
 
 ```JSON
 "publications": [
@@ -150,9 +120,9 @@ Tämä rakenne sisältää ensiesitykseen liittyvät julkaisut.
 | `reference` | aina | string | Julkaisun lähdeviite | |
 | `id` | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
 
-## items.\*.firstPerformed.\*.sources
+## items.\*.creationYear.\*.sources
 
-Tämä rakenne sisältää ensiesityksen lähteet.
+Tämä rakenne sisältää luomisajan lähteet.
 
 ```JSON
 "sources": [
