@@ -76,6 +76,8 @@ Tämä rakenne sisältää esityskokoonpanon otsikon kieliversiot.
 
 Tämä rakenne sisältää esityskokoonpanon esittäjät.
 
+Esittäjät on poimittu [Suomalaisesta esityskokoonpanosanastosta (SEKO)](https://finto.fi/seko/fi/).
+
 > [!NOTE]
 > Avaimia `itemCount`, `itemIsVocal`, `itemIsGroup` ja `itemIsContinuo` voidaan hyödyntää [Marc-kentän 382 muodostamisessa](https://wiki.helsinki.fi/pages/viewpage.action?pageId=400875418#id-6.Fyysisenkuvailunjne.kent%C3%A4t(3XX)-382382ESITYSKOKOONPANO(T)).
 
@@ -109,9 +111,11 @@ Tämä rakenne sisältää esityskokoonpanon esittäjät.
 | --- | --- | --- | --- | --- |
 | [`label`](#itemsmediumofperformanceitemslabel) | aina | array | Esittäjän otsikko. | |
 | `itemCount` | joskus | integer | Esittäjien lukumäärä. | |
-| `itemIsVocal` | joskus | boolean | Esittäjä on vokaaliesittäjä. | |
-| `itemIsGroup` | joskus | boolean | Esittäjä on esittäjäryhmä. | |
-| `itemIsContinuo` | joskus | boolean | Esittäjä on continuo. | |
+| `itemIsVocal` | joskus | boolean | Esittäjä on vokaaliesittäjä. Avain on läsnä vain, jos esittäjä on vokaaliesittäjä. | |
+| `itemIsGroup` | joskus | boolean | Esittäjä on esittäjäryhmä. Avain on läsnä vain, jos esittäjä on esittäjäryhmä. | |
+| `itemIsContinuo` | joskus | boolean | Esittäjä on continuo. Avain on läsnä vain, jos esittäjä on continuo. | |
+| `note` | joskus | string | Huomautus esittäjästä. | |
+| `sekoUri` | aina | string | Esittäjän SEKO URI. | `uri` |
 
 ### items.\*.mediumOfPerformance.\*.items.\*.label
 
