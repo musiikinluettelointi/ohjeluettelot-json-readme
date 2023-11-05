@@ -5,7 +5,7 @@ Tämä rakenne sisältää teosluettelo-objektin luomisajan.
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | [`label`](#itemscreationyearlabel) | aina | array | Luomisajan otsikko. |  |
-| [`years`](#itemscreationyearyears) | joskus | array | Luomisajan vuosiluku. | |
+| [`years`](#itemscreationyearyears) | joskus | array | Luomisajan vuosiluku. | `YYYY` |
 | [`timespan`](#itemscreationyeartimespan) | joskus | boolean | Luomisajan vuosiluvut muodostavat aikavälin. | |
 | [`separateYears`](#itemscreationyearseparateyears) | joskus | boolean | Luomisajan vuosiluvut ovat erillisiä. | |
 | `note` | joskus | string | Huomautus luomisajasta. | |
