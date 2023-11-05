@@ -4,13 +4,13 @@ Tämä rakenne sisältää teosluettelo-objektin alkusanat.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`label`](#itemscreationyearlabel) | aina | array | Luomisajan otsikko. |  |
-| [`years`](#itemscreationyearyears) | joskus | array | Luomisajan vuosiluku. | `YYYY` |
-| [`timespan`](#itemscreationyeartimespan) | joskus | boolean | Luomisajan vuosiluvut muodostavat aikavälin. | |
-| [`separateYears`](#itemscreationyearseparateyears) | joskus | boolean | Luomisajan vuosiluvut ovat erillisiä. | |
-| `note` | joskus | string | Huomautus luomisajasta. | |
-| [`publications`](#itemscreationyearpublications) | joskus | array | Luomisaikaan liittyvät julkaisut. | |
-| [`sources`](#itemscreationyearsources) | joskus | array | Luomisajan lähteet. | |
+| `text` | aina | array | Alkusanat. |  |
+| [`language`](#itemsincipittextlanguage) | joskus | object | Alkusanojen kieli | |
+| [`alphabet`](#itemsincipittextalphabet) | joskus | object | Nimekkeen merkistö |  |
+| [`transliteration`](#itemsincipittexttransliteration) | joskus | string | Nimekkeen translitterointi | `iso9` \| `sfs4900` |
+| `note` | joskus | string | Huomautus alkusanoista. | |
+| [`publications`](#itemsincipittextpublications) | joskus | array | Alkusanoihin liittyvät julkaisut. | |
+| [`sources`](#itemsincipittextsources) | joskus | array | Alkusanojen lähteet. | |
 
 ## Esimerkki
 
@@ -31,69 +31,102 @@ Tämä rakenne sisältää teosluettelo-objektin alkusanat.
 ]
 ```
 
-## items.\*.creationYear.\*.label
+## items.\*.incipitText.\*.language
 
-Tämä rakenne sisältää luomisajan otsikon kieliversiot.
+Tämä rakenne sisältää alkusanojen kielen.
+
+```JSON
+"language": {
+    "code": "fin",
+    "label": [
+        {
+            "locale": "fi",
+            "literal": "suomi"
+        }
+    ]
+}
+```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `code` | aina | string | Kielen koodi. | ISO 639-2 |
+| [`label`](#itemsincipittextlanguagelabel) | aina | array | Kielen otsikon kieliversiot. | |
+
+### items.\*.incipitText.\*.language.label
+
+Tämä rakenne sisältää kielen otsikon kieliversiot.
 
 ```JSON
 "label": [
     {
         "locale": "fi",
-        "literal": "1930?-1939?"
+        "literal": "suomi"
     }
 ]
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `locale` | aina | string | Luomisajan otsikon kielikoodi. | ISO 639-2 |
-| `literal` | aina | array | Luomisajan otsikko. | |
+| `locale` | aina | string | Kielen otsikon kielikoodi. | ISO 639-2 |
+| `literal` | aina | array | Kielen otsikko. | |
 
-## items.\*.creationYear.\*.years
+## items.\*.incipitText.\*.alphabet
 
-Tämä rakenne sisältää luomisajan vuosiluvut.
-
-> [!NOTE]
-> Rakenne sisältää enintään 2 luomisajan vuosilukua.
+Tämä rakenne sisältää alkusanojen merkistön. Tieto on tallennettu kyrillisestä merkistöstä latinalaiselle merkistölle translitteroiduille alkusanoille, mikäli se on saatavilla.
 
 ```JSON
-"years": [
+"alphabet": {
+    "code": "latin",
+    "label": [
+        {
+            "locale": "fi",
+            "literal": "latinalainen"
+        }
+    ]
+}
+```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `code` | aina | string | Merkistön koodi. | `latin` \| `cyrillic` |
+| [`label`](#itemsincipittextalphabetlabel) | aina | array | Merkistön otsikon kieliversiot. | |
+
+### items.\*.incipitText.\*.alphabet.label
+
+Tämä rakenne sisältää merkistön otsikon kieliversiot.
+
+```JSON
+"label": [
     {
-        "year": 1930,
-        "yearIsUncertain": true
-    },
-    {
-        "year": 1939,
-        "yearIsUncertain": true
+        "locale": "fi",
+        "literal": "latinalainen"
     }
 ]
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `year` | aina | integer | Luomisajan vuosiluku. |  |
-| `yearIsUncertain` | joskus | boolean | Luomisajan vuosiluku on epävarma. | |
+| `locale` | aina | string | Merkistön otsikon kielikoodi. | ISO 639-2 |
+| `literal` | aina | array | Merkistön otsikko. | |
 
 
-## items.\*.creationYear.\*.timespan
+## items.\*.incipitText.\*.transliteration
 
-Luomisajan vuosiluvut muodostavat aikavälin. Tieto merkitään vain, kun luomisaika koostuu kahdesta vuosiluvusta ja ne muodostavat aikavälin.
-
-```JSON
-"timespan": true
-```
-
-## items.\*.creationYear.\*.separateYears
-
-Luomisajan vuosiluvut ovat erillisiä. Tieto merkitään vain, kun luomisaika koostuu kahdesta vuosiluvusta ja ne ovat erillisiä.
+Alkusanojen translitterointi. Tieto on tallennettu kyrillisestä merkistöstä latinalaiselle merkistölle translitteroiduille alkusanoille, mikäli se on saatavilla.
 
 ```JSON
-"separateYears": true
+"transliteration": "sfs4900"
 ```
 
-## items.\*.creationYear.\*.publications
+| Arvo | Kuvaus |
+| --- | --- |
+| `iso9`| Kansainvälinen standardi |
+| `sfs4900`| Kansallinen standardi |
 
-Tämä rakenne sisältää luomisaikaan liittyvät julkaisut.
+
+## items.\*.incipitText.\*.publications
+
+Tämä rakenne sisältää alkusanoihin liittyvät julkaisut.
 
 ```JSON
 "publications": [
@@ -109,9 +142,9 @@ Tämä rakenne sisältää luomisaikaan liittyvät julkaisut.
 | `reference` | aina | string | Julkaisun lähdeviite | |
 | `id` | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
 
-## items.\*.creationYear.\*.sources
+## items.\*.incipitText.\*.sources
 
-Tämä rakenne sisältää luomisajan lähteet.
+Tämä rakenne sisältää alkusanojen lähteet.
 
 ```JSON
 "sources": [
