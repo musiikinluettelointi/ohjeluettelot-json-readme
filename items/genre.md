@@ -1,110 +1,52 @@
-# items.\*.creationYear
+# items.\*.genre
 
-Tämä rakenne sisältää teosluettelo-objektin luomisajan.
+Tämä rakenne sisältää teosluettelo-objektin muodon tai lajityypin. Muoto tai lajityyppi on poimittu [Suomalaisesta lajityyppi- ja muotosanastosta (SLM)](https://finto.fi/slm/fi/).
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`label`](#itemscreationyearlabel) | aina | array | Luomisajan otsikko. |  |
-| [`years`](#itemscreationyearyears) | joskus | array | Luomisajan vuosiluku. | `YYYY` |
-| [`timespan`](#itemscreationyeartimespan) | joskus | boolean | Luomisajan vuosiluvut muodostavat aikavälin. | |
-| [`separateYears`](#itemscreationyearseparateyears) | joskus | boolean | Luomisajan vuosiluvut ovat erillisiä. | |
-| `note` | joskus | string | Huomautus luomisajasta. | |
-| [`publications`](#itemscreationyearpublications) | joskus | array | Luomisaikaan liittyvät julkaisut. | |
-| [`sources`](#itemscreationyearsources) | joskus | array | Luomisajan lähteet. | |
+| [`label`](#itemsgenrelabel) | aina | array | Muodon tai lajityypin otsikko. |  |
+| `slmUri` | joskus | array | Muodon tai lajityypin SLM-URI. | `uri` |
+| `note` | joskus | string | Huomautus muodosta tai lajityypistä. | |
+| [`publications`](#itemsgenrepublications) | joskus | array | Muotoon tai lajityyppiin liittyvät julkaisut. | |
+| [`sources`](#itemsgenresources) | joskus | array | Muodon tai lajityypin lähteet. | |
 
 ## Esimerkki
 
 ```JSON
-"creationYear": [
+"genre": [
   {
     "label": [
       {
         "locale": "fi",
-        "literal": "1915-1916"
+        "literal": "orkesterimusiikki"
       }
     ],
-    "years": [
-      {
-        "year": 1915
-      },
-      {
-        "year": 1916
-      }
-    ],
-    "timespan": true,
-    "sources": [
-      {
-        "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
-        "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
-      }
-    ]
+    "slmUri": "http://urn.fi/URN:NBN:fi:au:slm:s1009"
   }
 ]
 ```
 
-## items.\*.creationYear.\*.label
+## items.\*.genre.\*.label
 
-Tämä rakenne sisältää luomisajan otsikon kieliversiot.
+Tämä rakenne sisältää muodon tai lajityypin otsikon kieliversiot.
 
 ```JSON
 "label": [
   {
     "locale": "fi",
-    "literal": "1930?-1939?"
+    "literal": "orkesterimusiikki"
   }
 ]
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `locale` | aina | string | Luomisajan otsikon kielikoodi. | ISO 639-2 |
-| `literal` | aina | array | Luomisajan otsikko. | |
+| `locale` | aina | string | Muodon tai lajityypin otsikon kielikoodi. | ISO 639-2 |
+| `literal` | aina | array | Muodon tai lajityypin otsikko. | |
 
-## items.\*.creationYear.\*.years
+## items.\*.genre.\*.publications
 
-Tämä rakenne sisältää luomisajan vuosiluvut.
-
-> [!NOTE]
-> Rakenne sisältää enintään 2 luomisajan vuosilukua.
-
-```JSON
-"years": [
-  {
-    "year": 1930,
-    "yearIsUncertain": true
-  },
-  {
-    "year": 1939,
-    "yearIsUncertain": true
-  }
-]
-```
-
-| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | --- | --- | --- |
-| `year` | aina | integer | Luomisajan vuosiluku. |  |
-| `yearIsUncertain` | joskus | boolean | Luomisajan vuosiluku on epävarma. | |
-
-
-## items.\*.creationYear.\*.timespan
-
-Luomisajan vuosiluvut muodostavat aikavälin. Tieto merkitään vain, kun luomisaika koostuu kahdesta vuosiluvusta ja ne muodostavat aikavälin.
-
-```JSON
-"timespan": true
-```
-
-## items.\*.creationYear.\*.separateYears
-
-Luomisajan vuosiluvut ovat erillisiä. Tieto merkitään vain, kun luomisaika koostuu kahdesta vuosiluvusta ja ne ovat erillisiä.
-
-```JSON
-"separateYears": true
-```
-
-## items.\*.creationYear.\*.publications
-
-Tämä rakenne sisältää luomisaikaan liittyvät julkaisut.
+Tämä rakenne sisältää muotoon tai lajityyppiin liittyvät julkaisut.
 
 ```JSON
 "publications": [
@@ -120,9 +62,9 @@ Tämä rakenne sisältää luomisaikaan liittyvät julkaisut.
 | `reference` | aina | string | Julkaisun lähdeviite | |
 | `id` | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
 
-## items.\*.creationYear.\*.sources
+## items.\*.genre.\*.sources
 
-Tämä rakenne sisältää luomisajan lähteet.
+Tämä rakenne sisältää muodon tai lajityypin lähteet.
 
 ```JSON
 "sources": [

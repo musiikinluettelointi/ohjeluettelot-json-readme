@@ -93,7 +93,7 @@ Tämä rakenne sisältää ensiesityksen otsikon kieliversiot.
 
 ## items.\*.firstPerformed.\*.place
 
-Tämä rakenne sisältää ensiesityksen paikan.
+Tämä rakenne sisältää ensiesityksen paikan. Paikka on poimittu [YSO-paikat-sanastosta](https://finto.fi/yso-paikat/fi/).
 
 ```JSON
 "place": {
