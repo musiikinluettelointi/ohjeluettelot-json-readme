@@ -2,9 +2,6 @@
 
 Tämä rakenne sisältää teosluettelo-objektin säveltäjän tiedot.
 
-> [!NOTE]
->  Anonyymeillä teosluettelo-objekteilla ei ole säveltäjää.
-
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `id` | aina | string | Säveltäjän tunniste teosluettelossa. | name-{uuid} |

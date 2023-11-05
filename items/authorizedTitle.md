@@ -5,8 +5,6 @@ Tämä rakenne sisältää teosluettelo-objektin auktorisoidun nimekkeen.
 > [!NOTE]
 > Kaikilla teosluettelo-objekteilla ei ole auktorisoitua nimekettä, katso [`items.*.nonAuthorizedTitle`](nonAuthorizedTitle.md).
 
-
-
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `title` | aina | string | Auktorisoitu nimeke. |  |
