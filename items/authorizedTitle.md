@@ -140,8 +140,8 @@ Tämä rakenne sisältää nimekkeeseen liittyvät julkaisut.
 ```JSON
 "publications": [
     {
-        "reference": "",
-        "id": ""
+        "reference": "Joulupukki [1958].  (1958). Helsinki, Valistus (yhtiö). ",
+        "id": "publication-d9cd27f1-dda2-4aec-bd82-31373f2ffa78"
     }
 ]
 ```
