@@ -1,27 +1,29 @@
-# items.\*.commissionedBy
+# items.\*.dedicatedTo
 
-Tämä rakenne sisältää teosluettelo-objektin tilaajat.
+Tämä rakenne sisältää teosluettelo-objektin omistukset.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `name` | aina | string | Tilaajan nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktorisoituja nimenmuotoja. | |
-| `id` | aina | string | Tilaajan tunniste teosluettelossa. | name-{uuid} |
-| `kantoUri` | joskus | string | Tilaajan KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta. | |
-| `date` | joskus | string  | Tilaajan päivämäärä. |  `YYYY`-`MM`-`DD`  |
-| `year` | joskus | integer | Tilaajan vuosiluku. | `YYYY` |
-| [`place`](#itemscommissionedbyplace) | joskus | object  | Tilaajan paikka. | |
-| `note` | joskus | string | Huomautus tilaajasta. | |
-| [`publications`](#itemscommissionedbypublications) | joskus | array | Tilaajaan liittyvät julkaisut. | |
-| [`sources`](#itemscommissionedbysources) | joskus | array | Tilaajan lähteet. | |
+| `name` | aina | string | Omistuksen kohteen nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktorisoituja nimenmuotoja. | |
+| `id` | aina | string | Omistuksen kohteen tunniste teosluettelossa. | name-{uuid} |
+| `kantoUri` | joskus | string | Omistuksen kohteen KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta. | |
+| `text` | joskus | string | Omistuksen teksti. | |
+| `date` | joskus | string  | Omistuksen päivämäärä. |  `YYYY`-`MM`-`DD`  |
+| `year` | joskus | integer | Omistuksen vuosiluku. | `YYYY` |
+| [`place`](#itemsdedicatedtoplace) | joskus | object  | Omistuksen paikka. | |
+| `note` | joskus | string | Huomautus omistuksesta. | |
+| [`publications`](#itemsdedicatedtopublications) | joskus | array | Omistukseen liittyvät julkaisut. | |
+| [`sources`](#itemsdedicatedtosources) | joskus | array | Omistuksen lähteet. | |
 
 ## Esimerkki
 
 ```JSON
-"commissionedBy": [
+"dedicatedTo": [
     {
-        "name": "Helsingin juhlaviikot",
-        "id": "name-5b829f70-0732-4520-a2d9-8c6cdec40001",
-        "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000000745",
+        "name": "Tarvajärvi, Niilo, 1914-2002",
+        "id": "name-55bdebdd-785a-485e-8d57-8720cb6d825a",
+        "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000060624",
+        "text": "\"Niilo Tarvajärvelle ja hänen kissalleen\"",
         "sources": [
             {
                 "reference": "Poroila, Heikki (2015). Yhtenäistetty Joonas Kokkonen. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 183. PDF. ISBN 978-952-5363-81-4. ",
@@ -33,9 +35,9 @@ Tämä rakenne sisältää teosluettelo-objektin tilaajat.
 ```
 
 
-## items.\*.commissionedBy.\*.place
+## items.\*.dedicatedTo.\*.place
 
-Tämä rakenne sisältää tilaajan paikan. Paikka on poimittu [YSO-paikat-sanastosta](https://finto.fi/yso-paikat/fi/).
+Tämä rakenne sisältää omistuksen paikan. Paikka on poimittu [YSO-paikat-sanastosta](https://finto.fi/yso-paikat/fi/).
 
 ```JSON
 "place": {
@@ -51,12 +53,12 @@ Tämä rakenne sisältää tilaajan paikan. Paikka on poimittu [YSO-paikat-sanas
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`label`](#itemscommissionedbyplacelabel) | aina | array | Tilaajan paikan otsikon kieliversiot. | |
+| [`label`](#itemsdedicatedtoplacelabel) | aina | array | Tilaajan paikan otsikon kieliversiot. | |
 | `ysoUri` | aina | string | Tilaajan paikan YSO-paikat-URI | `uri` |
 
-### items.\*.commissionedBy.\*.place.label
+### items.\*.dedicatedTo.\*.place.label
 
-Tämä rakenne sisältää tilaajan paikan otsikon kieliversiot.
+Tämä rakenne sisältää omistuksen paikan otsikon kieliversiot.
 
 ```JSON
 "label": [
@@ -72,9 +74,9 @@ Tämä rakenne sisältää tilaajan paikan otsikon kieliversiot.
 | `locale` | aina | string | Tilaajan paikan otsikon kielikoodi. | ISO 639-1 |
 | `literal` | aina | string | Tilaajan paikan otsikko. | |
 
-## items.\*.commissionedBy.\*.publications
+## items.\*.dedicatedTo.\*.publications
 
-Tämä rakenne sisältää tilaajaan liittyvät julkaisut.
+Tämä rakenne sisältää omistukseen liittyvät julkaisut.
 
 ```JSON
 "publications": [
@@ -90,9 +92,9 @@ Tämä rakenne sisältää tilaajaan liittyvät julkaisut.
 | `reference` | aina | string | Julkaisun lähdeviite | |
 | `id` | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
 
-## items.\*.commissionedBy.\*.sources
+## items.\*.dedicatedTo.\*.sources
 
-Tämä rakenne sisältää tilaajan lähteet.
+Tämä rakenne sisältää omistuksen lähteet.
 
 ```JSON
 "sources": [
