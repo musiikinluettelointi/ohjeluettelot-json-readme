@@ -67,7 +67,7 @@ Tämä rakenne sisältää muun tekijän roolin.
 Muun tekijän roolin koodi.
 
 > [!NOTE]
-> Rooleja ei ole vielä toistaiseksi linkitetty [Metatietosanastoon (MTS)](https://finto.fi/mts/fi/), josta vastaavat roolit löytyvät oheisen taulukon mukaisesti.
+> Rooleja ei ole vielä linkitetty [Metatietosanastoon (MTS)](https://finto.fi/mts/fi/), josta vastaavat roolit löytyvät oheisen taulukon mukaisesti.
 
 | Arvo | Kuvaus | Metatietosanasto-URI |
 | --- | --- | --- |
