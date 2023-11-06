@@ -7,6 +7,7 @@ Tämä rakenne sisältää teosluettelo-objektin omistukset.
 | `name` | aina | string | Omistuksen kohteen nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktorisoituja nimenmuotoja. | |
 | `id` | aina | string | Omistuksen kohteen tunniste teosluettelossa. | name-{uuid} |
 | `kantoUri` | joskus | string | Omistuksen kohteen KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta. | |
+| `text` | joskus | string | Omistuksen teksti. | |
 | `date` | joskus | string  | Omistuksen päivämäärä. |  `YYYY`-`MM`-`DD`  |
 | `year` | joskus | integer | Omistuksen vuosiluku. | `YYYY` |
 | [`place`](#itemsdedicatedtoplace) | joskus | object  | Omistuksen paikka. | |
@@ -22,6 +23,7 @@ Tämä rakenne sisältää teosluettelo-objektin omistukset.
         "name": "Tarvajärvi, Niilo, 1914-2002",
         "id": "name-55bdebdd-785a-485e-8d57-8720cb6d825a",
         "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000060624",
+        "text": "\"Niilo Tarvajärvelle ja hänen kissalleen\"",
         "sources": [
             {
                 "reference": "Poroila, Heikki (2015). Yhtenäistetty Joonas Kokkonen. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 183. PDF. ISBN 978-952-5363-81-4. ",
