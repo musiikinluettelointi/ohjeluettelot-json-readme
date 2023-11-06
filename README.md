@@ -6,8 +6,8 @@ Dokumentti sisältää metatiedot rakenteessa `meta` ja teosluettelo-objektit ra
 
 | Avain | Läsnä | Tyyppi | Kuvaus |
 | --- | --- | --- | --- |
-| [`items`](#items) | aina  | array | Sisältää teosluettelo-objektit |
 | [`meta`](#meta) | aina | object | Sisältää dokumentin metatiedot |
+| [`items`](#items) | aina  | array | Sisältää teosluettelo-objektit |
 
 ## meta
 
@@ -38,7 +38,7 @@ Tämä rakenne sisältää teosluettelon teosluettelo-objektit.
 | [`composer`](items/composer.md) | joskus | object | Säveltäjä | |
 | [`creationYear`](items/creationYear.md) | joskus | array | Luomisaika | |
 | [`dedicatedTo`](items/dedicatedTo.md) | joskus | array | Omistus | |
-| [`derivativeWork`](items/derivativeWork.md) | joskus | array | Jhdetut teokset | |
+| [`derivativeWork`](items/derivativeWork.md) | joskus | array | Johdetut teokset | |
 | [`firstPerformed`](items/firstPerformed.md) | joskus | array | Ensiesitys | |
 | [`firstPublication`](items/firstPublication.md) | joskus | array | Ensijulkaisu | |
 | [`genre`](items/genre.md) | joskus | array | Muoto tai lajityyppi | |
