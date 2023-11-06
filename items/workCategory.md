@@ -1,90 +1,82 @@
 # items.\*.workCategory
 
-`array`
+Tämä rakenne sisältää teosluettelo-objektin teoskategoriat.
 
-Tämä rakenne sisältää teosluettelo-objektin teoskategoriat. Kaikilla teosluettelo-objekteilla ei ole teoskategoriaa.
+## Esimerkki
 
 ```JSON
 "workCategory": [
-
+    {
+        "code": "withOpusNumber",
+        "label": [
+            {
+                "locale": "fi",
+                "literal": "Opusnumeroidut teokset"
+            }
+        ]
+    }
 ]
-```
-
-## items.\*.workCategory.\*
-
-`object`
-
-Tämä rakenne sisältää teosluettelo-objektin teoskategorian.
-
-```JSON
-{
-  "code": "withOpusNumber",
-  "label": [
-
-  ]
-}
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`code`](#itemsworkcategorycode)   | aina | string | Teoskategorian koodi  |   |
+| `code` | aina | string | Teoskategorian koodi  |   |
 | [`label`](#itemsworkcategorylabel)  | aina | array | Teoskategorian otsikko | |
+| `note` | joskus | string | Huomautus muusta tekijästä. | |
+| [`publications`](#itemsworkcategorypublications) | joskus | array | Muuhun tekijään liittyvät julkaisut. | |
+| [`sources`](#itemsworkcategorysources) | joskus | array | Muun tekijän lähteet. | |
 
-
-### items.\*.workCategory.\*.code
-
-`string`
-
-Tämä rakenne sisältää teoskategorian koodin.
-
-```JSON
-  "code": "withOpusNumber",
-```
 
 ### items.\*.workCategory.\*.label
-
-`array`
 
 Tämä rakenne sisältää teoskategorian otsikon kieliversiot.
 
 ```JSON
 "label": [
-
+    {
+        "locale": "fi",
+        "literal": "Opusnumeroidut teokset"
+    }
 ]
 ```
 
-#### items.\*.workCategory.\*.label.\*
-
-`object`
-
-Tämä rakenne sisältää teoskategorian otsikon kieliversion.
-
-```JSON
-{
-  "locale": ,
-  "literal":
-}
-```
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`locale`](#itemsworkcategorylabellocale) | aina | string |  Teoskategorian otsikon kielikoodi | ISO 639-1  |
-| [`literal`](#itemsworkcategorylabelliteral) | aina | string | Teoskategorian otsikko | |
+| `locale` | aina | string | Teoskategorian otsikon kielikoodi. | ISO 639-1 |
+| `literal` | aina | string | Teoskategorian otsikko. | |
 
-#### items.\*.workCategory.\*.label.\*.locale
+## items.\*.workCategory.\*.publications
 
-`string`
-
-Teoskategorian otsikon kielikoodi.
+Tämä rakenne sisältää teoskategoriaan liittyvät julkaisut.
 
 ```JSON
-"locale": "fi"
+"publications": [
+  {
+    "reference": "",
+    "id": ""
+  }
+]
 ```
-#### items.\*.workCategory.\*.label.\*.literal
 
-`string`
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `reference` | aina | string | Julkaisun lähdeviite | |
+| `id` | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
 
-Teoskategorian otsikko.
+## items.\*.workCategory.\*.sources
+
+Tämä rakenne sisältää teoskategorian lähteet.
 
 ```JSON
-"literal": "Opusnumeroidut teokset"
+"sources": [
+  {
+    "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
+    "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
+  }
+]
 ```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `reference` | aina | string | Lähteen lähdeviite. | |
+| `id` | aina | string | Lähteen tunniste teosluettelossa. | source-{uuid} |

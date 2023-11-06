@@ -79,7 +79,6 @@ Tämä rakenne sisältää muun tekijän roolin otsikon kieliversiot.
 | `locale` | aina | string | Muun tekijän roolin otsikon kielikoodi. | ISO 639-1 |
 | `literal` | aina | string | Muun tekijän roolin otsikko. | |
 
-
 ## items.\*.secondaryAuthor.\*.publications
 
 Tämä rakenne sisältää muuhun tekijään liittyvät julkaisut.
