@@ -2,6 +2,14 @@
 
 Tämä rakenne sisältää teosluettelo-objektin teosnumerot.
 
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `number` | aina | string |  Teosnumero. |  |
+| [`type`](#itemsworknumbertype) | joskus | object | Teosnumeron tyyppi. | |
+| `note` | joskus | string |  Huomautus teosnumerosta. |  |
+| [`publications`](#itemsworknumberpublications) | joskus | array | Teosnumeroon liittyvät julkaisut. | |
+| [`sources`](#itemsworknumbersources) | joskus | array |  Teosnumeron lähteet. |  |
+
 ## Esimerkki
 
 ```JSON
@@ -26,14 +34,6 @@ Tämä rakenne sisältää teosluettelo-objektin teosnumerot.
     }
 ],
 ```
-
-| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | --- | --- | --- |
-| `number` | aina | string |  Teosnumero. |  |
-| [`type`](#itemsworknumbertype) | joskus | object | Teosnumeron tyyppi. | |
-| `note` | joskus | string |  Huomautus teosnumerosta. |  |
-| [`publications`](#itemsworknumberpublications) | joskus | array | Teosnumeroon liittyvät julkaisut. | |
-| [`sources`](#itemsworknumbersources) | joskus | array |  Teosnumeron lähteet. |  |
 
 ## items.\*.workNumber.\*.type
 

@@ -2,6 +2,14 @@
 
 Tämä rakenne sisältää teosluettelo-objektin teoskategoriat.
 
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `code` | aina | string | Teoskategorian koodi  |   |
+| [`label`](#itemsworkcategorylabel)  | aina | array | Teoskategorian otsikko | |
+| `note` | joskus | string | Huomautus teoskategoriasta. | |
+| [`publications`](#itemsworkcategorypublications) | joskus | array | Teoskategoriaan liittyvät julkaisut. | |
+| [`sources`](#itemsworkcategorysources) | joskus | array | Teoskategorian lähteet. | |
+
 ## Esimerkki
 
 ```JSON
@@ -17,15 +25,6 @@ Tämä rakenne sisältää teosluettelo-objektin teoskategoriat.
     }
 ]
 ```
-
-| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | --- | --- | --- |
-| `code` | aina | string | Teoskategorian koodi  |   |
-| [`label`](#itemsworkcategorylabel)  | aina | array | Teoskategorian otsikko | |
-| `note` | joskus | string | Huomautus teoskategoriasta. | |
-| [`publications`](#itemsworkcategorypublications) | joskus | array | Teoskategoriaan liittyvät julkaisut. | |
-| [`sources`](#itemsworkcategorysources) | joskus | array | Teoskategorian lähteet. | |
-
 
 ### items.\*.workCategory.\*.label
 

@@ -13,7 +13,6 @@ Tämä rakenne sisältää teosluettelo-objektin auktorisoimattoman nimekkeen.
 | [`publications`](#itemsnonauthorizedtitlepublications) | joskus | array | Nimekkeeseen liittyvät julkaisut | |
 | [`sources`](#itemsnonauthorizedtitlesources) | joskus | array | Nimekkeen lähteet | |
 
-
 ## Esimerkki
 
 ```JSON

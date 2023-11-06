@@ -2,6 +2,11 @@
 
 Tämä rakenne sisältää teosluettelo-objektin lähteet.
 
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `reference` | aina | string | Lähteen lähdeviite. | |
+| `id` | aina | string | Lähteen tunniste teosluettelossa. | source-{uuid} |
+
 ## Esimerkki
 
 ```JSON
@@ -12,8 +17,3 @@ Tämä rakenne sisältää teosluettelo-objektin lähteet.
       }
   ]
 ```
-
-| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | --- | --- | --- |
-| `reference` | aina | string | Lähteen lähdeviite. | |
-| `id` | aina | string | Lähteen tunniste teosluettelossa. | source-{uuid} |

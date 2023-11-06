@@ -2,6 +2,11 @@
 
 Tämä rakenne sisältää teosluettelo-objektiin liittyvät julkaisut.
 
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `reference` | aina | string | Julkaisun lähdeviite | |
+| `id` | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
+
 ## Esimerkki
 
 ```JSON
@@ -12,8 +17,3 @@ Tämä rakenne sisältää teosluettelo-objektiin liittyvät julkaisut.
       }
   ]
 ```
-
-| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | --- | --- | --- |
-| `reference` | aina | string | Julkaisun lähdeviite | |
-| `id` | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
