@@ -1,8 +1,8 @@
 # items.\*.publications
 
-`array`
+Tämä rakenne sisältää teosluettelo-objektiin liittyvät julkaisut.
 
-Tämä rakenne sisältää teosluettelo-objektiin liittyvät julkaisut. Kaikilla teosluettelo-objekteilla ei ole liittyviä julkaisuja.
+## Esimerkki
 
 ```JSON
   "sources": [
@@ -12,3 +12,8 @@ Tämä rakenne sisältää teosluettelo-objektiin liittyvät julkaisut. Kaikilla
       }
   ]
 ```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `reference` | aina | string | Julkaisun lähdeviite | |
+| `id` | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |

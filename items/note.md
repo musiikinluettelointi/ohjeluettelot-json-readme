@@ -1,8 +1,8 @@
 # items.\*.note
 
-`string`
+Huomautus teosluettelo-objektista.
 
-Tämä rakenne sisältää huomautuksen teosluettelo-objektista.
+## Esimerkki
 
 ```JSON
 "note": "\"Alkuperäiset sanat Leo Tolstoi, ruotsintajaa ei tiedetä.\" (Poroila 2014)",

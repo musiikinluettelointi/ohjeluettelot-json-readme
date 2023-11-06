@@ -1,8 +1,8 @@
 # items.\*.sources
 
-`array`
+Tämä rakenne sisältää teosluettelo-objektin lähteet.
 
-Tämä rakenne sisältää teosluettelo-objektin lähteet. Kaikilla teosluettelo-objekteilla ei ole lähteitä.
+## Esimerkki
 
 ```JSON
   "sources": [
@@ -12,3 +12,8 @@ Tämä rakenne sisältää teosluettelo-objektin lähteet. Kaikilla teosluettelo
       }
   ]
 ```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `reference` | aina | string | Lähteen lähdeviite. | |
+| `id` | aina | string | Lähteen tunniste teosluettelossa. | source-{uuid} |
