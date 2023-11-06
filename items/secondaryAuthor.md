@@ -1,110 +1,88 @@
-# items.\*.creationYear
+# items.\*.secondaryAuthor
 
-Tämä rakenne sisältää teosluettelo-objektin luomisajan.
+Tämä rakenne sisältää teosluettelo-objektin muut tekijät.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`label`](#itemscreationyearlabel) | aina | array | Luomisajan otsikko. |  |
-| [`years`](#itemscreationyearyears) | joskus | array | Luomisajan vuosiluku. | `YYYY` |
-| [`timespan`](#itemscreationyeartimespan) | joskus | boolean | Luomisajan vuosiluvut muodostavat aikavälin. | |
-| [`separateYears`](#itemscreationyearseparateyears) | joskus | boolean | Luomisajan vuosiluvut ovat erillisiä. | |
-| `note` | joskus | string | Huomautus luomisajasta. | |
-| [`publications`](#itemscreationyearpublications) | joskus | array | Luomisaikaan liittyvät julkaisut. | |
-| [`sources`](#itemscreationyearsources) | joskus | array | Luomisajan lähteet. | |
+| `name` | aina | string | Muun tekijän nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktorisoituja nimenmuotoja. | |
+| `id` | aina | string | Muun tekijän tunniste teosluettelossa. | name-{uuid} |
+| `kantoUri` | joskus | string | Muun tekijän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta. | |
+| [`role`](#itemssecondaryauthorrole) | joskus | object | Muun tekijän rooli. | |
+| `note` | joskus | string | Huomautus muusta tekijästä. | |
+| [`publications`](#itemssecondaryauthorpublications) | joskus | array | Muuhun tekijään liittyvät julkaisut. | |
+| [`sources`](#itemssecondaryauthorsources) | joskus | array | Muun tekijän lähteet. | |
 
 ## Esimerkki
 
 ```JSON
-"creationYear": [
-  {
-    "label": [
-      {
-        "locale": "fi",
-        "literal": "1915-1916"
-      }
-    ],
-    "years": [
-      {
-        "year": 1915
-      },
-      {
-        "year": 1916
-      }
-    ],
-    "timespan": true,
-    "sources": [
-      {
-        "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
-        "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
-      }
-    ]
-  }
+"secondaryAuthor": [
+    {
+        "name": "Heine, Heinrich, 1797-1856",
+        "id": "name-d28f56f6-b3cc-4f84-acf7-79cba52e66a2",
+        "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000196030",
+        "role": {
+            "code": "writer",
+            "label": [
+                {
+                    "locale": "fi",
+                    "label": "kirjoittaja"
+                }
+            ]
+        },
+        "sources": [
+            {
+                "reference": "Poroila, Heikki (2012). Yhtenäistetty Armas Järnefelt. Yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 134. PDF. ISBN 978-952-5363-68-5. ",
+                "id": "source-e674f774-82d7-48a8-ad7d-6bb3834a747e"
+            }
+        ]
+    }
 ]
 ```
 
-## items.\*.creationYear.\*.label
 
-Tämä rakenne sisältää luomisajan otsikon kieliversiot.
+## items.\*.secondaryAuthor.\*.role
+
+Tämä rakenne sisältää muun tekijän roolin.
+
+```JSON
+"role": {
+    "code": "writer",
+    "label": [
+        {
+            "locale": "fi",
+            "label": "kirjoittaja"
+        }
+    ]
+},
+```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `code` | aina | string | Muun tekijän roolin koodi |  |
+| [`label`](#itemssecondaryauthorrolelabel) | aina | array | Muun tekijän roolin otsikon kieliversiot. | |
+
+### items.\*.secondaryAuthor.\*.role.label
+
+Tämä rakenne sisältää muun tekijän roolin otsikon kieliversiot.
 
 ```JSON
 "label": [
-  {
-    "locale": "fi",
-    "literal": "1930?-1939?"
-  }
+    {
+        "locale": "fi",
+        "literal": "kirjoittaja"
+    }
 ]
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `locale` | aina | string | Luomisajan otsikon kielikoodi. | ISO 639-2 |
-| `literal` | aina | string | Luomisajan otsikko. | |
-
-## items.\*.creationYear.\*.years
-
-Tämä rakenne sisältää luomisajan vuosiluvut.
-
-> [!NOTE]
-> Rakenne sisältää enintään 2 luomisajan vuosilukua.
-
-```JSON
-"years": [
-  {
-    "year": 1930,
-    "yearIsUncertain": true
-  },
-  {
-    "year": 1939,
-    "yearIsUncertain": true
-  }
-]
-```
-
-| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
-| --- | --- | --- | --- | --- |
-| `year` | aina | integer | Luomisajan vuosiluku. |  |
-| `yearIsUncertain` | joskus | boolean | Luomisajan vuosiluku on epävarma. | |
+| `locale` | aina | string | Muun tekijän roolin otsikon kielikoodi. | ISO 639-1 |
+| `literal` | aina | string | Muun tekijän roolin otsikko. | |
 
 
-## items.\*.creationYear.\*.timespan
+## items.\*.secondaryAuthor.\*.publications
 
-Luomisajan vuosiluvut muodostavat aikavälin. Tieto merkitään vain, kun luomisaika koostuu kahdesta vuosiluvusta ja ne muodostavat aikavälin.
-
-```JSON
-"timespan": true
-```
-
-## items.\*.creationYear.\*.separateYears
-
-Luomisajan vuosiluvut ovat erillisiä. Tieto merkitään vain, kun luomisaika koostuu kahdesta vuosiluvusta ja ne ovat erillisiä.
-
-```JSON
-"separateYears": true
-```
-
-## items.\*.creationYear.\*.publications
-
-Tämä rakenne sisältää luomisaikaan liittyvät julkaisut.
+Tämä rakenne sisältää muuhun tekijään liittyvät julkaisut.
 
 ```JSON
 "publications": [
@@ -120,9 +98,9 @@ Tämä rakenne sisältää luomisaikaan liittyvät julkaisut.
 | `reference` | aina | string | Julkaisun lähdeviite | |
 | `id` | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
 
-## items.\*.creationYear.\*.sources
+## items.\*.secondaryAuthor.\*.sources
 
-Tämä rakenne sisältää luomisajan lähteet.
+Tämä rakenne sisältää muun tekijän lähteet.
 
 ```JSON
 "sources": [
