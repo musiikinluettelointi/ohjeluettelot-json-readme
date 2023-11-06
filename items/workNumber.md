@@ -67,7 +67,6 @@ Teosnumeron tyypin koodi.
 | `orderNumber`| Järjestysnumero |
 | `otherNumber`| Muu numero |
 
-
 ### items.\*.workNumber.\*.type.label
 
 Tämä rakenne sisältää teosnumeron tyypin otsikon kieliversiot.

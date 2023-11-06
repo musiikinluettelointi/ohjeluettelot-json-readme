@@ -58,8 +58,23 @@ Tämä rakenne sisältää muun tekijän roolin.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `code` | aina | string | Muun tekijän roolin koodi |  |
+| [`code`](#itemssecondaryauthorrolecode) | aina | string | Muun tekijän roolin koodi. |  |
 | [`label`](#itemssecondaryauthorrolelabel) | aina | array | Muun tekijän roolin otsikon kieliversiot. | |
+
+
+### items.\*.secondaryAuthor.\*.role.code
+
+Muun tekijän roolin koodi.
+
+| Arvo | Kuvaus | Metatietosanasto-URI |
+| --- | --- | --- |
+| `arranger`| Sovittaja | http://urn.fi/URN:NBN:fi:au:mts:m1205 |
+| `composer`| Säveltäjä  | http://urn.fi/URN:NBN:fi:au:mts:m695 |
+| `librettist`| Libretisti | http://urn.fi/URN:NBN:fi:au:mts:m322 |
+| `lyricist`| Sanoittaja | http://urn.fi/URN:NBN:fi:au:mts:m384 |
+| `translator`| Kääntäjä | http://urn.fi/URN:NBN:fi:au:mts:m23 |
+| `writer`| Kirjoittaja | http://urn.fi/URN:NBN:fi:au:mts:m552 |
+
 
 ### items.\*.secondaryAuthor.\*.role.label
 
