@@ -1,7 +1,5 @@
 # items.\*.workNumber
 
-`array`
-
 Tämä rakenne sisältää teosluettelo-objektin teosnumerot.
 
 ## Esimerkki
