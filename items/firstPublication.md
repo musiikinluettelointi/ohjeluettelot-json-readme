@@ -51,8 +51,8 @@ Tämä rakenne sisältää ensijulkaisun otsikon kieliversiot.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| `locale` | aina | string | Luomisajan otsikon kielikoodi. | ISO 639-1 |
-| `literal` | aina | string | Luomisajan otsikko. | |
+| `locale` | aina | string | Ensijulkaisun otsikon kielikoodi. | ISO 639-1 |
+| `literal` | aina | string | Ensijulkaisun otsikko. | |
 
 ## items.\*.firstPublication.\*.publications
 
