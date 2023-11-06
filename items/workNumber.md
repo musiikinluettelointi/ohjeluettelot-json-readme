@@ -32,10 +32,10 @@ Tämä rakenne sisältää teosluettelo-objektin teosnumerot.
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | `number` | aina | string |  Teosnumero. |  |
-| [`type`]() | joskus | object | Teosnumeron tyyppi. | |
-| [`note`]() | joskus | string |  Huomautus teosnumerosta. |  |
-| [`publications`]() | joskus | array | Teosnumeroon liittyvät julkaisut. | |
-| [`sources`]() | joskus | array |  Teosnumeron lähteet. |  |
+| [`type`](#itemsworknumbertype) | joskus | object | Teosnumeron tyyppi. | |
+| `note` | joskus | string |  Huomautus teosnumerosta. |  |
+| [`publications`](#itemsworknumberpublications) | joskus | array | Teosnumeroon liittyvät julkaisut. | |
+| [`sources`](#itemsworknumbersources) | joskus | array |  Teosnumeron lähteet. |  |
 
 ## items.\*.workNumber.\*.type
 
@@ -56,7 +56,7 @@ Tämä rakenne sisältää teosnumeron tyypin.
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
 | [`code`](#itemsworknumbertypecode) | aina | string |  Teosnumeron tyypin koodi | |
-| [`label`](#itemsworknumbertypelabel) | aina | array | teosnumeron tyypin otsikon kieliversiot | |
+| [`label`](#itemsworknumbertypelabel) | aina | array | Teosnumeron tyypin otsikon kieliversiot | |
 
 ### items.\*.workNumber.\*.type.code
 
@@ -72,17 +72,15 @@ Teosnumeron tyypin koodi.
 
 ### items.\*.workNumber.\*.type.label
 
-`array`
-
 Tämä rakenne sisältää teosnumeron tyypin otsikon kieliversiot.
 
 ```JSON
-    "label": [
-        {
-            "locale": "fi",
-            "literal": "opusnumero"
-        }
-    ]
+"label": [
+    {
+        "locale": "fi",
+        "literal": "opusnumero"
+    }
+]
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
@@ -93,100 +91,36 @@ Tämä rakenne sisältää teosnumeron tyypin otsikon kieliversiot.
 
 ## items.\*.workNumber.\*.publications
 
-`array`
-
 Tämä rakenne sisältää teosnumeroon liittyvät julkaisut.
 
 ```JSON
 "publications": [
-
+  {
+    "reference": "",
+    "id": ""
+  }
 ]
-```
-
-### items.\*.workNumber.\*.publications.\*
-
-`object`
-
-Tämä rakenne sisältää teosnumeroon liittyvän julkaisun.
-
-```JSON
-{
-  "reference": ,
-  "id":
-}
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`reference`](#itemsworknumberpublicationsreference) | aina | string | Julkaisun lähdeviite | |
-| [`id`](#itemsworknumberpublicationsid) | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
-
-#### items.\*.workNumber.\*.publications.\*.reference
-
-`string`
-
-Julkaisun lähdeviite.
-
-```JSON
-"reference": ""
-```
-
-#### items.\*.workNumber.\*.publications.\*.id
-
-`string`
-
-Julkaisun tunniste teosluettelossa.
-
-```JSON
-"id": ""
-```
+| `reference` | aina | string | Julkaisun lähdeviite | |
+| `id` | aina | string | Julkaisun tunniste teosluettelossa | publication-{uuid} |
 
 ## items.\*.workNumber.\*.sources
-
-`array`
 
 Tämä rakenne sisältää teosnumeron lähteet.
 
 ```JSON
 "sources": [
-
+  {
+    "reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1.",
+    "id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
+  }
 ]
-```
-
-### items.\*.workNumber.\*.sources.\*
-
-`object`
-
-Tämä rakenne sisältää teosnumeron lähteen.
-
-```JSON
-{
-  "reference": ,
-  "id":
-}
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`reference`](#itemsworknumbersourcesreference) | aina | string | Lähteen lähdeviite | |
-| [`id`](#itemsworknumbersourcesid) | aina | string | Lähteen tunniste teosluettelossa | source-{uuid} |
-
-#### items.\*.workNumber.\*.sources.\*.reference
-
-`string`
-
-Lähteen lähdeviite.
-
-```JSON
-"reference": "Poroila, Heikki (2013). Yhtenäistetty Toivo Kuula. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 154. Toinen laitos, verkkoversio 1.0. ISBN 978-952-5363-53-1."
-```
-
-#### items.\*.workNumber.\*.sources.\*.id
-
-`string`
-
-Lähteen tunniste teosluettelossa.
-
-```JSON
-"id": "source-165ed660-ccbe-43da-852c-3f5f58c03826"
-```
+| `reference` | aina | string | Lähteen lähdeviite. | |
+| `id` | aina | string | Lähteen tunniste teosluettelossa. | source-{uuid} |
