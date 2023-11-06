@@ -22,9 +22,9 @@ Tämä rakenne sisältää teosluettelo-objektin teoskategoriat.
 | --- | --- | --- | --- | --- |
 | `code` | aina | string | Teoskategorian koodi  |   |
 | [`label`](#itemsworkcategorylabel)  | aina | array | Teoskategorian otsikko | |
-| `note` | joskus | string | Huomautus muusta tekijästä. | |
-| [`publications`](#itemsworkcategorypublications) | joskus | array | Muuhun tekijään liittyvät julkaisut. | |
-| [`sources`](#itemsworkcategorysources) | joskus | array | Muun tekijän lähteet. | |
+| `note` | joskus | string | Huomautus teoskategoriasta. | |
+| [`publications`](#itemsworkcategorypublications) | joskus | array | Teoskategoriaan liittyvät julkaisut. | |
+| [`sources`](#itemsworkcategorysources) | joskus | array | Teoskategorian lähteet. | |
 
 
 ### items.\*.workCategory.\*.label
