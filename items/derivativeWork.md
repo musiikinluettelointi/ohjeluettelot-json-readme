@@ -30,14 +30,30 @@ Tämä rakenne sisältää teosluettelo-objektista johdetut muiden säveltäjien
             }
         ]
     }
-],
+]
 ```
 
 ## items.\*.derivativeWork.\*.composer
 
+Tämä rakenne sisältää johdetun teoksen säveltäjän.
+
+```JSON
+"composer": {
+    "name": "Mozart, Wolfgang Amadeus, 1756-1791",
+    "id": "name-fd533d48-19e7-4a24-b6c5-d817a5e64694",
+    "kantoUri": "http://urn.fi/URN:NBN:fi:au:finaf:000052618"
+}
+```
+
+| Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
+| --- | --- | --- | --- | --- |
+| `id` | aina | string | Säveltäjän tunniste teosluettelossa. | name-{uuid} |
+| `name` | aina | string | Säveltäjän nimi. Teosluettelossa käytetään ensisijaisesti KANTOon auktorisoituja nimenmuotoja. | |
+| `kantoUri` | joskus | string | Säveltäjän KANTO URI, mikäli käytettävä nimenmuoto on poimittu KANTOsta. | |
+
 ## items.\*.derivativeWork.\*.publications
 
-Tämä rakenne sisältää muuhun tekijään liittyvät julkaisut.
+Tämä rakenne sisältää johdettuun teokseen liittyvät julkaisut.
 
 ```JSON
 "publications": [
@@ -55,7 +71,7 @@ Tämä rakenne sisältää muuhun tekijään liittyvät julkaisut.
 
 ## items.\*.derivativeWork.\*.sources
 
-Tämä rakenne sisältää muun tekijän lähteet.
+Tämä rakenne sisältää johdetun teoksen lähteet.
 
 ```JSON
 "sources": [
