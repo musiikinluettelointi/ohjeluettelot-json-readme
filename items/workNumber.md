@@ -2,84 +2,74 @@
 
 `array`
 
-Tämä rakenne sisältää teosluettelo-objektin teosnumerot. Kaikilla teosluettelo-objekteilla ei ole numerointia.
+Tämä rakenne sisältää teosluettelo-objektin teosnumerot.
+
+## Esimerkki
 
 ```JSON
 "workNumber": [
-
-]
-```
-
-## items.\*.workNumber.\*
-
-`object`
-
-Tämä rakenne sisältää teosluettelo-objektin teosnumeron.
-
-```JSON
-{
-  "number": ,
-  "type": {
-
-  },
-  "note": ,
-  "publications": [
-
-  ],
-  "sources": [
-
-  ]
-}
+    {
+        "number": "op5",
+        "type": {
+            "code": "opusNumber",
+            "label": [
+                {
+                    "locale": "fi",
+                    "literal": "opusnumero"
+                }
+            ]
+        },
+        "sources": [
+            {
+                "reference": "Poroila, Heikki (2014). Yhtenäistetty Ernest Pingoud. Teosten yhtenäistettyjen nimekkeiden ohjeluettelo. Helsinki, Suomen musiikkikirjastoyhdistys. Suomen musiikkikirjastoyhdistyksen julkaisusarja, 169. PDF. ISBN 978-952-5363-68-5. ",
+                "id": "source-87511f45-eb6e-414d-832f-eadd88967c4b"
+            }
+        ]
+    }
+],
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`number`](#itemsworknumbernumber) | aina | string |  Teosnumero |  |
-| [`type`](#itemsworknumbernumbertype) | joskus | object | Teosnumeron tyyppi | |
-| [`note`](#itemsworknumbernumbernote) | joskus | string |  Huomautus teosnumerosta |  |
-| [`publications`](#itemsworknumbernumberpublications) | joskus | array | Teosnumeroon liittyvät julkaisut | |
-| [`sources`](#itemsworknumbersources) | joskus | array |  Teosnumeron lähteet |  |
-
-## items.\*.workNumber.\*.number
-
-`string`
-
-Teosnumero.
-
-```JSON
-"number": "op4",
-```
-
+| `number` | aina | string |  Teosnumero. |  |
+| [`type`]() | joskus | object | Teosnumeron tyyppi. | |
+| [`note`]() | joskus | string |  Huomautus teosnumerosta. |  |
+| [`publications`]() | joskus | array | Teosnumeroon liittyvät julkaisut. | |
+| [`sources`]() | joskus | array |  Teosnumeron lähteet. |  |
 
 ## items.\*.workNumber.\*.type
-
-`object`
 
 Tämä rakenne sisältää teosnumeron tyypin.
 
 ```JSON
 "type": {
-  "code": "opusNumber",
-  "label": [
-
-  ]
+    "code": "opusNumber",
+    "label": [
+        {
+            "locale": "fi",
+            "literal": "opusnumero"
+        }
+    ]
 }
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`code`](#itemsworknumbertypecode) | aina | string |  Teosnumeron tyypin koodi | ISO 639-1  |
+| [`code`](#itemsworknumbertypecode) | aina | string |  Teosnumeron tyypin koodi | |
 | [`label`](#itemsworknumbertypelabel) | aina | array | teosnumeron tyypin otsikon kieliversiot | |
 
 ### items.\*.workNumber.\*.type.code
 
-`string`
-
 Teosnumeron tyypin koodi.
 
-```JSON
-"code": "opusNumber",
-```
+| Arvo | Kuvaus |
+| --- | --- |
+| `catalogNumber`| Teosluettelonumero |
+| `opusNumber`| Opusnumero  |
+| `orderNumber`| Järjestysnumero |
+| `otherNumber`| Muu numero |
+
+
 ### items.\*.workNumber.\*.type.label
 
 `array`
@@ -87,57 +77,19 @@ Teosnumeron tyypin koodi.
 Tämä rakenne sisältää teosnumeron tyypin otsikon kieliversiot.
 
 ```JSON
-"label": [
-
-]
-```
-
-#### items.\*.workNumber.\*.type.label.\*
-
-`object`
-
-Tämä rakenne sisältää teosnumeron tyypin otsikon kieliversion.
-
-```JSON
-{
-  "locale": ,
-  "literal":
-}
+    "label": [
+        {
+            "locale": "fi",
+            "literal": "opusnumero"
+        }
+    ]
 ```
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
-| [`locale`](#itemsworknumbertypelabellocale) | aina | string |  Teosnumeron tyypin otsikon kielikoodi | ISO 639-1  |
-| [`literal`](#itemsworknumbertypelabelliteral) | aina | string | Teosnumeron tyypin otsikko | |
+| `locale` | aina | string | Teosnumeron tyypin otsikon kielikoodi. | ISO 639-1 |
+| `literal` | aina | string | Teosnumeron tyypin otsikko. | |
 
-#### items.\*.workNumber.\*.type.label.\*.locale
-
-`string`
-
-Teosnumeron tyypin otsikon kielikoodi.
-
-```JSON
-"locale": "fi"
-```
-#### items.\*.workNumber.\*.type.label.\*.literal
-
-`string`
-
-Teosnumeron tyypin otsikko.
-
-```JSON
-"literal": "opusnumero"
-```
-
-## items.\*.workNumber.\*.note
-
-`string`
-
-Huomautus teosnumerosta.
-
-```JSON
- "note": "Poroila 2013"
-```
 
 ## items.\*.workNumber.\*.publications
 
