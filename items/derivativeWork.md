@@ -8,8 +8,8 @@ Tämä rakenne sisältää teosluettelo-objektista johdetut muiden säveltäjien
 | `id` | aina | string | Johdetun teoksen tunniste teosluettelossa. | work-{uuid} |
 | [`composer`](#itemsderivativeworkcomposer) | aina | object | Johdetun teoksen säveltäjä. | |
 | `note` | joskus | string | Huomautus johdetusta teoksesta. | |
-| [`publications`](#itemsderivativeworkpublications) | joskus | array | Muuhun tekijään liittyvät julkaisut. | |
-| [`sources`](#itemsderivativeworksources) | joskus | array | Muun tekijän lähteet. | |
+| [`publications`](#itemsderivativeworkpublications) | joskus | array | Johdettuun teokseen liittyvät julkaisut. | |
+| [`sources`](#itemsderivativeworksources) | joskus | array | Johdetun teoksen lähteet. | |
 
 ## Esimerkki
 
