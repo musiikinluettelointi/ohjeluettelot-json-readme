@@ -1,6 +1,6 @@
 # items.\*.composer
 
-Tämä rakenne sisältää teosluettelo-objektin säveltäjän tiedot.
+Tämä rakenne sisältää teosluettelo-objektin säveltäjän.
 
 | Avain | Läsnä | Tyyppi | Kuvaus | Formaatti |
 | --- | --- | --- | --- | --- |
