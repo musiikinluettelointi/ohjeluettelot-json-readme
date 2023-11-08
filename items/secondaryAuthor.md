@@ -78,7 +78,6 @@ Muun tekijän roolin koodi.
 | `translator`| Kääntäjä | http://urn.fi/URN:NBN:fi:au:mts:m23 |
 | `writer`| Kirjoittaja | http://urn.fi/URN:NBN:fi:au:mts:m552 |
 
-
 ### items.\*.secondaryAuthor.\*.role.label
 
 Tämä rakenne sisältää muun tekijän roolin otsikon kieliversiot.
