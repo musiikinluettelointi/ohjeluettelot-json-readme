@@ -37,7 +37,7 @@ Tämä rakenne sisältää teosluettelo-objektin sävellajin.
 Sävellajin koodi.
 
 | Arvo | Sävellaji |
-| --- | --- | --- |
+| --- | --- |
 | `cFlatMajor`| Ces-duuri |
 | `cMajor`| C-duuri  |
 | `cSharpMajor`| Cis-duuri |
