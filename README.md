@@ -1,5 +1,7 @@
 # ohjeluettelot-json-readme
 
+Tämä repositorio sisältää sivustolla [Yhtenäistettyjen musiikkinimekkeiden ohjeluettelot](https://musiikinluettelointi.fi/ohjeluettelot) julkaistujen säveltäjien teosten kirjastoluetteloinnissa käytettävien auktorisoitujen nimekkeiden ohjeluetteloiden [koneluettavien JSON-tiedostojen](https://github.com/musiikinluettelointi/ohjeluettelot-json) tietorakenteen kuvauksen.
+
 ## Dokumentti
 
 Dokumentti sisältää metatiedot rakenteessa `meta` ja teosluettelo-objektit rakenteessa `items`.
@@ -60,3 +62,11 @@ Tämä rakenne sisältää teosluettelon teosluettelo-objektit.
 | [`textOriginWork`](items/textOriginWork.md) | joskus  | array | Tekstin perustana oleva teos | |
 | [`workCategory`](items/workCategory.md) | joskus | array | Teoskategoria | |
 | [`workNumber`](items/workNumber.md) | joskus  | array | Numerointi | |
+
+## Lisenssi 
+
+[Creative Commons Zero v1.0 Universal](LICENSE)
+
+## Yhteystiedot
+
+info@musiikinluettelointi.fi
